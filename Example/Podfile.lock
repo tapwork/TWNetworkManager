@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../TWNetworkManager.podspec
 
 SPEC CHECKSUMS:
-  TWNetworkManager: 4fc866e8b770f094cdcad9aef217bf2a64636196
+  TWNetworkManager: 65bf62ea1e48559e038ca468a4f0172514e52636
 
 COCOAPODS: 0.35.0
