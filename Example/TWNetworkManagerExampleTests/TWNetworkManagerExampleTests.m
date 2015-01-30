@@ -38,7 +38,7 @@
           }];
      }];
     
-    [self waitForExpectationsWithTimeout:3.0 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:8.0 handler:^(NSError *error) {
         XCTAssertFalse(error, @"timeout with error: %@", error);
     }];
 }
@@ -61,7 +61,7 @@
          [expectation fulfill];
      }];
     
-    [self waitForExpectationsWithTimeout:3.0 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:8.0 handler:^(NSError *error) {
         XCTAssertFalse(error, @"timeout with error: %@", error);
     }];
 }
@@ -101,7 +101,7 @@
           }];
      }];
     
-    [self waitForExpectationsWithTimeout:3.0 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:8.0 handler:^(NSError *error) {
         XCTAssertFalse(error, @"timeout with error: %@", error);
     }];
 }
@@ -123,7 +123,7 @@
          [expectation fulfill];
      }];
     
-    [self waitForExpectationsWithTimeout:3.0 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:8.0 handler:^(NSError *error) {
         XCTAssertFalse(error, @"timeout with error: %@", error);
     }];
 }
@@ -144,7 +144,7 @@
     [[TWNetworkManager defaultManager] cancelAllRequests];
     XCTAssertFalse([[TWNetworkManager defaultManager] isProcessingURL:url]);
     
-    [self waitForExpectationsWithTimeout:3.0 handler:^(NSError *error) {
+    [self waitForExpectationsWithTimeout:8.0 handler:^(NSError *error) {
         XCTAssertFalse(error, @"timeout with error: %@", error);
     }];
 }
