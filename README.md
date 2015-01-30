@@ -93,7 +93,7 @@ NSURL *url = [NSURL URLWithString:@"http://whatthecommit.com"];
      }];
 ```
 
-# More method calls
+### More method calls
 This resets the memory cache and deletes all cached data on disk
 ```objc
 - (BOOL)reset;
