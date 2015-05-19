@@ -121,11 +121,7 @@ static void TWEndNetworkActivity()
             break;
     }
 
-    [self request:request
-       completion:^(NSData *data,
-                    NSError *error) {
-           completion(data, nil, NO, error);
-    }];
+    [self _startRequest:request completion:completion];
 }
 
 - (void)request:(NSURLRequest*)request
@@ -140,59 +136,13 @@ static void TWEndNetworkActivity()
         
         return;
     }
-    NSURL *url = [request URL];
-    [self addRequestedURL:url];
-    
-    TWBeginNetworkActivity();
-    
-    NSURLSession *session = self.urlSession;
-    [[session dataTaskWithRequest:request
-                completionHandler:^(NSData *data,
-                                    NSURLResponse *response,
-                                    NSError *connectionError) {
-                    
-                    TWEndNetworkActivity();
-                    
-                    NSError *resError = connectionError;
-                    NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
-                    if (statusCode >= 400) {
-                        data = nil;
-                        resError = [NSError errorWithDomain:NSURLErrorDomain
-                                                       code:statusCode
-                                                   userInfo:@{@"HTTP Error": @(statusCode)}];
-                    }
-                    
-                    NSString *filepath = [self cachedFilePathForURL:url];
-                    if (data) {
-                        // for some strange reasons,NSDataWritingAtomic does not override in some cases
-                        NSFileManager* filemanager = [[NSFileManager alloc] init];
-                        [filemanager removeItemAtPath:filepath error:nil];
-                        [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
-                        
-                        NSError *readError = nil;
-                        data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&readError];
-                        
-                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-                            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
-                            NSString *etag = header[@"Etag"];
-                            NSString *lastmodified = header[@"Last-Modified"];
-                            if (etag) {
-                                // store the eTag - we use it to check later if the content has been modified
-                                [self setETag:etag forCachedFilepath:filepath];
-                            } else if (lastmodified) {
-                                [self setLastModified:lastmodified forCachedFilepath:filepath];
-                            }
-                        }
-                    }
-                    
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        
-                        if (completion) {
-                            completion(data,resError);
-                        }
-                        [self removeRequestedURL:url];
-                    });
-                }] resume];
+    [self _startRequest:request
+             completion:^(NSData *data,
+                          NSString *localFilepath,
+                          BOOL isFromCache,
+                          NSError *error) {
+                 completion(data,error);
+    }];
 }
 
 - (UIImage*)imageAtURL:(NSURL*)url
@@ -462,6 +412,69 @@ static void TWEndNetworkActivity()
 + (NSCache*)imageCache
 {
     return kImageCache;
+}
+
+#pragma mark - Private
+
+- (void)_startRequest:(NSURLRequest*)request
+           completion:(void(^)(NSData *data,
+                               NSString *localFilepath,
+                               BOOL isFromCache,
+                               NSError *error))completion
+{
+    NSURL *url = [request URL];
+    [self addRequestedURL:url];
+    
+    TWBeginNetworkActivity();
+    
+    NSURLSession *session = self.urlSession;
+    [[session dataTaskWithRequest:request
+                completionHandler:^(NSData *data,
+                                    NSURLResponse *response,
+                                    NSError *connectionError) {
+                    
+                    TWEndNetworkActivity();
+                    
+                    NSError *resError = connectionError;
+                    NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
+                    if (statusCode >= 400) {
+                        data = nil;
+                        resError = [NSError errorWithDomain:NSURLErrorDomain
+                                                       code:statusCode
+                                                   userInfo:@{@"HTTP Error": @(statusCode)}];
+                    }
+                    
+                    NSString *filepath = [self cachedFilePathForURL:url];
+                    if (data) {
+                        // for some strange reasons,NSDataWritingAtomic does not override in some cases
+                        NSFileManager* filemanager = [[NSFileManager alloc] init];
+                        [filemanager removeItemAtPath:filepath error:nil];
+                        [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
+                        
+                        NSError *readError = nil;
+                        data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&readError];
+                        
+                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+                            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
+                            NSString *etag = header[@"Etag"];
+                            NSString *lastmodified = header[@"Last-Modified"];
+                            if (etag) {
+                                // store the eTag - we use it to check later if the content has been modified
+                                [self setETag:etag forCachedFilepath:filepath];
+                            } else if (lastmodified) {
+                                [self setLastModified:lastmodified forCachedFilepath:filepath];
+                            }
+                        }
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        
+                        if (completion) {
+                            completion(data,filepath,NO,resError);
+                        }
+                        [self removeRequestedURL:url];
+                    });
+                }] resume];
 }
 
 #pragma mark - Private Getter
