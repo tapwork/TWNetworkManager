@@ -58,13 +58,18 @@ typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
                                 BOOL isFromCache,
                                 NSError *error))completion;
 
-// Sends a request with an http method to the given URL - does not use caching
+// Request from URL with specific HTTP method - does not use caching
 - (void)requestURL:(NSURL*)url
-              type:(TWNetworkHTTPMethod)requestType
+              type:(TWNetworkHTTPMethod)HTTPMethod
         completion:(void(^)(NSData *data,
                             NSString *localFilepath,
                             BOOL isFromCache,
                             NSError *error))completion;
+
+// Request with NSURLRequest - does not use caching
+- (void)request:(NSURLRequest*)request
+     completion:(void(^)(NSData *data,
+                         NSError *error))completion;
 
 // returns YES if URL is currently requested or in download progress
 - (BOOL)isProcessingURL:(NSURL *)url;

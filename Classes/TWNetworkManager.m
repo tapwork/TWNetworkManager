@@ -78,13 +78,121 @@ static void TWEndNetworkActivity()
 #pragma mark - Public methods
 
 - (void)requestURL:(NSURL*)url
-              type:(TWNetworkHTTPMethod)requestType
+              type:(TWNetworkHTTPMethod)method
         completion:(void(^)(NSData *data,
                             NSString *localFilepath,
                             BOOL isFromCache,
                             NSError *error))completion
 {
-    [self _startAsyncDownloadFromURL:url requestType:requestType completion:completion];
+    if (!url || ![url scheme] || ![url host]) {
+        NSAssert(url, @"url must not be nil here");
+        if (completion) {
+            completion(nil,nil,NO,nil);
+        }
+        
+        return;
+    }
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
+                                    initWithURL:url
+                                    cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                    timeoutInterval:kDownloadTimeout];
+    NSURL *cookieURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@",[url scheme],[url host]]];
+    NSArray * cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:cookieURL];
+    if ([cookies count] > 0) {
+        NSDictionary * headers = [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];
+        [request setAllHTTPHeaderFields:headers];
+    }
+    
+    switch (method) {
+        case TWNetworkHTTPMethodGET:
+            [request setHTTPMethod:@"GET"];
+            break;
+        case TWNetworkHTTPMethodPOST:
+            [request setHTTPMethod:@"POST"];
+            break;
+        case TWNetworkHTTPMethodDELETE:
+            [request setHTTPMethod:@"DELETE"];
+            break;
+        case TWNetworkHTTPMethodPUT:
+            [request setHTTPMethod:@"PUT"];
+            break;
+        default:
+            [request setHTTPMethod:@"GET"];
+            break;
+    }
+
+    [self request:request
+       completion:^(NSData *data,
+                    NSError *error) {
+           completion(data, nil, NO, error);
+    }];
+}
+
+- (void)request:(NSURLRequest*)request
+     completion:(void(^)(NSData *data,
+                         NSError *error))completion
+{
+    if (!request) {
+        NSAssert(request, @"url must not be nil here");
+        if (completion) {
+            completion(nil,nil);
+        }
+        
+        return;
+    }
+    NSURL *url = [request URL];
+    [self addRequestedURL:url];
+    
+    TWBeginNetworkActivity();
+    
+    NSURLSession *session = self.urlSession;
+    [[session dataTaskWithRequest:request
+                completionHandler:^(NSData *data,
+                                    NSURLResponse *response,
+                                    NSError *connectionError) {
+                    
+                    TWEndNetworkActivity();
+                    
+                    NSError *resError = connectionError;
+                    NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
+                    if (statusCode >= 400) {
+                        data = nil;
+                        resError = [NSError errorWithDomain:NSURLErrorDomain
+                                                       code:statusCode
+                                                   userInfo:@{@"HTTP Error": @(statusCode)}];
+                    }
+                    
+                    NSString *filepath = [self cachedFilePathForURL:url];
+                    if (data) {
+                        // for some strange reasons,NSDataWritingAtomic does not override in some cases
+                        NSFileManager* filemanager = [[NSFileManager alloc] init];
+                        [filemanager removeItemAtPath:filepath error:nil];
+                        [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
+                        
+                        NSError *readError = nil;
+                        data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&readError];
+                        
+                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+                            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
+                            NSString *etag = header[@"Etag"];
+                            NSString *lastmodified = header[@"Last-Modified"];
+                            if (etag) {
+                                // store the eTag - we use it to check later if the content has been modified
+                                [self setETag:etag forCachedFilepath:filepath];
+                            } else if (lastmodified) {
+                                [self setLastModified:lastmodified forCachedFilepath:filepath];
+                            }
+                        }
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        
+                        if (completion) {
+                            completion(data,resError);
+                        }
+                        [self removeRequestedURL:url];
+                    });
+                }] resume];
 }
 
 - (UIImage*)imageAtURL:(NSURL*)url
@@ -177,7 +285,9 @@ static void TWEndNetworkActivity()
                                      });
                                  }
                              } else {
-                                 [self _startAsyncDownloadFromURL:url requestType:TWNetworkHTTPMethodGET completion:completion];
+                                 [self requestURL:url
+                                             type:TWNetworkHTTPMethodGET
+                                       completion:completion];
                              }
                          }];
 }
@@ -224,107 +334,6 @@ static void TWEndNetworkActivity()
     NSFileManager *fileManager = [[NSFileManager alloc] init];
     NSError *error = nil;
     return [fileManager removeItemAtPath:cachePath error:&error];
-}
-
-
-#pragma mark - private download method
-
-- (void)_startAsyncDownloadFromURL:(NSURL*)url
-                       requestType:(TWNetworkHTTPMethod)requestType
-                        completion:(void(^)(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error))completion
-{
-    if (!url || ![url scheme] || ![url host]) {
-        NSAssert(url, @"url must not be nil here");
-        if (completion) {
-            completion(nil,nil,NO,nil);
-        }
-        
-        return;
-    }
-    
-    [self addRequestedURL:url];
-    
-    NSAssert(url, @"URL must not be nil here");
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
-                                    initWithURL:url
-                                    cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                    timeoutInterval:kDownloadTimeout];
-    NSURL *cookieURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@",[url scheme],[url host]]];
-    NSArray * cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:cookieURL];
-    if ([cookies count] > 0) {
-        NSDictionary * headers = [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];
-        [request setAllHTTPHeaderFields:headers];
-    }
-    
-    switch (requestType) {
-        case TWNetworkHTTPMethodGET:
-            [request setHTTPMethod:@"GET"];
-            break;
-        case TWNetworkHTTPMethodPOST:
-            [request setHTTPMethod:@"POST"];
-            break;
-        case TWNetworkHTTPMethodDELETE:
-            [request setHTTPMethod:@"DELETE"];
-            break;
-        case TWNetworkHTTPMethodPUT:
-            [request setHTTPMethod:@"PUT"];
-            break;
-            
-        default:
-            [request setHTTPMethod:@"GET"];
-            break;
-    }
-    
-    TWBeginNetworkActivity();
-    
-    NSURLSession *session = self.urlSession;
-    [[session dataTaskWithRequest:request
-                completionHandler:^(NSData *data,
-                                    NSURLResponse *response,
-                                    NSError *connectionError) {
-                   
-         TWEndNetworkActivity();
-         
-         NSError *resError = connectionError;
-         NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
-         if (statusCode >= 400) {
-             data = nil;
-             resError = [NSError errorWithDomain:NSURLErrorDomain
-                                            code:statusCode
-                                        userInfo:@{@"HTTP Error": @(statusCode)}];
-         }
-         
-         NSString *filepath = [self cachedFilePathForURL:url];
-         if (data) {
-             // for some strange reasons,NSDataWritingAtomic does not override in some cases
-             NSFileManager* filemanager = [[NSFileManager alloc] init];
-             [filemanager removeItemAtPath:filepath error:nil];
-             [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
-             
-             NSError *readError = nil;
-             data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&readError];
-             
-             if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-                 NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
-                 NSString *etag = header[@"Etag"];
-                 NSString *lastmodified = header[@"Last-Modified"];
-                 if (etag) {
-                     // store the eTag - we use it to check later if the content has been modified
-                     [self setETag:etag forCachedFilepath:filepath];
-                 } else if (lastmodified) {
-                     [self setLastModified:lastmodified forCachedFilepath:filepath];
-                 }
-             }
-         }
-         
-         dispatch_async(dispatch_get_main_queue(), ^{
-             
-             if (completion) {
-                 completion(data,filepath,NO,resError);
-             }
-             [self removeRequestedURL:url];
-         });
-     }] resume];
 }
 
 #pragma mark - Getter
