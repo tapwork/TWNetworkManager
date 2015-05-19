@@ -96,13 +96,6 @@ static void TWEndNetworkActivity()
                                     initWithURL:url
                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                     timeoutInterval:kDownloadTimeout];
-    NSURL *cookieURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@",[url scheme],[url host]]];
-    NSArray * cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:cookieURL];
-    if ([cookies count] > 0) {
-        NSDictionary * headers = [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];
-        [request setAllHTTPHeaderFields:headers];
-    }
-    
     switch (method) {
         case TWNetworkHTTPMethodGET:
             [request setHTTPMethod:@"GET"];
