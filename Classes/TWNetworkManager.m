@@ -198,14 +198,10 @@ static void TWEndNetworkActivity()
 - (void)downloadURL:(NSURL*)url
          completion:(void(^)(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error))completion
 {
-    
     if (!url) {
         if (completion) {
             completion(nil,nil,NO,[NSError errorWithDomain:@"NSURL" code:-1 userInfo:@{@"description":@"URL must not be nil"}]);
         }
-        
-        
-        ///
         ///  URL is nil
         ///  stop here
         return;
