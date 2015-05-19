@@ -9,6 +9,6 @@
 // TWNetworkManager
 #define COCOAPODS_POD_AVAILABLE_TWNetworkManager
 #define COCOAPODS_VERSION_MAJOR_TWNetworkManager 1
-#define COCOAPODS_VERSION_MINOR_TWNetworkManager 1
-#define COCOAPODS_VERSION_PATCH_TWNetworkManager 2
+#define COCOAPODS_VERSION_MINOR_TWNetworkManager 2
+#define COCOAPODS_VERSION_PATCH_TWNetworkManager 0
 
