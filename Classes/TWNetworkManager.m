@@ -242,34 +242,6 @@ static void TWEndNetworkActivity()
                          }];
 }
 
-- (void)postJSON:(NSDictionary*)json
-           atURL:(NSURL*)url
-      completion:(void(^)(BOOL success, NSData *responseData))completion
-{
-    NSError *jsonError;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:json options:0 error:&jsonError];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
-                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
-                                                       timeoutInterval:60.0];
-    [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)[jsonData length]] forHTTPHeaderField:@"Content-Length"];
-    [request setHTTPBody: jsonData];
-    TWBeginNetworkActivity();
-    
-    NSURLSession *session = self.urlSession;
-    [[session uploadTaskWithRequest:request fromData:request.HTTPBody
-                  completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                      TWEndNetworkActivity();
-                      
-                      if (completion) {
-                          BOOL success = (error == nil);
-                          completion(success, data);
-                      }
-                  }] resume];
-}
-
 - (void)cancelAllRequests
 {
     [_urlSession invalidateAndCancel];
