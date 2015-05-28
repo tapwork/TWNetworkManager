@@ -84,14 +84,6 @@ static void TWEndNetworkActivity()
                             BOOL isFromCache,
                             NSError *error))completion
 {
-    if (!url || ![url scheme] || ![url host]) {
-        NSAssert(url, @"url must not be nil here");
-        if (completion) {
-            completion(nil,nil,NO,nil);
-        }
-        
-        return;
-    }
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                     initWithURL:url
                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
@@ -121,14 +113,6 @@ static void TWEndNetworkActivity()
      completion:(void(^)(NSData *data,
                          NSError *error))completion
 {
-    if (!request) {
-        NSAssert(request, @"url must not be nil here");
-        if (completion) {
-            completion(nil,nil);
-        }
-        
-        return;
-    }
     [self _startRequest:request
              completion:^(NSData *data,
                           NSString *localFilepath,
@@ -147,7 +131,7 @@ static void TWEndNetworkActivity()
     if (!url) {
         if (completion) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                completion(nil,nil,YES,[NSError errorWithDomain:@"URL is nil" code:-1 userInfo:nil]);
+                completion(nil, nil, YES, [self errorForNilURL]);
             });
         }
 
@@ -200,7 +184,7 @@ static void TWEndNetworkActivity()
 {
     if (!url) {
         if (completion) {
-            completion(nil,nil,NO,[NSError errorWithDomain:@"NSURL" code:-1 userInfo:@{@"description":@"URL must not be nil"}]);
+            completion(nil,nil,NO,[self errorForNilURL]);
         }
         ///  URL is nil
         ///  stop here
@@ -362,7 +346,6 @@ static void TWEndNetworkActivity()
     return ([reach currentReachabilityStatus] != NotReachable);
 }
 
-
 - (BOOL)isReachableViaWiFi
 {
     Reachability *reach = [Reachability reachabilityForInternetConnection];
@@ -375,6 +358,13 @@ static void TWEndNetworkActivity()
     return kImageCache;
 }
 
+- (NSError*)errorForNilURL
+{
+    return [NSError errorWithDomain:NSURLErrorDomain
+                               code:-1
+                           userInfo:@{@"reason" : @"URL must not be nil"}];
+}
+
 #pragma mark - Private
 
 - (void)_startRequest:(NSURLRequest*)request
@@ -384,6 +374,15 @@ static void TWEndNetworkActivity()
                                NSError *error))completion
 {
     NSURL *url = [request URL];
+    if (!url || ![url scheme] || ![url host]) {
+        NSAssert(url, @"url must not be nil here");
+        if (completion) {
+            completion(nil,nil,NO,[self errorForNilURL]);
+        }
+        
+        return;
+    }
+    
     [self addRequestedURL:url];
     
     TWBeginNetworkActivity();
