@@ -398,7 +398,6 @@ static void TWEndNetworkActivity()
                     NSError *resError = connectionError;
                     NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
                     if (statusCode >= 400) {
-                        data = nil;
                         resError = [NSError errorWithDomain:NSURLErrorDomain
                                                        code:statusCode
                                                    userInfo:@{@"HTTP Error": @(statusCode)}];
