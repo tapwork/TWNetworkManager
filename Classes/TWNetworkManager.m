@@ -398,9 +398,14 @@ static void TWEndNetworkActivity()
                     NSError *resError = connectionError;
                     NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
                     if (statusCode >= 400) {
+                        NSMutableDictionary *errorUserInfo = [NSMutableDictionary dictionary];
+                        errorUserInfo[@"HTTP statuscode"] = @(statusCode);
+                        if (connectionError) {
+                            errorUserInfo[@"underlying error"] = connectionError;
+                        }
                         resError = [NSError errorWithDomain:NSURLErrorDomain
                                                        code:statusCode
-                                                   userInfo:@{@"HTTP Error": @(statusCode)}];
+                                                   userInfo:errorUserInfo];
                     }
                     
                     NSString *filepath = [self cachedFilePathForURL:url];
