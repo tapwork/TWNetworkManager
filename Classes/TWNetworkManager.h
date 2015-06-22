@@ -83,6 +83,8 @@ typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
 // Cancels all outstanding tasks and then invalidates the session object.
 - (void)cancelAllRequests;
 
+- (void)cancelAllRequestForURL:(NSURL*)url;
+
 // Deletes all cached data from disk and removes the images from NSCache
 - (BOOL)reset;
 

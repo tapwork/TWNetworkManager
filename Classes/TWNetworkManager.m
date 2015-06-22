@@ -222,6 +222,23 @@ static void TWEndNetworkActivity()
     _runningURLRequests = nil;
 }
 
+- (void)cancelAllRequestForURL:(NSURL*)url
+{
+    [_urlSession getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
+
+        NSInteger capacity = [dataTasks count] + [uploadTasks count] + [downloadTasks count];
+        NSMutableArray *tasks = [NSMutableArray arrayWithCapacity:capacity];
+        [tasks addObjectsFromArray:dataTasks];
+        [tasks addObjectsFromArray:uploadTasks];
+        [tasks addObjectsFromArray:downloadTasks];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"originalRequest.URL = %@", url];
+        [tasks filterUsingPredicate:predicate];
+        for (NSURLSessionTask *task in tasks) {
+            [task cancel];
+        }
+    }];
+}
+
 - (BOOL)reset
 {
     [[[self class] imageCache] removeAllObjects];
