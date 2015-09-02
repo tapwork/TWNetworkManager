@@ -13,6 +13,7 @@ static NSString *const kDownloadCachePathname = @"TWDownloadCache";
 const char *const kETAGExtAttributeName  = "etag";
 const char *const kLastModifiedExtAttributeName  = "lastmodified";
 static const double kDownloadTimeout = 20.0;
+static const double kETagValidationTimeout = 1.0;
 static NSCache *kImageCache = nil;
 static dispatch_queue_t kDownloadGCDQueue = nil;
 
@@ -288,7 +289,7 @@ static void TWEndNetworkActivity()
     } else {
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url
                                                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                                                timeoutInterval:3.0];
+                                                                timeoutInterval:kETagValidationTimeout];
         if ([eTag length] > 0) {
             [request setValue:eTag forHTTPHeaderField:@"If-None-Match"];
         }
