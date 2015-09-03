@@ -152,31 +152,30 @@ static void TWEndNetworkActivity()
         return image;
     }
     
-    [self downloadURL:url
-           completion:^(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error) {
-               
-               dispatch_async(kDownloadGCDQueue, ^{
-                   UIImage *image = nil;
-                   if (url && data) {
-                       image = [UIImage imageWithData:data];
-                       if (image.size.width < 2 || image.size.height < 2) {
-                           image = nil;
-                       }
-                       if (image) {
-                           [[[self class] imageCache] setObject:image forKey:url];
-                       }
-                   }
-                   
-                   dispatch_async(dispatch_get_main_queue(), ^{
-                       
-                       if (completion) {
-                           completion(image,localFilepath,isFromCache,error);
-                       }
-                   });
-               });
-           }];
-    
-    
+    if ([self hasCachedFileForURL:url]) {
+        dispatch_async(kDownloadGCDQueue, ^{
+            NSString *filepath = [self cachedFilePathForURL:url];
+            NSError *error = nil;
+            NSData *data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&error];
+            UIImage *image = [UIImage imageWithData:data];
+            if (image) {
+                [[[self class] imageCache] setObject:image forKey:url];
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (completion) {
+                    completion(image, filepath, YES, error);
+                    [self isDownloadNecessaryForURL:url completion:^(BOOL needsDownload) {
+                        if (needsDownload) {
+                            [self requestImageAtURL:url completion:completion];
+                        }
+                    }];
+                }
+            });
+        });
+    } else {
+        [self requestImageAtURL:url completion:completion];
+    }
+
     return nil;
 }
 
@@ -384,6 +383,35 @@ static void TWEndNetworkActivity()
 }
 
 #pragma mark - Private
+
+- (void)requestImageAtURL:(NSURL*)url
+               completion:(void(^)(UIImage *image,
+                                   NSString *localFilepath,
+                                   BOOL isFromCache,
+                                   NSError *error))completion
+{
+    [self requestURL:url
+                type:TWNetworkHTTPMethodGET
+         completion:^(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error) {
+             dispatch_async(kDownloadGCDQueue, ^{
+                 UIImage *image = nil;
+                 if (url && data) {
+                     image = [UIImage imageWithData:data];
+                     if (image.size.width < 2 || image.size.height < 2) {
+                         image = nil;
+                     }
+                     if (image) {
+                         [[[self class] imageCache] setObject:image forKey:url];
+                     }
+                 }
+                 dispatch_async(dispatch_get_main_queue(), ^{
+                     if (completion) {
+                         completion(image, localFilepath, isFromCache, error);
+                     }
+                 });
+             });
+         }];
+}
 
 - (void)_startRequest:(NSURLRequest*)request
            completion:(void(^)(NSData *data,
