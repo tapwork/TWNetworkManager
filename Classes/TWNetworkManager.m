@@ -107,20 +107,20 @@ static void TWEndNetworkActivity()
             break;
     }
 
-    [self _startRequest:request completion:completion];
+    [self sendRequest:request completion:completion];
 }
 
 - (void)request:(NSURLRequest*)request
      completion:(void(^)(NSData *data,
                          NSError *error))completion
 {
-    [self _startRequest:request
-             completion:^(NSData *data,
-                          NSString *localFilepath,
-                          BOOL isFromCache,
-                          NSError *error) {
-                 completion(data,error);
-    }];
+    [self sendRequest:request
+           completion:^(NSData *data,
+                        NSString *localFilepath,
+                        BOOL isFromCache,
+                        NSError *error) {
+               completion(data,error);
+           }];
 }
 
 - (UIImage*)imageAtURL:(NSURL*)url
@@ -413,11 +413,11 @@ static void TWEndNetworkActivity()
          }];
 }
 
-- (void)_startRequest:(NSURLRequest*)request
-           completion:(void(^)(NSData *data,
-                               NSString *localFilepath,
-                               BOOL isFromCache,
-                               NSError *error))completion
+- (void)sendRequest:(NSURLRequest*)request
+         completion:(void(^)(NSData *data,
+                             NSString *localFilepath,
+                             BOOL isFromCache,
+                             NSError *error))completion
 {
     NSURL *url = [request URL];
     if (!url || ![url scheme] || ![url host]) {
