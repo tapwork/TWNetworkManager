@@ -10,296 +10,21 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>0372D300B46DA16E1DEEF947</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0EC880F684D53069CBD0EEE7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>03D27EF1EA9BE03AC3EC7D87</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AC238EA4699A679A4075AE91</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0CC6EACE36B7DB9481675001</key>
+		<key>03522BC5D6C07A170E655F62</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6CB691A51DBE230C2A286BB2</string>
+			<string>E5AE640883B5E29C673182F6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>0D2E26D4D60968F28DD5C983</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Reachability.h</string>
-			<key>path</key>
-			<string>Classes/Reachability.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0EC880F684D53069CBD0EEE7</key>
+		<key>107A12A1727186D22B31D671</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>73B962FEFC7A389C3B4F70F6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12CB60DFA1BD15ABF11439B4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManager-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1BADA45B1E7A7EE513D9A574</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F871CFF514682BB7533E2D73</string>
-				<string>994770870A3DD7E1C02DCDB1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22887FD4301AF666657D208A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>270992907350897597D5E635</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF7419B3CFEF6CEC8E33E4AF</string>
-				<string>6F2D0EB42608F66370000C2F</string>
-				<string>0CC6EACE36B7DB9481675001</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>27DABE0555D10C3FA8F8CE7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C627C3D45B3B58FDACCA4DC6</string>
-				<string>54025B4571F033687D0A9A98</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2883234C8FBCF03E801DDFE6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8C4C8C65C1B91B77FFC16418</string>
-				<string>DEF508B25D2CB2867E333CDC</string>
-				<string>0372D300B46DA16E1DEEF947</string>
-				<string>2E2A31B79C12208D9EFB55D7</string>
-				<string>1BADA45B1E7A7EE513D9A574</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2AD7DB2E142E3AE0A56BB212</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>35ED3DFEAA48488903C682AF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>62C375155CB79D8B1ADA6263</string>
-				<string>547B5816DD3BBE3C0BE20297</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>79D0ABC2B6AFE7EBFA6552FC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests</string>
-			<key>productName</key>
-			<string>Pods-TWNetworkManagerExampleTests</string>
-			<key>productReference</key>
-			<string>3D9511089FBAA4E78AC4C650</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>2ADE19CFACF514585C810B14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D22A3DA245CF6A68BEBC48A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManager-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2E2A31B79C12208D9EFB55D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BEAC348D109D1FDA9528A594</string>
-				<string>A1742DBE251D099D262C04CE</string>
-				<string>3D9511089FBAA4E78AC4C650</string>
-				<string>5925528BE7222CA57EC32405</string>
+				<string>7EF476440252AEC0EF534827</string>
+				<string>4166CC8C0247C2B03AF52D7A</string>
+				<string>D5D22DB1F7348E18E2F5A7D1</string>
+				<string>3FF358D8CB94C8558DE04715</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -308,117 +33,118 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2E800F26F8ED001BEA6FB996</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>12CB60DFA1BD15ABF11439B4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-TWNetworkManager/Pods-TWNetworkManager-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>30010316F6349F8FAC438F71</key>
+		<key>132DB65CF1922818F9306295</key>
 		<dict>
 			<key>containerPortal</key>
-			<string>A05D84D65149BBB824F08D1E</string>
+			<string>39757A601A720CE0B0454680</string>
 			<key>isa</key>
 			<string>PBXContainerItemProxy</string>
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>DE8CA8A8413F626330B2C8ED</string>
+			<string>9D7E8C523ED13AE1F4EC8AED</string>
 			<key>remoteInfo</key>
 			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
 		</dict>
-		<key>35ED3DFEAA48488903C682AF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>7FE32012451D9FAC0768D18D</string>
-				<string>B5662BB4E635B5AD4CCFEAA9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>37800F1F803BA8DC2BAC79EF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D92A35971FAD358DA8451C33</string>
-				<string>5CB654D79A61EC273D672C6C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3D9511089FBAA4E78AC4C650</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TWNetworkManagerExampleTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>4A3EF13668F2BA4F2C5A8BB7</key>
+		<key>139EA346617A7DC03AC602D0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>73B962FEFC7A389C3B4F70F6</string>
+			<string>E5AE640883B5E29C673182F6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>4F45E890B0831472E111830D</key>
+		<key>1414C5EA5F03AFE89B61E077</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A17AD1C856372016453AA132</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3DA69217382FCEBC55CCC7AA</string>
+				<string>FDB0BE3E6F0D57C423E61FE8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>DBC1256D33337243A5613635</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests</string>
+			<key>productName</key>
+			<string>Pods-TWNetworkManagerExampleTests</string>
+			<key>productReference</key>
+			<string>D5D22DB1F7348E18E2F5A7D1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>1817B9F647E99E78EA8678D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TWNetworkManager.h</string>
+			<key>path</key>
+			<string>Classes/TWNetworkManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>196DF34997374817379142F8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B5D124DA8563FCAC458E5BD7</string>
+				<string>2054167C56F70EE4CDEB5E72</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1DFFE89CC39CA3A9B9EDF695</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager-dummy.m</string>
+			<key>path</key>
+			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2054167C56F70EE4CDEB5E72</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>335CEB39DBA4BF469FD8DA8F</string>
+				<string>DA49DCD668E53DD8D0893092</string>
+				<string>B0F1F7DFC4B862F2209F258D</string>
+				<string>75E7AAEF0F8AD4EE4B18198B</string>
+				<string>C6545D1B9B36846B11DEA0B4</string>
+				<string>AB0AFFD9ABFB3F56E8299491</string>
+				<string>6FC63029479365DCA5AEC691</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TWNetworkManagerExampleTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20A53907E6F4344287AE9983</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -427,133 +153,40 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-dummy.m</string>
+			<string>Pods-TWNetworkManager-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>54025B4571F033687D0A9A98</key>
+		<key>2201802428333DCCB608D04B</key>
 		<dict>
-			<key>fileRef</key>
-			<string>888A0DD946098CAB1BB69DD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>547B5816DD3BBE3C0BE20297</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>D203694DABFBC77352630292</string>
+				<string>DE14890229FCED9AB6A69241</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>54C3510C5B220CA79FA9B50D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6CB691A51DBE230C2A286BB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>55B5DE4DDA1CF87E36795761</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods-TWNetworkManager</string>
-			<key>target</key>
-			<string>E7BCB8808BB3448DBFD51448</string>
-			<key>targetProxy</key>
-			<string>9ED2EF9F341EB39CA3F6EAF3</string>
-		</dict>
-		<key>55FC96ED1EB693748D3F8E77</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AB5DAE10F1C5CD1A384016AA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>5925528BE7222CA57EC32405</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TWNetworkManagerExampleTests-TWNetworkManager.a</string>
+			<string>iOS</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5977E141AF0F1BCFEB6F0DF1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0D2E26D4D60968F28DD5C983</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>59D721CFC4CCBC3DB6BFA292</key>
+		<key>265178F71964E1719E04ACD6</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>DB915DC48AC7B8661940EE07</string>
+				<string>C34FF76A5C27BE476433B098</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>5CB654D79A61EC273D672C6C</key>
+		<key>26B69D7908533C1609DA79CC</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>82C0B3A0D685768C1D17C8B5</string>
+			<string>B5BAA67F251AE4D649541BB8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -600,91 +233,258 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>62C375155CB79D8B1ADA6263</key>
+		<key>2ADDBE4610EF22900C9030B4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A429C5D796B939C8E4DFBDA0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-TWNetworkManager/Pods-TWNetworkManager-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2D11261EC206CDED7CB0564E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE14890229FCED9AB6A69241</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2E2E2B7FC282AD1138A41055</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A429C5D796B939C8E4DFBDA0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-TWNetworkManager/Pods-TWNetworkManager-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>32508EB7B2014E6AB39ECA82</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE14890229FCED9AB6A69241</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>335CEB39DBA4BF469FD8DA8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManagerExampleTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33CD43F2731A56EE828F0947</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BBB443D6A71A43ACE9368081</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>367EC55D65E25A8476861A84</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E938CB97AFA924C57633C997</string>
+				<string>E5E6CB6740E6FDCF4BAAB421</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>6357AC05EFF95727C6AB668E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Reachability.m</string>
-			<key>path</key>
-			<string>Classes/Reachability.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>639A232BFF3747B3AC86102D</key>
+		<key>378CCD2E048A6CAB304D57DD</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>5977E141AF0F1BCFEB6F0DF1</string>
-				<string>D36518F783686647BE564E7D</string>
+				<string>32508EB7B2014E6AB39ECA82</string>
 			</array>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
+			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>6A3CFD3B28353D467EECF0B2</key>
+		<key>39757A601A720CE0B0454680</key>
 		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>D0E940AAD52F6029779CAC30</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>AE7B5B8CEEF1DE93246DF05A</string>
+			<key>productRefGroup</key>
+			<string>107A12A1727186D22B31D671</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>D662D42D660CADAF105220CE</string>
+				<string>499108BB7CA15D5D68C8072D</string>
+				<string>1414C5EA5F03AFE89B61E077</string>
+				<string>9D7E8C523ED13AE1F4EC8AED</string>
+			</array>
+		</dict>
+		<key>3DA69217382FCEBC55CCC7AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C24D0B67E7968E81AB67A8F6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3E6066E22B83424042F48FFA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F304288CA991C751C0DF339F</string>
+				<string>B1770593884AD51AC66CD289</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3FF358D8CB94C8558DE04715</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Pods-environment.h</string>
+			<string>libPods-TWNetworkManagerExampleTests-TWNetworkManager.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>6CB691A51DBE230C2A286BB2</key>
+		<key>4166CC8C0247C2B03AF52D7A</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TWNetworkManager.m</string>
 			<key>path</key>
-			<string>Classes/TWNetworkManager.m</string>
+			<string>libPods-TWNetworkManager.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>6D221F5BF5F0713AC59BF558</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4F45E890B0831472E111830D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6D3C535718B75D88F5CE3C9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F406E0A3C8FA35CDBDDE9F71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6D4AADE6DD3FB888776D0E53</key>
+		<key>4731E434DA8A7F670792BAFF</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -751,83 +551,75 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>6F2D0EB42608F66370000C2F</key>
+		<key>474A154535B313C2EFBCDB32</key>
 		<dict>
-			<key>fileRef</key>
-			<string>6357AC05EFF95727C6AB668E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>72F9CC621C924D76B8B647EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManager.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73B962FEFC7A389C3B4F70F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>77391F129773417B57970C21</key>
-		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>0D2E26D4D60968F28DD5C983</string>
-				<string>6357AC05EFF95727C6AB668E</string>
-				<string>888A0DD946098CAB1BB69DD4</string>
-				<string>6CB691A51DBE230C2A286BB2</string>
-				<string>9E791C73A921F0B92812220D</string>
+				<string>139EA346617A7DC03AC602D0</string>
+				<string>764437DC1C3CA86CDEC66C3A</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TWNetworkManager</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>78888DC62323E7451DEF8804</key>
+		<key>499108BB7CA15D5D68C8072D</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildConfigurationList</key>
+			<string>4AE06A278BF697F6619D379E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5C37F4668B8A3F3DEBBA0358</string>
+				<string>265178F71964E1719E04ACD6</string>
+				<string>474A154535B313C2EFBCDB32</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79D0ABC2B6AFE7EBFA6552FC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
-			<key>target</key>
-			<string>DE8CA8A8413F626330B2C8ED</string>
-			<key>targetProxy</key>
-			<string>30010316F6349F8FAC438F71</string>
+			<string>Pods-TWNetworkManager</string>
+			<key>productName</key>
+			<string>Pods-TWNetworkManager</string>
+			<key>productReference</key>
+			<string>4166CC8C0247C2B03AF52D7A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>7D1D7141AB1055AF78DFBDEB</key>
+		<key>4A0FBCF250A40B140391F352</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C89FF3A4666FD19D46776988</string>
+				<string>A9592E803675E2DFF0AC6E66</string>
+				<string>33CD43F2731A56EE828F0947</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4AE06A278BF697F6619D379E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2ADDBE4610EF22900C9030B4</string>
+				<string>2E2E2B7FC282AD1138A41055</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4AE8B410A3198B8818773204</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -840,338 +632,128 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7FE32012451D9FAC0768D18D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A2BF9568A698FDF24E38E4B9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>82C0B3A0D685768C1D17C8B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager-Private.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>869283B2AC024537B06EAB69</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>888A0DD946098CAB1BB69DD4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TWNetworkManager.h</string>
-			<key>path</key>
-			<string>Classes/TWNetworkManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C4C8C65C1B91B77FFC16418</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>994770870A3DD7E1C02DCDB1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EF5507A3F57DC7991354500B</string>
-				<string>78888DC62323E7451DEF8804</string>
-				<string>A01FAFC9D3AA6ABEDB215AD8</string>
-				<string>B895D25E9586DB025A52BB3C</string>
-				<string>B1740EB266B8CB1C90D78A97</string>
-				<string>A2BF9568A698FDF24E38E4B9</string>
-				<string>EF8E5FC4849B56F9E168D563</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-TWNetworkManagerExampleTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9E791C73A921F0B92812220D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>72F9CC621C924D76B8B647EB</string>
-				<string>12CB60DFA1BD15ABF11439B4</string>
-				<string>ACCAA8B85993E16F16471E3C</string>
-				<string>2D22A3DA245CF6A68BEBC48A</string>
-				<string>2ADE19CFACF514585C810B14</string>
-				<string>82C0B3A0D685768C1D17C8B5</string>
-				<string>F406E0A3C8FA35CDBDDE9F71</string>
-				<string>B475A705D24CE3F567E56DCD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pods-TWNetworkManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9ED2EF9F341EB39CA3F6EAF3</key>
+		<key>5553850101F37B1106BD70F9</key>
 		<dict>
 			<key>containerPortal</key>
-			<string>A05D84D65149BBB824F08D1E</string>
+			<string>39757A601A720CE0B0454680</string>
 			<key>isa</key>
 			<string>PBXContainerItemProxy</string>
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>E7BCB8808BB3448DBFD51448</string>
+			<string>499108BB7CA15D5D68C8072D</string>
 			<key>remoteInfo</key>
 			<string>Pods-TWNetworkManager</string>
 		</dict>
-		<key>A01FAFC9D3AA6ABEDB215AD8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A05D84D65149BBB824F08D1E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>FCEEA02CBAD02B64595A0D6A</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>2883234C8FBCF03E801DDFE6</string>
-			<key>productRefGroup</key>
-			<string>2E2A31B79C12208D9EFB55D7</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E2D8899ACFE345EE91C18ED9</string>
-				<string>E7BCB8808BB3448DBFD51448</string>
-				<string>2AD7DB2E142E3AE0A56BB212</string>
-				<string>DE8CA8A8413F626330B2C8ED</string>
-			</array>
-		</dict>
-		<key>A1742DBE251D099D262C04CE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TWNetworkManager.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A2BF9568A698FDF24E38E4B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A30046DF4A71C9764140AE1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73B962FEFC7A389C3B4F70F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB5DAE10F1C5CD1A384016AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC238EA4699A679A4075AE91</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACCAA8B85993E16F16471E3C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManager-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AFF800FF91ADFA4420D374A3</key>
+		<key>5C37F4668B8A3F3DEBBA0358</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>A30046DF4A71C9764140AE1C</string>
+				<string>B2474FFF6B7DF0763D840231</string>
+				<string>CFADA1C8FD43A934DA3C6A10</string>
+				<string>B68B2D62FEF68BC403FB505F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5F6E14F69FE9FE641AE5CAFA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EA6FA4717F2B79C0B0E3A060</string>
+				<string>26B69D7908533C1609DA79CC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>642ED9D5FD10362B4D15080F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>75BF00FD423DBCFC5EE56A84</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>67CE07ADA5338E219B4FF8A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68EC0AE314F2C69D2DC67E81</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F53944633D357A476D109F4C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>B1740EB266B8CB1C90D78A97</key>
+		<key>6C691D21F99AF76EBC4F49B2</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B475A705D24CE3F567E56DCD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXTargetDependency</string>
 			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager-prefix.pch</string>
+			<string>Pods-TWNetworkManager</string>
+			<key>target</key>
+			<string>499108BB7CA15D5D68C8072D</string>
+			<key>targetProxy</key>
+			<string>5553850101F37B1106BD70F9</string>
+		</dict>
+		<key>6C89F08174E52346812534E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager-prefix.pch</string>
+			<string>Pods-TWNetworkManager.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B5662BB4E635B5AD4CCFEAA9</key>
+		<key>6FC63029479365DCA5AEC691</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManagerExampleTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7242AA745A7C8FBD7A9A06AF</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>EF8E5FC4849B56F9E168D563</string>
+			<string>6FC63029479365DCA5AEC691</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -1216,7 +798,43 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>B895D25E9586DB025A52BB3C</key>
+		<key>72A1867D54EE131040630C68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>75BF00FD423DBCFC5EE56A84</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5AE640883B5E29C673182F6</string>
+				<string>8D9551FD5968A6FFE6620B51</string>
+				<string>1817B9F647E99E78EA8678D2</string>
+				<string>BBB443D6A71A43ACE9368081</string>
+				<string>925DA0C72B46326ED3B240F7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TWNetworkManager</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75E7AAEF0F8AD4EE4B18198B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1229,7 +847,81 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BEAC348D109D1FDA9528A594</key>
+		<key>764437DC1C3CA86CDEC66C3A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1817B9F647E99E78EA8678D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>781DD88FFC3E7B01A7B81B5E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1817B9F647E99E78EA8678D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>794EB6D0A5EBC6ACACA5423D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EB769F2D31317FEB42DBB07</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AB0AFFD9ABFB3F56E8299491</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7EF476440252AEC0EF534827</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -1242,19 +934,399 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>BF7419B3CFEF6CEC8E33E4AF</key>
+		<key>837E6C131C0D2D425DA91F79</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8601DBCD2DA3CAECBDA9A81F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D9551FD5968A6FFE6620B51</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Reachability.m</string>
+			<key>path</key>
+			<string>Classes/Reachability.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8FFE601EA53CD6B4F50B9DB7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>925DA0C72B46326ED3B240F7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6C89F08174E52346812534E2</string>
+				<string>A429C5D796B939C8E4DFBDA0</string>
+				<string>20A53907E6F4344287AE9983</string>
+				<string>ABD755BFE51029B14E987B97</string>
+				<string>8601DBCD2DA3CAECBDA9A81F</string>
+				<string>B5BAA67F251AE4D649541BB8</string>
+				<string>1DFFE89CC39CA3A9B9EDF695</string>
+				<string>C340196740EC5C0C485DF003</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/Pods-TWNetworkManager</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D7E8C523ED13AE1F4EC8AED</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5F6E14F69FE9FE641AE5CAFA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4A0FBCF250A40B140391F352</string>
+				<string>378CCD2E048A6CAB304D57DD</string>
+				<string>B334527439657A77DEB67E79</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
+			<key>productName</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
+			<key>productReference</key>
+			<string>3FF358D8CB94C8558DE04715</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>A17AD1C856372016453AA132</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7EB769F2D31317FEB42DBB07</string>
+				<string>7242AA745A7C8FBD7A9A06AF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A429C5D796B939C8E4DFBDA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManager-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A9592E803675E2DFF0AC6E66</key>
 		<dict>
 			<key>fileRef</key>
-			<string>ACCAA8B85993E16F16471E3C</string>
+			<string>8D9551FD5968A6FFE6620B51</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C079735825B870EAEF786649</key>
+		<key>AB0AFFD9ABFB3F56E8299491</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManagerExampleTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ABD755BFE51029B14E987B97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManager-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD26C48CB23FC2B86D5C56D4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2201802428333DCCB608D04B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE7B5B8CEEF1DE93246DF05A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>72A1867D54EE131040630C68</string>
+				<string>642ED9D5FD10362B4D15080F</string>
+				<string>AD26C48CB23FC2B86D5C56D4</string>
+				<string>107A12A1727186D22B31D671</string>
+				<string>196DF34997374817379142F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0F1F7DFC4B862F2209F258D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManagerExampleTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1770593884AD51AC66CD289</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>837E6C131C0D2D425DA91F79</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B2474FFF6B7DF0763D840231</key>
+		<dict>
+			<key>fileRef</key>
+			<string>20A53907E6F4344287AE9983</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B334527439657A77DEB67E79</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>03522BC5D6C07A170E655F62</string>
+				<string>781DD88FFC3E7B01A7B81B5E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B5BAA67F251AE4D649541BB8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager-Private.xcconfig</string>
+			<key>path</key>
+			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B5D124DA8563FCAC458E5BD7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4AE8B410A3198B8818773204</string>
+				<string>FB6D5537AA5CCA74FE662C63</string>
+				<string>67CE07ADA5338E219B4FF8A5</string>
+				<string>794EB6D0A5EBC6ACACA5423D</string>
+				<string>8FFE601EA53CD6B4F50B9DB7</string>
+				<string>E498FB65037533443B902531</string>
+				<string>837E6C131C0D2D425DA91F79</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>path</key>
+			<string>Target Support Files/Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B68B2D62FEF68BC403FB505F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BBB443D6A71A43ACE9368081</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BBB443D6A71A43ACE9368081</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>TWNetworkManager.m</string>
+			<key>path</key>
+			<string>Classes/TWNetworkManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C24D0B67E7968E81AB67A8F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B0F1F7DFC4B862F2209F258D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C340196740EC5C0C485DF003</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager-prefix.pch</string>
+			<key>path</key>
+			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C34FF76A5C27BE476433B098</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE14890229FCED9AB6A69241</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6545D1B9B36846B11DEA0B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TWNetworkManagerExampleTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C89FF3A4666FD19D46776988</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1DFFE89CC39CA3A9B9EDF695</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CFADA1C8FD43A934DA3C6A10</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8D9551FD5968A6FFE6620B51</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D0E940AAD52F6029779CAC30</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>03D27EF1EA9BE03AC3EC7D87</string>
-				<string>55FC96ED1EB693748D3F8E77</string>
+				<string>4731E434DA8A7F670792BAFF</string>
+				<string>F8CDC5EA16470AF9F0467AB2</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -1263,21 +1335,46 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>C1D0BF5BEFEFBCE34A28A1B2</key>
+		<key>D5D22DB1F7348E18E2F5A7D1</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2E800F26F8ED001BEA6FB996</string>
-				<string>F2C1494E2D68C5CA01E72326</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
 			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-TWNetworkManagerExampleTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>C5C2AE65FACC962B06081972</key>
+		<key>D662D42D660CADAF105220CE</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3E6066E22B83424042F48FFA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>367EC55D65E25A8476861A84</string>
+				<string>68EC0AE314F2C69D2DC67E81</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6C691D21F99AF76EBC4F49B2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>7EF476440252AEC0EF534827</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>DA49DCD668E53DD8D0893092</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1286,35 +1383,73 @@
 			<key>lastKnownFileType</key>
 			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
+			<string>Pods-TWNetworkManagerExampleTests-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C627C3D45B3B58FDACCA4DC6</key>
+		<key>DBC1256D33337243A5613635</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
+			<key>target</key>
+			<string>9D7E8C523ED13AE1F4EC8AED</string>
+			<key>targetProxy</key>
+			<string>132DB65CF1922818F9306295</string>
+		</dict>
+		<key>DE14890229FCED9AB6A69241</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>E498FB65037533443B902531</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5AE640883B5E29C673182F6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Reachability.h</string>
+			<key>path</key>
+			<string>Classes/Reachability.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5E6CB6740E6FDCF4BAAB421</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0D2E26D4D60968F28DD5C983</string>
+			<string>67CE07ADA5338E219B4FF8A5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D203694DABFBC77352630292</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73B962FEFC7A389C3B4F70F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D36518F783686647BE564E7D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>888A0DD946098CAB1BB69DD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D92A35971FAD358DA8451C33</key>
+		<key>EA6FA4717F2B79C0B0E3A060</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>82C0B3A0D685768C1D17C8B5</string>
+			<string>B5BAA67F251AE4D649541BB8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -1360,187 +1495,35 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>DB915DC48AC7B8661940EE07</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73B962FEFC7A389C3B4F70F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DE8CA8A8413F626330B2C8ED</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>37800F1F803BA8DC2BAC79EF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>ED359A27FE61EC6C4E70F2A9</string>
-				<string>F71A0FA8645C97A9BE203F03</string>
-				<string>27DABE0555D10C3FA8F8CE7F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
-			<key>productName</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager</string>
-			<key>productReference</key>
-			<string>5925528BE7222CA57EC32405</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>DEF508B25D2CB2867E333CDC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>77391F129773417B57970C21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2D8899ACFE345EE91C18ED9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C079735825B870EAEF786649</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F39A3DFFE7E28065F2D547BC</string>
-				<string>59D721CFC4CCBC3DB6BFA292</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>55B5DE4DDA1CF87E36795761</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>BEAC348D109D1FDA9528A594</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>E61FA3CD58C927F23449EAEC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6357AC05EFF95727C6AB668E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E7BCB8808BB3448DBFD51448</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C1D0BF5BEFEFBCE34A28A1B2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>270992907350897597D5E635</string>
-				<string>AFF800FF91ADFA4420D374A3</string>
-				<string>639A232BFF3747B3AC86102D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManager</string>
-			<key>productName</key>
-			<string>Pods-TWNetworkManager</string>
-			<key>productReference</key>
-			<string>A1742DBE251D099D262C04CE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>E938CB97AFA924C57633C997</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A01FAFC9D3AA6ABEDB215AD8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED359A27FE61EC6C4E70F2A9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6D3C535718B75D88F5CE3C9B</string>
-				<string>E61FA3CD58C927F23449EAEC</string>
-				<string>54C3510C5B220CA79FA9B50D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EF5507A3F57DC7991354500B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF8E5FC4849B56F9E168D563</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F2C1494E2D68C5CA01E72326</key>
+		<key>F304288CA991C751C0DF339F</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>12CB60DFA1BD15ABF11439B4</string>
+			<string>E498FB65037533443B902531</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
 				<string>NO</string>
 				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
+				<string>NO</string>
 				<key>DSTROOT</key>
 				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-TWNetworkManager/Pods-TWNetworkManager-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
 				<key>INSTALL_PATH</key>
 				<string>$(BUILT_PRODUCTS_DIR)</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>8.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>OTHER_LIBTOOLFLAGS</key>
@@ -1553,6 +1536,73 @@
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F53944633D357A476D109F4C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE14890229FCED9AB6A69241</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F8CDC5EA16470AF9F0467AB2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
 				<key>VALIDATE_PRODUCT</key>
 				<string>YES</string>
 			</dict>
@@ -1561,84 +1611,34 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>F39A3DFFE7E28065F2D547BC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6D221F5BF5F0713AC59BF558</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F406E0A3C8FA35CDBDDE9F71</key>
+		<key>FB6D5537AA5CCA74FE662C63</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests-TWNetworkManager-dummy.m</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>../Pods-TWNetworkManagerExampleTests-TWNetworkManager/Pods-TWNetworkManagerExampleTests-TWNetworkManager-dummy.m</string>
+			<string>Pods-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F71A0FA8645C97A9BE203F03</key>
+		<key>FDB0BE3E6F0D57C423E61FE8</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>4A3EF13668F2BA4F2C5A8BB7</string>
+				<string>2D11261EC206CDED7CB0564E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>F871CFF514682BB7533E2D73</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7D1D7141AB1055AF78DFBDEB</string>
-				<string>C5C2AE65FACC962B06081972</string>
-				<string>4F45E890B0831472E111830D</string>
-				<string>6A3CFD3B28353D467EECF0B2</string>
-				<string>869283B2AC024537B06EAB69</string>
-				<string>AC238EA4699A679A4075AE91</string>
-				<string>AB5DAE10F1C5CD1A384016AA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCEEA02CBAD02B64595A0D6A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6D4AADE6DD3FB888776D0E53</string>
-				<string>22887FD4301AF666657D208A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
 	</dict>
 	<key>rootObject</key>
-	<string>A05D84D65149BBB824F08D1E</string>
+	<string>39757A601A720CE0B0454680</string>
 </dict>
 </plist>
