@@ -420,10 +420,10 @@ static void TWEndNetworkActivity()
                              NSError *error))completion
 {
     NSURL *url = [request URL];
-    if (!url || ![url scheme] || ![url host]) {
+    if (!url) {
         NSAssert(url, @"url must not be nil here");
         if (completion) {
-            completion(nil,nil,NO,[self errorForNilURL]);
+            completion(nil, nil, NO, [self errorForNilURL]);
         }
         
         return;
