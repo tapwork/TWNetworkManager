@@ -442,7 +442,10 @@ static void TWEndNetworkActivity()
                     TWEndNetworkActivity();
                     
                     NSError *resError = connectionError;
-                    NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
+                    NSInteger statusCode = 0;
+                    if ([response respondsToSelector:@selector(statusCode)]) {
+                        statusCode = [(NSHTTPURLResponse*)response statusCode];
+                    }
                     if (statusCode >= 400) {
                         NSMutableDictionary *errorUserInfo = [NSMutableDictionary dictionary];
                         errorUserInfo[@"HTTP statuscode"] = @(statusCode);
