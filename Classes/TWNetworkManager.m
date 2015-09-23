@@ -379,7 +379,7 @@ static void TWEndNetworkActivity()
 {
     return [NSError errorWithDomain:NSURLErrorDomain
                                code:-1
-                           userInfo:@{@"reason" : @"URL must not be nil"}];
+                           userInfo:@{NSLocalizedFailureReasonErrorKey : @"URL must not be nil"}];
 }
 
 #pragma mark - Private
