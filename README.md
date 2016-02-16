@@ -31,7 +31,7 @@ Download the repository into your project via git or just as zip.
 Drag the `Classes` folder with the 4 files (`Reachability.h/m` & `TWNetworkManager.h/m`) folder into your Xcode project.
 
 # How to use it
-
+Example are still in Objective C. Sure, Swift works as well.
 Make sure to import the header file
 ```objc
 #import <TWNetworkManager/TWNetworkManager.h>
@@ -129,7 +129,7 @@ Good old Reachability
 TWNetworkManager comes with an example project and some unit tests. Just open `Example/TWNetworkManagerExample.xcworkspace`
 
 # Todo
-* Test with Swift
+* ~~Test with Swift~~ (WORKS)
 * OS X Support
 
 # Other Frameworks
