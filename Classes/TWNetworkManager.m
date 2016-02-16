@@ -311,8 +311,7 @@ static void TWEndNetworkActivity()
                                 completion(NO);
                             } else if (statusCode == 301) { // Moved Permanently HTTP Forward
                                 NSURL *forwardURL = [NSURL URLWithString:header[@"Location"]];
-                                [self isDownloadNecessaryForURL:forwardURL
-                                                     completion:completion];
+                                [self isDownloadNecessaryForURL:forwardURL completion:completion];
                             } else if (statusCode == 200) {
                                 completion(YES);
                             } else {
@@ -465,7 +464,9 @@ static void TWEndNetworkActivity()
                         [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
                         
                         NSError *readError = nil;
-                        data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&readError];
+                        data = [NSData dataWithContentsOfFile:filepath
+                                                      options:NSDataReadingMappedIfSafe
+                                                        error:&readError];
                         
                         if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
                             NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
@@ -526,7 +527,7 @@ static void TWEndNetworkActivity()
         [output appendFormat:@"%02x", digest[i]];
     }
     
-    return  output;
+    return output;
 }
 
 - (NSSet *)runningURLRequests
