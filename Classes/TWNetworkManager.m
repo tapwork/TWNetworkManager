@@ -496,10 +496,10 @@ static void TWEndNetworkActivity()
 - (void)addRequestedURL:(NSURL*)url
 {
     @synchronized(self) {
-        NSMutableSet *requests = [self.runningURLRequests mutableCopy];
         if (url) {
+            NSMutableSet *requests = [self.runningURLRequests mutableCopy];
             [requests addObject:url];
-            _runningURLRequests = requests;
+            _runningURLRequests = [requests copy];
         }
     }
 }
@@ -510,7 +510,7 @@ static void TWEndNetworkActivity()
         NSMutableSet *requests = [self.runningURLRequests mutableCopy];
         if (url && [requests containsObject:url]) {
             [requests removeObject:url];
-            _runningURLRequests = requests;
+            _runningURLRequests = [requests copy];
         }
     }
 }
