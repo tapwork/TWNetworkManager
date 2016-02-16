@@ -480,13 +480,12 @@ static void TWEndNetworkActivity()
                             }
                         }
                     }
+                    [self removeRequestedURL:url];
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        
                         if (completion) {
                             completion(data,filepath,NO,resError);
                         }
-                        [self removeRequestedURL:url];
                     });
                 }] resume];
 }
