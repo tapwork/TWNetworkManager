@@ -1,6 +1,6 @@
 # TWNetworkManager
 [![Build Status](https://api.travis-ci.org/tapwork/TWNetworkManager.svg?style=flat)](https://travis-ci.org/tapwork/TWNetworkManager)
-[![Cocoapods Version](http://img.shields.io/cocoapods/v/TWNetworkManager.svg?style=flat)](https://github.com/tapwork/TWNetworkManager/blob/master/TWNetworkManager.podspec)
+[![CocoaPods Version](http://img.shields.io/cocoapods/v/TWNetworkManager.svg?style=flat)](https://github.com/tapwork/TWNetworkManager/blob/master/TWNetworkManager.podspec)
 [![](http://img.shields.io/cocoapods/l/TWNetworkManager.svg?style=flat)](https://github.com/tapwork/TWNetworkManager/blob/master/LICENSE.md)
 [![CocoaPods Platform](http://img.shields.io/cocoapods/p/TWNetworkManager.svg?style=flat)]()
 
