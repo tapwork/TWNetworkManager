@@ -1,5 +1,5 @@
 PODS:
-  - TWNetworkManager (1.2.5)
+  - TWNetworkManager (1.2.7)
 
 DEPENDENCIES:
   - TWNetworkManager (from `../TWNetworkManager.podspec`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../TWNetworkManager.podspec"
 
 SPEC CHECKSUMS:
-  TWNetworkManager: 424f9ee76cf52838e6836987f6947372c5a3afda
+  TWNetworkManager: b4415c591c766919bfd8db368634a9a4a24e7e60
 
 COCOAPODS: 0.38.2

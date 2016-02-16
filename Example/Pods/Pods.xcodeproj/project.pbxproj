@@ -22,14 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A3F7B3D97BEA07A74128DD524D0AE7E /* PBXContainerItemProxy */ = {
+		2F36EA856AD4C75CB370E843AFBE86ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B791B1CF001FA1B57FE0C2221016DBB7;
 			remoteInfo = TWNetworkManager;
 		};
-		F6577E8910AEBF561D6BB2693A9C6D2E /* PBXContainerItemProxy */ = {
+		60170B5B6759F8F6FFC1049AF1A7E2E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -239,7 +239,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7073A84B388AABF13B7399081B01D9B /* PBXTargetDependency */,
+				CE161880E44BAC4D9777633F6D4BC83A /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -256,7 +256,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0C42BA54B9E6B6DEF254D4CADC63CECF /* PBXTargetDependency */,
+				E8BF72D3A496DDC890288A7B1036B907 /* PBXTargetDependency */,
 			);
 			name = "Pods-TWNetworkManagerExampleTests";
 			productName = "Pods-TWNetworkManagerExampleTests";
@@ -339,17 +339,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C42BA54B9E6B6DEF254D4CADC63CECF /* PBXTargetDependency */ = {
+		CE161880E44BAC4D9777633F6D4BC83A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TWNetworkManager;
 			target = B791B1CF001FA1B57FE0C2221016DBB7 /* TWNetworkManager */;
-			targetProxy = F6577E8910AEBF561D6BB2693A9C6D2E /* PBXContainerItemProxy */;
+			targetProxy = 60170B5B6759F8F6FFC1049AF1A7E2E2 /* PBXContainerItemProxy */;
 		};
-		A7073A84B388AABF13B7399081B01D9B /* PBXTargetDependency */ = {
+		E8BF72D3A496DDC890288A7B1036B907 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TWNetworkManager;
 			target = B791B1CF001FA1B57FE0C2221016DBB7 /* TWNetworkManager */;
-			targetProxy = 0A3F7B3D97BEA07A74128DD524D0AE7E /* PBXContainerItemProxy */;
+			targetProxy = 2F36EA856AD4C75CB370E843AFBE86ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
