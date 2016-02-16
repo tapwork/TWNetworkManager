@@ -70,7 +70,7 @@ static void TWEndNetworkActivity()
             [kImageCache setTotalCostLimit:1000];
         }
         if (!kDownloadGCDQueue) {
-            kDownloadGCDQueue = dispatch_queue_create("net.tapwork.download_gcd_queue", NULL);
+            kDownloadGCDQueue = dispatch_queue_create("net.tapwork.download_gcd_queue", DISPATCH_QUEUE_CONCURRENT);
         }
     }
     return self;
