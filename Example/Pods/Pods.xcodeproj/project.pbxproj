@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050E8F1E04B2830D6B9215288AA34C98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E23324668D0016673CCC02618BFA21 /* Foundation.framework */; };
-		12DCB86956CFF3F4A8DA4405A9995A47 /* TWNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AD004EC14A257E95CA8690F102E984D9 /* TWNetworkManager.h */; };
+		050E8F1E04B2830D6B9215288AA34C98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00C31E3AAD23DE60403606765E4E6A9 /* Foundation.framework */; };
+		14529F553AC352E197F6144FD254A47B /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5306D671F0F62F770BA407D8927DEA /* Reachability.h */; };
 		14E472EE14E23422CB0D194D73164DD8 /* Pods-TWNetworkManagerExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 523EBD31DCF62D100BF43B9F225B9E6E /* Pods-TWNetworkManagerExampleTests-dummy.m */; };
-		324D82125BF51B54BB268F37B6885A7E /* TWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E41608B009301CB047B16457AEF0D23 /* TWNetworkManager.m */; };
-		37A420925CB37039911DE72BCC3B5C4F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 919404BED684E9966150FB00BFF05A40 /* Reachability.m */; };
-		4045D1BBBCB78E0930E26691C3C1F8C3 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF23C5EDCF2C025C845E256CD9B8F44 /* Reachability.h */; };
-		50810F1CA23D0702BF85FCE7E3CA85C0 /* TWNetworkManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5774B7375686D65BC66E77E43EAA5BCA /* TWNetworkManager-dummy.m */; };
+		316AEA0CDBE137B797E020E44F8F3D01 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 246A58C2DDBF187E00288E313D14098D /* Reachability.m */; };
+		341AC480DF6C029C4323223FB3AA3A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00C31E3AAD23DE60403606765E4E6A9 /* Foundation.framework */; };
+		3C34FB4734D562EA95DC4CDF0B205751 /* TWNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 947177590B85E3212AC625B853054911 /* TWNetworkRequest.m */; };
+		907E234EF3CACE104F79322CE0088C68 /* TWNetworkManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DF5CCFA63B55C8734E015335D97EE3 /* TWNetworkManager-dummy.m */; };
 		A9B7DDB2389047E1A6F8D4B68B5A860B /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B222359AC1153B8B363FE0CCD3F7FC9 /* Pods-dummy.m */; };
-		AECE39E79BE64889045BE4EA8433C7E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E23324668D0016673CCC02618BFA21 /* Foundation.framework */; };
-		CCC0CAAF286CA22D8879211CB0208619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E23324668D0016673CCC02618BFA21 /* Foundation.framework */; };
+		AC86134891E9C77F0F43EA29A1E408A3 /* TWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 503F1E8FB159DA8E96A73EEE13EC3615 /* TWNetworkManager.m */; };
+		AECE39E79BE64889045BE4EA8433C7E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00C31E3AAD23DE60403606765E4E6A9 /* Foundation.framework */; };
+		CD2E46716033769A1BD8AA0EF58EE94F /* TWNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DF60D4EB3305A3712C6D18F8FB8280A6 /* TWNetworkRequest.h */; };
+		F5429E12A6E0A3EB12F5CD9FDE726FF8 /* TWNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A697FE49D673871F015AD08253712474 /* TWNetworkManager.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08E3D8CAB02107C81F53A61FF5E8603B /* PBXContainerItemProxy */ = {
+		0A3F7B3D97BEA07A74128DD524D0AE7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02A648B1D2B08F9C8E7C6172F509B5C4;
+			remoteGlobalIDString = B791B1CF001FA1B57FE0C2221016DBB7;
 			remoteInfo = TWNetworkManager;
 		};
-		E979AEF05370CBFF9CC593CA89CE9C77 /* PBXContainerItemProxy */ = {
+		F6577E8910AEBF561D6BB2693A9C6D2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02A648B1D2B08F9C8E7C6172F509B5C4;
+			remoteGlobalIDString = B791B1CF001FA1B57FE0C2221016DBB7;
 			remoteInfo = TWNetworkManager;
 		};
 /* End PBXContainerItemProxy section */
@@ -39,40 +41,34 @@
 /* Begin PBXFileReference section */
 		060B3935D09B5F85B4C80099E8332F43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B222359AC1153B8B363FE0CCD3F7FC9 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		0C7BABA0AF31F12B40D94F7838733F98 /* TWNetworkManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TWNetworkManager-prefix.pch"; sourceTree = "<group>"; };
-		0DF23C5EDCF2C025C845E256CD9B8F44 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0EDA9D2BD529CAA2C4FDE907C0C2ED09 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		11832A892B237A93045064033EF0839B /* libTWNetworkManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTWNetworkManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F1271414F6DC6A80CA56CF2041FAB0 /* Pods-TWNetworkManagerExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TWNetworkManagerExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		18EA72BAF1C75967543A6E576EBE3682 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		19799E65452336B2AC298365D0D460D6 /* libPods-TWNetworkManagerExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TWNetworkManagerExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E41608B009301CB047B16457AEF0D23 /* TWNetworkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkManager.m; sourceTree = "<group>"; };
+		246A58C2DDBF187E00288E313D14098D /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		33A590F7BB648FFE692DBFE745BFA5FB /* Pods-TWNetworkManagerExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TWNetworkManagerExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41DF5CCFA63B55C8734E015335D97EE3 /* TWNetworkManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TWNetworkManager-dummy.m"; sourceTree = "<group>"; };
 		420E0FE593007BF6D179B72E0C626B23 /* Pods-TWNetworkManagerExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TWNetworkManagerExampleTests-resources.sh"; sourceTree = "<group>"; };
+		4E1ED545794C4F0FFD168B8849B3BD64 /* TWNetworkManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TWNetworkManager-Private.xcconfig"; sourceTree = "<group>"; };
+		4E5306D671F0F62F770BA407D8927DEA /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		503F1E8FB159DA8E96A73EEE13EC3615 /* TWNetworkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkManager.m; sourceTree = "<group>"; };
 		523EBD31DCF62D100BF43B9F225B9E6E /* Pods-TWNetworkManagerExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TWNetworkManagerExampleTests-dummy.m"; sourceTree = "<group>"; };
 		573605B59ECB853C1A463F6DBDEC90B7 /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5774B7375686D65BC66E77E43EAA5BCA /* TWNetworkManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TWNetworkManager-dummy.m"; sourceTree = "<group>"; };
-		58CE5E283BE06A7E1735CA9CA1E65B29 /* libTWNetworkManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTWNetworkManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C849F0EE46803F84DDA7EAF6A843995 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		75768143E7DE0BDF32467FBBD285656B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		7673AE51C54C463428BCC8839076CBCB /* TWNetworkManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TWNetworkManager-Private.xcconfig"; sourceTree = "<group>"; };
-		8C62D8FBD7A2532FF338A66B11C12020 /* TWNetworkManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWNetworkManager.xcconfig; sourceTree = "<group>"; };
-		919404BED684E9966150FB00BFF05A40 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		A2E23324668D0016673CCC02618BFA21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AD004EC14A257E95CA8690F102E984D9 /* TWNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkManager.h; sourceTree = "<group>"; };
+		947177590B85E3212AC625B853054911 /* TWNetworkRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkRequest.m; sourceTree = "<group>"; };
+		A697FE49D673871F015AD08253712474 /* TWNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkManager.h; sourceTree = "<group>"; };
+		B00C31E3AAD23DE60403606765E4E6A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B28231B7705FBC1732E12D571315DC69 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		B90C281D11224888A255A78D38C0E273 /* TWNetworkManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWNetworkManager.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CEA5937932E26A0A6720FF529DF49188 /* TWNetworkManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TWNetworkManager-prefix.pch"; sourceTree = "<group>"; };
+		DF60D4EB3305A3712C6D18F8FB8280A6 /* TWNetworkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkRequest.h; sourceTree = "<group>"; };
 		FF1FCF00BC6897CE842FB49F33C861F0 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FD02C7317FC9C7F9D58263EB2000AE8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCC0CAAF286CA22D8879211CB0208619 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8257A624502769C248E74B8C46B3010C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +82,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECE39E79BE64889045BE4EA8433C7E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DF82B531805C17D915CE699988A64C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341AC480DF6C029C4323223FB3AA3A2E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +122,7 @@
 		0B15631CCC061AC6D31926EDBECEC686 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B662645EAA1D8EDC40AD3857D5406047 /* TWNetworkManager */,
+				89591ABE11BC6BEF224E79572881EDF9 /* TWNetworkManager */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -137,10 +141,22 @@
 			path = "Target Support Files/Pods-TWNetworkManagerExampleTests";
 			sourceTree = "<group>";
 		};
+		4397DE4DA453E225F5C562A724CDAFE7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B90C281D11224888A255A78D38C0E273 /* TWNetworkManager.xcconfig */,
+				4E1ED545794C4F0FFD168B8849B3BD64 /* TWNetworkManager-Private.xcconfig */,
+				41DF5CCFA63B55C8734E015335D97EE3 /* TWNetworkManager-dummy.m */,
+				CEA5937932E26A0A6720FF529DF49188 /* TWNetworkManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TWNetworkManager";
+			sourceTree = "<group>";
+		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A2E23324668D0016673CCC02618BFA21 /* Foundation.framework */,
+				B00C31E3AAD23DE60403606765E4E6A9 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -156,11 +172,11 @@
 			);
 			sourceTree = "<group>";
 		};
-		B662645EAA1D8EDC40AD3857D5406047 /* TWNetworkManager */ = {
+		89591ABE11BC6BEF224E79572881EDF9 /* TWNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				D36C1A0DFE5AE80FC3E892293393AE3E /* Classes */,
-				F72A20B5192AE72D61EC99E4D6B53BD4 /* Support Files */,
+				F39EA45DB56077C110CACDA7E7781B52 /* Classes */,
+				4397DE4DA453E225F5C562A724CDAFE7 /* Support Files */,
 			);
 			name = TWNetworkManager;
 			path = ../..;
@@ -179,66 +195,40 @@
 			children = (
 				060B3935D09B5F85B4C80099E8332F43 /* libPods.a */,
 				19799E65452336B2AC298365D0D460D6 /* libPods-TWNetworkManagerExampleTests.a */,
-				58CE5E283BE06A7E1735CA9CA1E65B29 /* libTWNetworkManager.a */,
+				11832A892B237A93045064033EF0839B /* libTWNetworkManager.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D36C1A0DFE5AE80FC3E892293393AE3E /* Classes */ = {
+		F39EA45DB56077C110CACDA7E7781B52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0DF23C5EDCF2C025C845E256CD9B8F44 /* Reachability.h */,
-				919404BED684E9966150FB00BFF05A40 /* Reachability.m */,
-				AD004EC14A257E95CA8690F102E984D9 /* TWNetworkManager.h */,
-				1E41608B009301CB047B16457AEF0D23 /* TWNetworkManager.m */,
+				4E5306D671F0F62F770BA407D8927DEA /* Reachability.h */,
+				246A58C2DDBF187E00288E313D14098D /* Reachability.m */,
+				A697FE49D673871F015AD08253712474 /* TWNetworkManager.h */,
+				503F1E8FB159DA8E96A73EEE13EC3615 /* TWNetworkManager.m */,
+				DF60D4EB3305A3712C6D18F8FB8280A6 /* TWNetworkRequest.h */,
+				947177590B85E3212AC625B853054911 /* TWNetworkRequest.m */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		F72A20B5192AE72D61EC99E4D6B53BD4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8C62D8FBD7A2532FF338A66B11C12020 /* TWNetworkManager.xcconfig */,
-				7673AE51C54C463428BCC8839076CBCB /* TWNetworkManager-Private.xcconfig */,
-				5774B7375686D65BC66E77E43EAA5BCA /* TWNetworkManager-dummy.m */,
-				0C7BABA0AF31F12B40D94F7838733F98 /* TWNetworkManager-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TWNetworkManager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5B72CE0695DE7F19C4E08921253CE30C /* Headers */ = {
+		828384283CD35B9E06A89E3F44B49AEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4045D1BBBCB78E0930E26691C3C1F8C3 /* Reachability.h in Headers */,
-				12DCB86956CFF3F4A8DA4405A9995A47 /* TWNetworkManager.h in Headers */,
+				14529F553AC352E197F6144FD254A47B /* Reachability.h in Headers */,
+				F5429E12A6E0A3EB12F5CD9FDE726FF8 /* TWNetworkManager.h in Headers */,
+				CD2E46716033769A1BD8AA0EF58EE94F /* TWNetworkRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		02A648B1D2B08F9C8E7C6172F509B5C4 /* TWNetworkManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A80EE6B1F3A333DF2FF2868157388B3C /* Build configuration list for PBXNativeTarget "TWNetworkManager" */;
-			buildPhases = (
-				E7E8189A00D25D1C712844220456971E /* Sources */,
-				2FD02C7317FC9C7F9D58263EB2000AE8 /* Frameworks */,
-				5B72CE0695DE7F19C4E08921253CE30C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TWNetworkManager;
-			productName = TWNetworkManager;
-			productReference = 58CE5E283BE06A7E1735CA9CA1E65B29 /* libTWNetworkManager.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		96197C51DE357C16A2D392193931CA35 /* Pods */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0E47D016C8CDC60D8D9EDE42AC8FA4F /* Build configuration list for PBXNativeTarget "Pods" */;
@@ -249,7 +239,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B087E5B736D787A66D4F5C674786AC33 /* PBXTargetDependency */,
+				A7073A84B388AABF13B7399081B01D9B /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -266,11 +256,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				3B1882CFB42B52E3EFF4EC48B6814502 /* PBXTargetDependency */,
+				0C42BA54B9E6B6DEF254D4CADC63CECF /* PBXTargetDependency */,
 			);
 			name = "Pods-TWNetworkManagerExampleTests";
 			productName = "Pods-TWNetworkManagerExampleTests";
 			productReference = 19799E65452336B2AC298365D0D460D6 /* libPods-TWNetworkManagerExampleTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B791B1CF001FA1B57FE0C2221016DBB7 /* TWNetworkManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF4319B5978D009E0DC101E637209A3 /* Build configuration list for PBXNativeTarget "TWNetworkManager" */;
+			buildPhases = (
+				5FE08351E6AF86A8C9F40A2FB9CB5249 /* Sources */,
+				D9DF82B531805C17D915CE699988A64C /* Frameworks */,
+				828384283CD35B9E06A89E3F44B49AEF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWNetworkManager;
+			productName = TWNetworkManager;
+			productReference = 11832A892B237A93045064033EF0839B /* libTWNetworkManager.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -296,12 +303,23 @@
 			targets = (
 				96197C51DE357C16A2D392193931CA35 /* Pods */,
 				98D35AC85CE118F9FE6AEBB6016F270B /* Pods-TWNetworkManagerExampleTests */,
-				02A648B1D2B08F9C8E7C6172F509B5C4 /* TWNetworkManager */,
+				B791B1CF001FA1B57FE0C2221016DBB7 /* TWNetworkManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5FE08351E6AF86A8C9F40A2FB9CB5249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316AEA0CDBE137B797E020E44F8F3D01 /* Reachability.m in Sources */,
+				907E234EF3CACE104F79322CE0088C68 /* TWNetworkManager-dummy.m in Sources */,
+				AC86134891E9C77F0F43EA29A1E408A3 /* TWNetworkManager.m in Sources */,
+				3C34FB4734D562EA95DC4CDF0B205751 /* TWNetworkRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9694ADC1B11EEF9E709BA9B4F7B1719E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,34 +336,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7E8189A00D25D1C712844220456971E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37A420925CB37039911DE72BCC3B5C4F /* Reachability.m in Sources */,
-				50810F1CA23D0702BF85FCE7E3CA85C0 /* TWNetworkManager-dummy.m in Sources */,
-				324D82125BF51B54BB268F37B6885A7E /* TWNetworkManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B1882CFB42B52E3EFF4EC48B6814502 /* PBXTargetDependency */ = {
+		0C42BA54B9E6B6DEF254D4CADC63CECF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TWNetworkManager;
-			target = 02A648B1D2B08F9C8E7C6172F509B5C4 /* TWNetworkManager */;
-			targetProxy = E979AEF05370CBFF9CC593CA89CE9C77 /* PBXContainerItemProxy */;
+			target = B791B1CF001FA1B57FE0C2221016DBB7 /* TWNetworkManager */;
+			targetProxy = F6577E8910AEBF561D6BB2693A9C6D2E /* PBXContainerItemProxy */;
 		};
-		B087E5B736D787A66D4F5C674786AC33 /* PBXTargetDependency */ = {
+		A7073A84B388AABF13B7399081B01D9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TWNetworkManager;
-			target = 02A648B1D2B08F9C8E7C6172F509B5C4 /* TWNetworkManager */;
-			targetProxy = 08E3D8CAB02107C81F53A61FF5E8603B /* PBXContainerItemProxy */;
+			target = B791B1CF001FA1B57FE0C2221016DBB7 /* TWNetworkManager */;
+			targetProxy = 0A3F7B3D97BEA07A74128DD524D0AE7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3D71942B78DD3E777C23214AA180C432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1ED545794C4F0FFD168B8849B3BD64 /* TWNetworkManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		4D69216B03ECEBD5692DEDF6A3F51C1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B28231B7705FBC1732E12D571315DC69 /* Pods.release.xcconfig */;
@@ -361,22 +385,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		5B8D0129FED0A910AC248FC0B1857008 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7673AE51C54C463428BCC8839076CBCB /* TWNetworkManager-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		6BF51846CE11C414A7105DF6BBFE6A23 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -449,6 +457,22 @@
 			};
 			name = Debug;
 		};
+		D176A23E7C574211AE5D8B42794B37DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1ED545794C4F0FFD168B8849B3BD64 /* TWNetworkManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -483,22 +507,6 @@
 			};
 			name = Release;
 		};
-		EA6A7E9D9603E5C283DF6898E559444F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7673AE51C54C463428BCC8839076CBCB /* TWNetworkManager-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		F2A658E5FD5FDB8C19E51B984DC251E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18EA72BAF1C75967543A6E576EBE3682 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */;
@@ -527,11 +535,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A80EE6B1F3A333DF2FF2868157388B3C /* Build configuration list for PBXNativeTarget "TWNetworkManager" */ = {
+		5CF4319B5978D009E0DC101E637209A3 /* Build configuration list for PBXNativeTarget "TWNetworkManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B8D0129FED0A910AC248FC0B1857008 /* Debug */,
-				EA6A7E9D9603E5C283DF6898E559444F /* Release */,
+				D176A23E7C574211AE5D8B42794B37DF /* Debug */,
+				3D71942B78DD3E777C23214AA180C432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
