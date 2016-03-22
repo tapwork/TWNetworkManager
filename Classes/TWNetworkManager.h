@@ -14,7 +14,7 @@
 @interface TWNetworkManager : NSObject
 
 /// The default network manager's singleton instance
-/// TWNetworkManager can also used as non singleton just with [[TWNetworkManager alloc] init]
+/// TWNetworkManager can be used also as non singleton with [[TWNetworkManager alloc] init]
 + (instancetype)defaultManager;
 
 /// The default image cache with NSURL & UImage (key, value) pair
