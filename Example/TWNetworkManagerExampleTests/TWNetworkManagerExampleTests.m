@@ -20,7 +20,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testRequestHTML"];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de"];
+    NSURL *url = [NSURL URLWithString:@"http://www.google.de"];
     [[TWNetworkManager defaultManager]
      requestURL:url
      type:TWNetworkHTTPMethodGET completion:^(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error) {
