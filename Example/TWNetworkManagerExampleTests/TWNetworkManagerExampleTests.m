@@ -20,7 +20,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testRequestHTML"];
     
-    NSURL *url = [NSURL URLWithString:@"http://lorempixel.com/10/10/"];
+    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de"];
     [[TWNetworkManager defaultManager]
      requestURL:url
      type:TWNetworkHTTPMethodGET completion:^(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error) {
@@ -153,7 +153,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testReset"];
     
-    NSURL *url = [NSURL URLWithString:@"http://lorempixel.com/55/55/"];
+    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de"];
     [[TWNetworkManager defaultManager]
      imageAtURL:url
      completion:^(UIImage *image, NSString *localFilepath, BOOL isFromCache, NSError *error) {
