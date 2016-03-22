@@ -36,6 +36,8 @@ Make sure to import the header file
 ```objc
 #import <TWNetworkManager/TWNetworkManager.h>
 ```
+The default `defaultManager` is the standard singleton instance. But TWNetworkManager can also be used as non singleton  with `[[TWNetworkManager alloc] init]`.
+
 ### Download
 This method uses disk caching with HTTP `eTag` and `Last-Modified`.
 ```objc
