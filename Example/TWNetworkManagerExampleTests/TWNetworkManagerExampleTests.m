@@ -47,7 +47,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testImageCache"];
     
-    NSURL *url = [NSURL URLWithString:@"http://tapwork.de/images/favicon/apple-touch-icon-144x144.png"];
+    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de/api/wp-content/uploads/2014/06/christian.png"];
     [[TWNetworkManager defaultManager]
      imageAtURL:url
      completion:^(UIImage *image, NSString *localFilepath, BOOL isFromCache, NSError *error) {
@@ -132,7 +132,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testCancelAllRequests"];
     
-    NSURL *url = [NSURL URLWithString:@"http://tapwork.de/images/favicon/apple-touch-icon-144x144.png"];
+    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de/api/wp-content/uploads/2014/06/henner.png"];
     [[TWNetworkManager defaultManager]
      imageAtURL:url
      completion:^(UIImage *image, NSString *localFilepath, BOOL isFromCache, NSError *error) {
