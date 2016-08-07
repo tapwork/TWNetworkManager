@@ -1,6 +1,6 @@
 desc "Bootstraps the repo"
 task :bootstrap do
-  sh 'bundle'
+  sh 'bundle install'
   sh 'cd Example && bundle exec pod install'
 end
 
