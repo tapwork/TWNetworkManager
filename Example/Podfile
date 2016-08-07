@@ -2,4 +2,7 @@ pod "TWNetworkManager", :path => "../TWNetworkManager.podspec"
 
 target "TWNetworkManagerExampleTests" do
   pod 'TWNetworkManager', :path => "../TWNetworkManager.podspec"
+  pod 'Expecta',     '~> 0.3.1'
+  pod 'OCMock',      '~> 3.0.0'
+  pod 'FBSnapshotTestCase/Core'
 end
