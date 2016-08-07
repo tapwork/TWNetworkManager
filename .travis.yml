@@ -4,4 +4,4 @@ before_install:
   - bundle install
   - cd Example && bundle exec pod install
 script:
-  - xcodebuild -workspace Example/TWNetworkManagerExample.xcworkspace -scheme 'TWNetworkManagerExample' test -sdk iphonesimulator | xcpretty -tc; exit ${PIPESTATUS[0]}
+  - xcodebuild -workspace TWNetworkManagerExample.xcworkspace -scheme 'TWNetworkManagerExample' test -sdk iphonesimulator | xcpretty -tc; exit ${PIPESTATUS[0]}
