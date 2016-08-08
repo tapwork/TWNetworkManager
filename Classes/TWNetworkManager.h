@@ -6,7 +6,8 @@
 //  Copyright (c) 2013 tapwork. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 #include <sys/xattr.h>
 #import <Reachability.h>
 #import <TWNetworkRequest.h>
