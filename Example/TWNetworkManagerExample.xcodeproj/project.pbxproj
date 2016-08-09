@@ -16,6 +16,7 @@
 		DA47DFD51A78325B005B9160 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA47DFD41A78325B005B9160 /* Images.xcassets */; };
 		DA47DFD81A78325B005B9160 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA47DFD61A78325B005B9160 /* LaunchScreen.xib */; };
 		DA47DFE41A78325C005B9160 /* TWNetworkManagerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47DFE31A78325C005B9160 /* TWNetworkManagerExampleTests.m */; };
+		DAEE99FB1D59BB7000E68CE5 /* TWNetworkImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEE99FA1D59BB7000E68CE5 /* TWNetworkImageViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DA47DFDD1A78325B005B9160 /* TWNetworkManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetworkManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA47DFE21A78325C005B9160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA47DFE31A78325C005B9160 /* TWNetworkManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWNetworkManagerExampleTests.m; sourceTree = "<group>"; };
+		DAEE99FA1D59BB7000E68CE5 /* TWNetworkImageViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNetworkImageViewTests.m; sourceTree = "<group>"; };
 		E7FEAB30373ECDD49FA7CF8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 			children = (
 				DA47DFE31A78325C005B9160 /* TWNetworkManagerExampleTests.m */,
 				DA47DFE11A78325C005B9160 /* Supporting Files */,
+				DAEE99FA1D59BB7000E68CE5 /* TWNetworkImageViewTests.m */,
 			);
 			path = TWNetworkManagerExampleTests;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEE99FB1D59BB7000E68CE5 /* TWNetworkImageViewTests.m in Sources */,
 				DA47DFE41A78325C005B9160 /* TWNetworkManagerExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

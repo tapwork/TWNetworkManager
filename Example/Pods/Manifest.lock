@@ -1,7 +1,9 @@
 PODS:
-  - TWNetworkManager (1.3.1)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - TWNetworkManager (1.4)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase/Core
   - TWNetworkManager (from `../TWNetworkManager.podspec`)
 
 EXTERNAL SOURCES:
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../TWNetworkManager.podspec"
 
 SPEC CHECKSUMS:
-  TWNetworkManager: ea154e5ed65e96e84c3f9c14a069f2a994b56862
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  TWNetworkManager: 37ce6a7f2bac68f7e6b69e2daa5d0a291e00b70c
 
 COCOAPODS: 0.38.2

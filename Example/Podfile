@@ -2,4 +2,5 @@ pod "TWNetworkManager", :path => "../TWNetworkManager.podspec"
 
 target "TWNetworkManagerExampleTests" do
   pod 'TWNetworkManager', :path => "../TWNetworkManager.podspec"
+  pod 'FBSnapshotTestCase/Core'
 end
