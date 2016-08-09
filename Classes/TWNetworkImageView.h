@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface TWNetworkImageView : UIImageView
 
-@property (nonatomic) NSURL *URL;
+@property (nullable, nonatomic) NSURL *URL;
 
-- (void)setImage:(UIImage *)image animated:(BOOL)animated;
+- (void)setImage:(UIImage *_Nullable)image animated:(BOOL)animated;
 
 @end
+
+NS_ASSUME_NONNULL_END
