@@ -28,7 +28,7 @@
     imageView.URL = [NSURL URLWithString:@"http://www.tapwork.de/api/wp-content/uploads/2014/06/christian.png"];
     imageView.frame = CGRectMake(0, 0, 320, 240);
     imageView.contentMode = UIViewContentModeScaleAspectFit;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         FBSnapshotVerifyView(imageView, nil);
         [expectation fulfill];
     });
@@ -45,7 +45,7 @@
     imageView.frame = CGRectMake(0, 0, 320, 240);
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.URL = nil;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         FBSnapshotVerifyView(imageView, nil);
         [expectation fulfill];
     });
@@ -62,7 +62,7 @@
     imageView.frame = CGRectMake(0, 0, 320, 240);
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.URL = [NSURL URLWithString:@"http://www.tapwork.de/api/wp-content/uploads/2014/06/henner.png"];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         FBSnapshotVerifyView(imageView, nil);
         [expectation fulfill];
     });

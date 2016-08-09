@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BEDE20F60C043A3546213A78"
+               BlueprintIdentifier = "5AF9A5FDB222AAFC6A4C50DC"
                BuildableName = "libTWNetworkManager.a"
                BlueprintName = "TWNetworkManager"
                ReferencedContainer = "container:Pods.xcodeproj">
