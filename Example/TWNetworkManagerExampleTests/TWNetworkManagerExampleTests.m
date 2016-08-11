@@ -68,14 +68,16 @@
 
 - (void)testIsProcessingURL
 {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"testIsProcessingURL"];
     NSURL *url = [NSURL URLWithString:@"http://tapwork.de/newslokal"];
-    [[TWNetworkManager defaultManager]
-     imageAtURL:url
-     completion:^(UIImage *image, NSString *localFilepath, BOOL isFromCache, NSError *error) {
-         
-     }];
+    [[TWNetworkManager defaultManager] requestURL:url type:TWNetworkHTTPMethodGET completion:^(NSData * _Nonnull data, NSString * _Nullable localFilepath, BOOL isFromCache, NSError * _Nullable error) {
+        [expectation fulfill];
+    }];
     
     XCTAssertTrue([[TWNetworkManager defaultManager] isProcessingURL:url]);
+    [self waitForExpectationsWithTimeout:2.0 handler:^(NSError *error) {
+        XCTAssertFalse(error, @"timeout with error: %@", error);
+    }];
 }
 
 - (void)testEtagAndLastModified
