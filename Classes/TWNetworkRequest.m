@@ -9,6 +9,9 @@
 #import "TWNetworkRequest.h"
 
 @implementation TWNetworkRequest
+{
+    NSString *_postParametersAsString;
+}
 
 #pragma mark - LifeCycle
 
@@ -21,11 +24,32 @@
     return self;
 }
 
+#pragma mark - Setter
+
+- (void)setPostParameters:(NSDictionary *)postParameters {
+    if (![_postParameters isEqual:postParameters]) {
+        _postParameters = postParameters;
+        if (!postParameters) {
+            _postParametersAsString = nil;
+        } else {
+            NSMutableString *postString = nil;
+            for (NSString *key in postParameters) {
+                if (!postString) {
+                    [postString appendString:@"&"];
+                }
+                NSString *value = postParameters[key];
+                [postString appendFormat:@"%@=%@", key, value];
+            }
+            _postParametersAsString = postString;
+        }
+    }
+}
+
 #pragma mark - Getter
 
 - (NSString *)HTTPMethod
 {
-    NSString *HTTPMethod = @"";
+    NSString *HTTPMethod = @"GET";
     switch (self.type) {
         case TWNetworkHTTPMethodGET:
             HTTPMethod = @"GET";
@@ -50,7 +74,11 @@
     return HTTPMethod;
 }
 
-- (NSString *)HTTPAuth {
+- (NSString *)HTTPAuth
+{
+    if (_URLRequest.HTTPMethod) {
+        return _URLRequest.HTTPMethod;
+    }
     NSString *authStr = nil;
     if (self.username) {
         authStr = self.username;
@@ -69,7 +97,29 @@
     return authValue;
 }
 
-- (NSURLRequest *)URLRequest {
+- (NSTimeInterval)timeout
+{
+    if (_URLRequest) {
+        return _URLRequest.timeoutInterval;
+    }
+
+    return _timeout;
+}
+
+- (NSURL *)URL
+{
+    if (_URLRequest.URL) {
+        return _URLRequest.URL;
+    }
+
+    return _URL;
+}
+
+- (NSURLRequest *)URLRequest
+{
+    if (_URLRequest) {
+        return _URLRequest;
+    }
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                     initWithURL:self.URL
                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
@@ -79,6 +129,10 @@
     if ([self HTTPAuth]) {
         NSString *value = [NSString stringWithFormat:@"Basic %@", [self HTTPAuth]];
         [request setValue:value forHTTPHeaderField:@"Authorization"];
+    }
+    if (self.postParameters && _postParametersAsString) {
+        [request setHTTPMethod:@"POST"];
+        [request setHTTPBody:[_postParametersAsString dataUsingEncoding:NSUTF8StringEncoding]];
     }
     
     return request;

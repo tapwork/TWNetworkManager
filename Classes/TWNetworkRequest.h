@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
     TWNetworkHTTPMethodGET = 0,
     TWNetworkHTTPMethodPOST,
@@ -20,14 +22,15 @@ typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
 @interface TWNetworkRequest : NSObject
 
 @property (nonatomic) NSURL *URL;
+@property (nonatomic, nullable) NSURLRequest *URLRequest; // Set a custom request to override all properties
 @property (nonatomic) TWNetworkHTTPMethod type;
-@property (nonatomic, readonly) NSString *HTTPMethod;
+@property (nonatomic, readonly) NSString *HTTPMethod; // Default is GET
 @property (nonatomic) BOOL useCache;
-@property (nonatomic) NSString *username;
-@property (nonatomic) NSString *password;
-@property (nonatomic) NSDictionary *parameters;
+@property (nonatomic, nullable) NSString *username;
+@property (nonatomic, nullable) NSString *password;
+@property (nonatomic, nullable) NSDictionary *postParameters;
 @property (nonatomic) NSTimeInterval timeout; // Default 60 seconds
 
-- (NSURLRequest *)URLRequest;
-
 @end
+
+NS_ASSUME_NONNULL_END
