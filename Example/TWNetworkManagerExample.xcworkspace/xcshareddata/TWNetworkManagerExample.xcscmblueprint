@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B7ACC3A3A4C26242C37B8DCF25598A78788C875D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B7ACC3A3A4C26242C37B8DCF25598A78788C875D" : 9223372036854775807,
+    "4DC2443926A4A3AA8FF228626E2A723B1CE24AD2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B2A81B50-9AB9-4B39-A55B-72742699273D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B7ACC3A3A4C26242C37B8DCF25598A78788C875D" : "TWNetworkManager\/",
+    "4DC2443926A4A3AA8FF228626E2A723B1CE24AD2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TWNetworkManagerExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/TWNetworkManagerExample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:tapwork\/redbull-mib-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DC2443926A4A3AA8FF228626E2A723B1CE24AD2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:tapwork\/TWNetworkManager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B7ACC3A3A4C26242C37B8DCF25598A78788C875D"
+    }
+  ]
+}
