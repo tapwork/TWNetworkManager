@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
 @property (nonatomic) BOOL useCache;
 @property (nonatomic, nullable) NSString *username;
 @property (nonatomic, nullable) NSString *password;
-@property (nonatomic, nullable) NSDictionary *postParameters;
+@property (nonatomic, nullable) NSDictionary <NSString*, NSString*> *postParameters;
 @property (nonatomic) NSTimeInterval timeout; // Default 60 seconds
 
 @end
