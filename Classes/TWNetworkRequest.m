@@ -131,7 +131,6 @@
         [request setValue:value forHTTPHeaderField:@"Authorization"];
     }
     if (self.postParameters && _postParametersAsString) {
-        [request setHTTPMethod:@"POST"];
         [request setHTTPBody:[_postParametersAsString dataUsingEncoding:NSUTF8StringEncoding]];
     }
     
