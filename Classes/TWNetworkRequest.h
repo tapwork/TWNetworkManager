@@ -12,12 +12,22 @@ typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
     TWNetworkHTTPMethodGET = 0,
     TWNetworkHTTPMethodPOST,
     TWNetworkHTTPMethodDELETE,
-    TWNetworkHTTPMethodPUT
+    TWNetworkHTTPMethodPUT,
+    TWNetworkHTTPMethodHEAD,
+    TWNetworkHTTPMethodPatch
 };
 
 @interface TWNetworkRequest : NSObject
 
-@property (nonatomic, strong) NSURL *url;
-@property (nonatomic, assign) TWNetworkHTTPMethod type;
+@property (nonatomic) NSURL *URL;
+@property (nonatomic) TWNetworkHTTPMethod type;
+@property (nonatomic, readonly) NSString *HTTPMethod;
+@property (nonatomic) BOOL useCache;
+@property (nonatomic) NSString *username;
+@property (nonatomic) NSString *password;
+@property (nonatomic) NSDictionary *parameters;
+@property (nonatomic) NSTimeInterval timeout; // Default 60 seconds
+
+- (NSURLRequest *)URLRequest;
 
 @end
