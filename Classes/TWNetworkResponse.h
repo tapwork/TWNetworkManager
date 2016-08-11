@@ -14,7 +14,9 @@
 @property (nonatomic, readonly, nullable) NSData *error;
 @property (nonatomic, readonly) BOOL isFromCache;
 @property (nonatomic, readonly, nullable) NSString *localFilePath;
-@property (nonatomic, readonly, nullable) NSURL *requestURL;
-@property (nonatomic, readonly, nullable) NSURL *responseURL;
+@property (nonatomic, readonly, nullable) NSURL *URL;
+@property (nonatomic, readonly, nullable) NSDictionary *headers;
+@property (nonatomic, readonly) NSInteger statusCode;
+@property (nonatomic, readonly, nullable) NSURLResponse *URLResponse; // The original response
 
 @end

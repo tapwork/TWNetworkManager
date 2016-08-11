@@ -15,8 +15,9 @@
 @property (nonatomic) NSData *error;
 @property (nonatomic) BOOL isFromCache;
 @property (nonatomic) NSString *localFilePath;
-@property (nonatomic) NSURL *requestURL;
-@property (nonatomic) NSURL *responseURL;
+@property (nonatomic) NSDictionary *headers;
+@property (nonatomic) NSInteger statusCode;
+@property (nonatomic) NSURLResponse *URLResponse;
 @end
 
 static NSString *const kDownloadCachePathname = @"TWDownloadCache";
@@ -105,7 +106,6 @@ static void TWEndNetworkActivity()
                                                                          error:&error];
                                  
                                  TWNetworkResponse *response = [TWNetworkResponse new];
-                                 response.requestURL = request.URL;
                                  response.data = data;
                                  response.error = error;
                                  response.isFromCache = YES;
@@ -128,11 +128,10 @@ static void TWEndNetworkActivity()
                                                                         NSString* cacheFilePath) {
                                      
                                      TWNetworkResponse *response = [TWNetworkResponse new];
-                                     response.requestURL = request.URL;
-                                     response.responseURL = URLResponse.URL;
                                      response.data = data;
                                      response.error = error;
                                      response.localFilePath = cacheFilePath;
+                                     response.URLResponse = URLResponse;
                                      dispatch_async(dispatch_get_main_queue(), ^{
                                          completion(response);
                                      });

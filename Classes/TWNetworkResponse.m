@@ -13,10 +13,32 @@
 @property (nonatomic) NSData *error;
 @property (nonatomic) BOOL isFromCache;
 @property (nonatomic) NSString *localFilePath;
-@property (nonatomic) NSURL *requestURL;
-@property (nonatomic) NSURL *responseURL;
+@property (nonatomic) NSDictionary *headers;
+@property (nonatomic) NSInteger statusCode;
+@property (nonatomic) NSURLResponse *URLResponse;
 @end
 
 @implementation TWNetworkResponse
+
+- (void)setURLResponse:(NSURLResponse *)URLResponse {
+    if (![_URLResponse isEqual:URLResponse]) {
+        _URLResponse = URLResponse;
+        if (!URLResponse) {
+            _statusCode = NSNotFound;
+            _headers = nil;
+        } else {
+            if ([URLResponse isKindOfClass:[NSHTTPURLResponse class]]) {
+                NSHTTPURLResponse *HTTPURLResponse = (NSHTTPURLResponse *)URLResponse;
+                _statusCode = HTTPURLResponse.statusCode;
+                _headers = HTTPURLResponse.allHeaderFields;
+            }
+        }
+    }
+}
+
+- (NSURL *)URL
+{
+    return self.URLResponse.URL;
+}
 
 @end
