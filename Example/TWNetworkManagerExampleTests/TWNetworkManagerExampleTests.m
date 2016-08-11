@@ -69,7 +69,7 @@
 - (void)testIsProcessingURL
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testIsProcessingURL"];
-    NSURL *url = [NSURL URLWithString:@"http://tapwork.de/newslokal"];
+    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de/api/wp-content/uploads/2014/06/newslokal_1@2x1.png"];
     [[TWNetworkManager defaultManager] requestURL:url type:TWNetworkHTTPMethodGET completion:^(NSData * _Nonnull data, NSString * _Nullable localFilepath, BOOL isFromCache, NSError * _Nullable error) {
         [expectation fulfill];
     }];
