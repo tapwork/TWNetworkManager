@@ -353,7 +353,7 @@ static void TWEndNetworkActivity()
     NSURL *url = request.URL;
     NSURLRequest *URLrequest = request.URLRequest;
     TWBeginNetworkActivity();
-
+    [self addRequestedURL:url];
     NSURLSession *session = self.urlSession;
     [[session dataTaskWithRequest:URLrequest
                 completionHandler:^(NSData *data,
