@@ -11,14 +11,12 @@
 
 // Make the response writeable
 @interface TWNetworkResponse (Private)
-@property (nonatomic, readwrite) NSData *data;
-@property (nonatomic, readwrite) NSData *error;
-@property (nonatomic, readwrite) BOOL isFromCache;
-@property (nonatomic, readwrite) NSString *localFilePath;
-@property (nonatomic, readwrite) NSURL *requestURL;
-@property (nonatomic, readwrite) NSURL *responseURL;
-@end
-@implementation TWNetworkResponse (Private)
+@property (nonatomic) NSData *data;
+@property (nonatomic) NSData *error;
+@property (nonatomic) BOOL isFromCache;
+@property (nonatomic) NSString *localFilePath;
+@property (nonatomic) NSURL *requestURL;
+@property (nonatomic) NSURL *responseURL;
 @end
 
 static NSString *const kDownloadCachePathname = @"TWDownloadCache";
