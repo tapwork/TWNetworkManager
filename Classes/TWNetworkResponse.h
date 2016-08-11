@@ -11,7 +11,7 @@
 @interface TWNetworkResponse : NSObject
 
 @property (nonatomic, readonly, nullable) NSData *data;
-@property (nonatomic, readonly, nullable) NSData *error;
+@property (nonatomic, readonly, nullable) NSError *error;
 @property (nonatomic, readonly) BOOL isFromCache;
 @property (nonatomic, readonly, nullable) NSString *localFilePath;
 @property (nonatomic, readonly, nullable) NSURL *requestURL;
