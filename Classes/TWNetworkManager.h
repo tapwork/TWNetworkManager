@@ -13,6 +13,8 @@
 #import "TWNetworkRequest.h"
 #import "TWNetworkResponse.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface TWNetworkManager : NSObject
 
 /// The default network manager's singleton instance
@@ -30,10 +32,10 @@
 
 /// Image download - uses disk and memory caching - returns the image immediately if the image is in cache
 - (UIImage *)imageAtURL:(NSURL *)url
-             completion:(void(^)(UIImage *image,
-                                 NSString *localFilepath,
+             completion:(void(^)(UIImage *_Nullable image,
+                                 NSString *_Nullable localFilepath,
                                  BOOL isFromCache,
-                                 NSError *error))completion;
+                                 NSError *_Nullable error))completion;
 
 /// Check current process for an URL
 /// @param URL The URL to check if it is processing
@@ -48,14 +50,14 @@
 /// Gives a local representation for the real URL
 /// @param URL The URL for the local representation
 /// @return A cached filepath for the full URL - nil if nothing is cached
-- (NSString *)cachedFilePathForURL:(NSURL *)url;
+- (NSString *_Nullable)cachedFilePathForURL:(NSURL *)url;
 
 /// Cancels all outstanding tasks and then invalidates the session object.
 - (void)cancelAllRequests;
 
 /// Cancels all tasks for the given URL.
 /// @param URL All requests with this URL will be canceled
-- (void)cancelAllRequestForURL:(NSURL*)url;
+- (void)cancelAllRequestForURL:(NSURL *)url;
 
 /// Deletes all cached data from disk and removes the images from NSCache
 - (BOOL)reset;
@@ -81,3 +83,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END
