@@ -9,6 +9,18 @@
 #import "TWNetworkManager.h"
 #import <CommonCrypto/CommonHMAC.h>
 
+// Make the response writeable
+@interface TWNetworkResponse (Private)
+@property (nonatomic, readwrite) NSData *data;
+@property (nonatomic, readwrite) NSData *error;
+@property (nonatomic, readwrite) BOOL isFromCache;
+@property (nonatomic, readwrite) NSString *localFilePath;
+@property (nonatomic, readwrite) NSURL *requestURL;
+@property (nonatomic, readwrite) NSURL *responseURL;
+@end
+@implementation TWNetworkResponse (Private)
+@end
+
 static NSString *const kDownloadCachePathname = @"TWDownloadCache";
 const char *const kETAGExtAttributeName  = "etag";
 const char *const kLastModifiedExtAttributeName  = "lastmodified";
@@ -78,141 +90,107 @@ static void TWEndNetworkActivity()
 
 #pragma mark - Public methods
 
-- (void)requestURL:(NSURL*)url
-              type:(TWNetworkHTTPMethod)method
-        completion:(void(^)(NSData *data,
-                            NSString *localFilepath,
-                            BOOL isFromCache,
-                            NSError *error))completion
+- (void)request:(TWNetworkRequest *)request completion:(void(^)(TWNetworkResponse *response))completion
 {
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
-                                    initWithURL:url
-                                    cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                    timeoutInterval:kDownloadTimeout];
-    switch (method) {
-        case TWNetworkHTTPMethodGET:
-            [request setHTTPMethod:@"GET"];
-            break;
-        case TWNetworkHTTPMethodPOST:
-            [request setHTTPMethod:@"POST"];
-            break;
-        case TWNetworkHTTPMethodDELETE:
-            [request setHTTPMethod:@"DELETE"];
-            break;
-        case TWNetworkHTTPMethodPUT:
-            [request setHTTPMethod:@"PUT"];
-            break;
-        default:
-            [request setHTTPMethod:@"GET"];
-            break;
-    }
-
-    [self sendRequest:request completion:completion];
+    NSParameterAssert(request);
+    NSParameterAssert(request.URL);
+    
+    [self canUseCacheForRequest:request
+                     completion:^(BOOL canUseCache) {
+                             if (canUseCache) {
+                                 // we can grab the data from the cache
+                                 // there is no newer version
+                                 NSString *filepath = [self cachedFilePathForURL:request.URL];
+                                 NSError *error = nil;
+                                 NSData *data = [NSData dataWithContentsOfFile:filepath
+                                                                       options:NSDataReadingMappedIfSafe
+                                                                         error:&error];
+                                 
+                                 TWNetworkResponse *response = [TWNetworkResponse new];
+                                 response.requestURL = request.URL;
+                                 response.data = data;
+                                 response.error = error;
+                                 response.isFromCache = YES;
+                                 response.localFilePath = filepath;
+                                 if (completion) {
+                                     dispatch_async(dispatch_get_main_queue(), ^{
+                                         completion(response);
+                                     });
+                                 }
+                             } else {
+                                 // We need a fresh request for this URL
+                                 NSMutableURLRequest *URLrequest = [[NSMutableURLRequest alloc]
+                                                                    initWithURL:request.URL
+                                                                    cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                                                    timeoutInterval:kDownloadTimeout];
+                                 [URLrequest setHTTPMethod:request.HTTPMethod];
+                                 [self sendRequest:request completion:^(NSData *data,
+                                                                        NSURLResponse *URLResponse,
+                                                                        NSError *error,
+                                                                        NSString* cacheFilePath) {
+                                     
+                                     TWNetworkResponse *response = [TWNetworkResponse new];
+                                     response.requestURL = request.URL;
+                                     response.responseURL = URLResponse.URL;
+                                     response.data = data;
+                                     response.error = error;
+                                     response.localFilePath = cacheFilePath;
+                                     dispatch_async(dispatch_get_main_queue(), ^{
+                                         completion(response);
+                                     });
+                                 }];
+                             }
+                         }];
 }
 
-- (void)request:(NSURLRequest*)request
-     completion:(void(^)(NSData *data,
-                         NSError *error))completion
-{
-    [self sendRequest:request
-           completion:^(NSData *data,
-                        NSString *localFilepath,
-                        BOOL isFromCache,
-                        NSError *error) {
-               completion(data,error);
-           }];
-}
-
-- (UIImage*)imageAtURL:(NSURL*)url
-            completion:(void(^)(UIImage *image,
+- (UIImage *)imageAtURL:(NSURL*)url
+             completion:(void(^)(UIImage *image,
                                 NSString *localFilepath,
                                 BOOL isFromCache,
                                 NSError *error))completion
 {
-    if (!url) {
-        if (completion) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                completion(nil, nil, YES, [self errorForNilURL]);
-            });
-        }
+    NSParameterAssert(url);
 
-        return nil;
-    }
     if ([url isKindOfClass:[NSURL class]] &&
         [[[self class] imageCache] objectForKey:url]) {
         // there is already an image in our cache so return this image
         // Download not necessary
-        // we also call the completion block
-        UIImage * image = [[[self class] imageCache] objectForKey:url];
+        UIImage *image = [[[self class] imageCache] objectForKey:url];
         if (completion) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                completion(image,nil,YES,nil);
+                completion(image, nil, YES, nil);
             });
         }
+
         return image;
     }
     
-    if ([self hasCachedFileForURL:url]) {
+    TWNetworkRequest *request = [TWNetworkRequest new];
+    request.type = TWNetworkHTTPMethodGET;
+    request.URL = url;
+    request.useCache = YES;
+    [self request:request
+       completion:^(TWNetworkResponse *response) {
         dispatch_async(kDownloadGCDQueue, ^{
-            NSString *filepath = [self cachedFilePathForURL:url];
-            NSError *error = nil;
-            NSData *data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&error];
-            UIImage *image = [UIImage imageWithData:data];
-            if (image) {
-                [[[self class] imageCache] setObject:image forKey:url];
+            UIImage *image = nil;
+            if (url && response.data) {
+                image = [UIImage imageWithData:response.data];
+                if (image.size.width < 2 || image.size.height < 2) {
+                    image = nil;
+                }
+                if (image) {
+                    [[[self class] imageCache] setObject:image forKey:url];
+                }
             }
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (completion) {
-                    completion(image, filepath, YES, error);
-                    [self isDownloadNecessaryForURL:url completion:^(BOOL needsDownload) {
-                        if (needsDownload) {
-                            [self requestImageAtURL:url completion:completion];
-                        }
-                    }];
+                    completion(image, response.localFilePath, response.isFromCache, response.error);
                 }
             });
         });
-    } else {
-        [self requestImageAtURL:url completion:completion];
-    }
+    }];
 
     return nil;
-}
-
-- (void)downloadURL:(NSURL*)url
-         completion:(void(^)(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error))completion
-{
-    if (!url) {
-        if (completion) {
-            completion(nil,nil,NO,[self errorForNilURL]);
-        }
-        ///  URL is nil
-        ///  stop here
-        return;
-    }
-    [self isDownloadNecessaryForURL:url
-                         completion: ^(BOOL needsDownload) {
-                             
-                             if (!needsDownload) {
-                                 //
-                                 // we can grab the data from the cache
-                                 // there is no newer version
-                                 
-                                 NSString *filepath = [self cachedFilePathForURL:url];
-                                 NSError *error = nil;
-                                 NSData *data = [NSData dataWithContentsOfFile:filepath options:NSDataReadingMappedIfSafe error:&error];
-                                 
-                                 if (completion) {
-                                     dispatch_async(dispatch_get_main_queue(), ^{
-                                         completion(data,filepath,YES,error);
-                                     });
-                                 }
-                             } else {
-                                 [self requestURL:url
-                                             type:TWNetworkHTTPMethodGET
-                                       completion:completion];
-                             }
-                         }];
 }
 
 - (void)cancelAllRequests
@@ -249,81 +227,9 @@ static void TWEndNetworkActivity()
     return [fileManager removeItemAtPath:cachePath error:&error];
 }
 
-#pragma mark - Getter
-
-- (NSURLSession *)urlSession
-{
-    if (_urlSession) {
-        return _urlSession;
-    }
-    
-    _urlSession = [NSURLSession sessionWithConfiguration:
-                   [NSURLSessionConfiguration defaultSessionConfiguration]];
-    _urlSession.sessionDescription = @"net.tapwork.twnetworkmanager.nsurlsession";
-    
-    return _urlSession;
-}
-
 - (BOOL)isProcessingURL:(NSURL*)url
 {
     return ([self.runningURLRequests containsObject:url]);
-}
-
-- (void)isDownloadNecessaryForURL:(NSURL*)url completion:(void(^)(BOOL needsDownload))completion
-{
-    NSString *cachedFile = [self cachedFilePathForURL:url];
-    NSString *eTag = [self eTagAtCachedFilepath:cachedFile];
-    NSString *lastModified = [self lastModifiedAtCachedFilepath:cachedFile];
-    
-    if (![self isNetworkReachable] &&
-        [self hasCachedFileForURL:url]) {
-        if (completion) {
-            completion(NO);
-        }
-    } else if (![self hasCachedFileForURL:url] ||
-             ![self isNetworkReachable] ||
-             (!eTag && !lastModified)) {
-        if (completion) {
-            completion(YES);
-        }
-    } else {
-        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url
-                                                                    cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                                                timeoutInterval:kETagValidationTimeout];
-        if ([eTag length] > 0) {
-            [request setValue:eTag forHTTPHeaderField:@"If-None-Match"];
-        }
-        if ([lastModified length] > 0) {
-            [request setValue:lastModified forHTTPHeaderField:@"If-Modified-Since"];
-        }
-        [request setHTTPMethod:@"HEAD"];
-        
-        NSURLSession *session = self.urlSession;
-        [[session dataTaskWithRequest:request
-                    completionHandler:^(NSData *data,
-                                        NSURLResponse *response,
-                                        NSError *error) {
-                        
-                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-                            NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
-                            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
-                            
-                            if (statusCode == 304) {  // Not Modified - our cached stuff is fresh enough
-                                completion(NO);
-                            } else if (statusCode == 301) { // Moved Permanently HTTP Forward
-                                NSURL *forwardURL = [NSURL URLWithString:header[@"Location"]];
-                                [self isDownloadNecessaryForURL:forwardURL completion:completion];
-                            } else if (statusCode == 200) {
-                                completion(YES);
-                            } else {
-                                completion(NO);
-                            }
-                        } else {
-                            completion(NO);
-                        }
-            
-        }] resume];
-    }
 }
 
 - (BOOL)hasCachedFileForURL:(NSURL*)url
@@ -375,66 +281,83 @@ static void TWEndNetworkActivity()
     return kImageCache;
 }
 
-- (NSError*)errorForNilURL
-{
-    return [NSError errorWithDomain:NSURLErrorDomain
-                               code:-1
-                           userInfo:@{NSLocalizedFailureReasonErrorKey : @"URL must not be nil"}];
-}
-
 #pragma mark - Private
 
-- (void)requestImageAtURL:(NSURL*)url
-               completion:(void(^)(UIImage *image,
-                                   NSString *localFilepath,
-                                   BOOL isFromCache,
-                                   NSError *error))completion
+- (void)canUseCacheForRequest:(TWNetworkRequest *)request
+                completion:(void(^)(BOOL canUseCache))completion
 {
-    [self requestURL:url
-                type:TWNetworkHTTPMethodGET
-         completion:^(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error) {
-             dispatch_async(kDownloadGCDQueue, ^{
-                 UIImage *image = nil;
-                 if (url && data) {
-                     image = [UIImage imageWithData:data];
-                     if (image.size.width < 2 || image.size.height < 2) {
-                         image = nil;
-                     }
-                     if (image) {
-                         [[[self class] imageCache] setObject:image forKey:url];
-                     }
-                 }
-                 dispatch_async(dispatch_get_main_queue(), ^{
-                     if (completion) {
-                         completion(image, localFilepath, isFromCache, error);
-                     }
-                 });
-             });
-         }];
+    NSParameterAssert(request.URL);
+    NSParameterAssert(completion);
+    NSURL *url = request.URL;
+    NSString *cachedFile = [self cachedFilePathForURL:url];
+    NSString *eTag = [self eTagAtCachedFilepath:cachedFile];
+    NSString *lastModified = [self lastModifiedAtCachedFilepath:cachedFile];
+    
+    if (!request.useCache) {
+        completion(NO);
+    } else if (![self isNetworkReachable] && [self hasCachedFileForURL:url]) {
+        completion(YES);
+    } else if (![self hasCachedFileForURL:url] || ![self isNetworkReachable] || (!eTag && !lastModified)) {
+        completion(NO);
+    } else {
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
+                                        initWithURL:url
+                                        cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                        timeoutInterval:kETagValidationTimeout];
+        if ([eTag length] > 0) {
+            [request setValue:eTag forHTTPHeaderField:@"If-None-Match"];
+        }
+        if ([lastModified length] > 0) {
+            [request setValue:lastModified forHTTPHeaderField:@"If-Modified-Since"];
+        }
+        [request setHTTPMethod:@"HEAD"];
+        __weak __typeof(self) weakself = self;
+        NSURLSession *session = self.urlSession;
+        [[session dataTaskWithRequest:request
+                    completionHandler:^(NSData *data,
+                                        NSURLResponse *response,
+                                        NSError *error) {
+                        
+                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+                            NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
+                            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
+                            
+                            if (statusCode == 304) {  // Not Modified - our cached stuff is fresh enough
+                                completion(YES);
+                            } else if (statusCode == 301) { // Moved Permanently HTTP Forward
+                                NSURL *forwardURL = [NSURL URLWithString:header[@"Location"]];
+                                request.URL = forwardURL;
+                                [self canUseCacheForRequest:request completion:completion];
+                            } else if (statusCode == 200) {
+                                completion(NO);
+                            } else if (statusCode > 400 && [self hasCachedFileForURL:url]) {
+                                completion(YES);
+                            } else {
+                                completion(NO);
+                            }
+                        } else {
+                            completion([self hasCachedFileForURL:url]);
+                        }
+                        
+                    }] resume];
+    }
 }
 
-- (void)sendRequest:(NSURLRequest*)request
+- (void)sendRequest:(TWNetworkRequest *)request
          completion:(void(^)(NSData *data,
-                             NSString *localFilepath,
-                             BOOL isFromCache,
-                             NSError *error))completion
+                             NSURLResponse *response,
+                             NSError *error,
+                             NSString *cacheFilePath))completion
 {
-    NSURL *url = [request URL];
-    if (!url) {
-        NSAssert(url, @"url must not be nil here");
-        if (completion) {
-            completion(nil, nil, NO, [self errorForNilURL]);
-        }
-        
-        return;
-    }
+    NSParameterAssert(request);
+    NSParameterAssert(request.URL);
     
-    [self addRequestedURL:url];
-    
+    NSURL *url = request.URL;
+    NSURLRequest *URLrequest = request.URLRequest;
     TWBeginNetworkActivity();
-    
+
     NSURLSession *session = self.urlSession;
-    [[session dataTaskWithRequest:request
+    [[session dataTaskWithRequest:URLrequest
                 completionHandler:^(NSData *data,
                                     NSURLResponse *response,
                                     NSError *connectionError) {
@@ -482,16 +405,13 @@ static void TWEndNetworkActivity()
                         }
                     }
                     [self removeRequestedURL:url];
-                    
                     dispatch_async(dispatch_get_main_queue(), ^{
                         if (completion) {
-                            completion(data,filepath,NO,resError);
+                            completion(data, response, resError, filepath);
                         }
                     });
                 }] resume];
 }
-
-#pragma mark - Private Getter
 
 - (void)addRequestedURL:(NSURL*)url
 {
@@ -537,6 +457,20 @@ static void TWEndNetworkActivity()
     }
     return _runningURLRequests;
 }
+
+- (NSURLSession *)urlSession
+{
+    if (_urlSession) {
+        return _urlSession;
+    }
+    
+    _urlSession = [NSURLSession sessionWithConfiguration:
+                   [NSURLSessionConfiguration defaultSessionConfiguration]];
+    _urlSession.sessionDescription = @"net.tapwork.twnetworkmanager.nsurlsession";
+    
+    return _urlSession;
+}
+
 
 #pragma mark - Extended File Attributes (eTag & Last Modified)
 

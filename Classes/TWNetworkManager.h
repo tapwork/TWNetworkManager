@@ -10,7 +10,8 @@
 @import Foundation;
 #include <sys/xattr.h>
 #import <Reachability.h>
-#import <TWNetworkRequest.h>
+#import "TWNetworkRequest.h"
+#import "TWNetworkResponse.h"
 
 @interface TWNetworkManager : NSObject
 
@@ -24,34 +25,15 @@
 @property (nonatomic, readonly) BOOL isNetworkReachable;
 @property (nonatomic, readonly) BOOL isReachableViaWiFi;
 
-/// Simple async download with disk caching -
-/// there will be no download if we are offline or
-/// the data on server side hasn't been modified (HTTP 304)
-- (void)downloadURL:(NSURL *)url
-         completion:(void(^)(NSData *data,
-                             NSString *localFilepath,
-                             BOOL isFromCache,
-                             NSError *error))completion;
+/// Request with a custom configurable TWRequest object
+- (void)request:(TWNetworkRequest *)request completion:(void(^)(TWNetworkResponse *response))completion;
 
 /// Image download - uses disk and memory caching - returns the image immediately if the image is in cache
 - (UIImage *)imageAtURL:(NSURL *)url
-            completion:(void(^)(UIImage *image,
-                                NSString *localFilepath,
-                                BOOL isFromCache,
-                                NSError *error))completion;
-
-/// Request from URL with specific HTTP method - does not use caching
-- (void)requestURL:(NSURL*)url
-              type:(TWNetworkHTTPMethod)HTTPMethod
-        completion:(void(^)(NSData *data,
-                            NSString *localFilepath,
-                            BOOL isFromCache,
-                            NSError *error))completion;
-
-/// Request with NSURLRequest - does not use caching
-- (void)request:(NSURLRequest*)request
-     completion:(void(^)(NSData *data,
-                         NSError *error))completion;
+             completion:(void(^)(UIImage *image,
+                                 NSString *localFilepath,
+                                 BOOL isFromCache,
+                                 NSError *error))completion;
 
 /// Check current process for an URL
 /// @param URL The URL to check if it is processing
@@ -81,4 +63,3 @@
 - (NSString *)localCachePath;
 
 @end
-
