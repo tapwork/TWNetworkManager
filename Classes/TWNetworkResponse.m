@@ -10,6 +10,7 @@
 
 @interface TWNetworkResponse ()
 @property (nonatomic) NSData *data;
+@property (nonatomic) NSURL *requestURL;
 @property (nonatomic) NSData *error;
 @property (nonatomic) BOOL isFromCache;
 @property (nonatomic) NSString *localFilePath;
@@ -34,11 +35,6 @@
             }
         }
     }
-}
-
-- (NSURL *)URL
-{
-    return self.URLResponse.URL;
 }
 
 @end

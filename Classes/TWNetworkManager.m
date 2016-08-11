@@ -12,6 +12,7 @@
 // Make the response writeable
 @interface TWNetworkResponse (Private)
 @property (nonatomic) NSData *data;
+@property (nonatomic) NSURL *requestURL;
 @property (nonatomic) NSData *error;
 @property (nonatomic) BOOL isFromCache;
 @property (nonatomic) NSString *localFilePath;
@@ -106,6 +107,7 @@ static void TWEndNetworkActivity()
                                                                          error:&error];
                                  
                                  TWNetworkResponse *response = [TWNetworkResponse new];
+                                 response.requestURL = request.URL;
                                  response.data = data;
                                  response.error = error;
                                  response.isFromCache = YES;
@@ -128,6 +130,7 @@ static void TWEndNetworkActivity()
                                                                         NSString* cacheFilePath) {
                                      
                                      TWNetworkResponse *response = [TWNetworkResponse new];
+                                     response.requestURL = request.URL;
                                      response.data = data;
                                      response.error = error;
                                      response.localFilePath = cacheFilePath;
