@@ -533,3 +533,39 @@ static void TWEndNetworkActivity()
 }
 
 @end
+
+@implementation TWNetworkManager (Deprecated)
+
+- (void)downloadURL:(NSURL *)url
+         completion:(void(^)(NSData *_Nullable data,
+                             NSString *_Nullable localFilepath,
+                             BOOL isFromCache,
+                             NSError *_Nullable error))completion __deprecated {
+    TWNetworkRequest *request = [TWNetworkRequest new];
+    request.URL = url;
+    request.useCache = YES;
+    [self request:request completion:^(TWNetworkResponse * _Nonnull response) {
+        if (completion) {
+            completion(response.data, response.localFilePath, response.isFromCache, response.error);
+        }
+    }];
+}
+
+- (void)requestURL:(NSURL*)url
+              type:(TWNetworkHTTPMethod)HTTPMethod
+        completion:(void(^)(NSData *data,
+                            NSString *_Nullable localFilepath,
+                            BOOL isFromCache,
+                            NSError *_Nullable error))completion __deprecated {
+    TWNetworkRequest *request = [TWNetworkRequest new];
+    request.URL = url;
+    request.useCache = NO;
+    request.type = HTTPMethod;
+    [self request:request completion:^(TWNetworkResponse * _Nonnull response) {
+        if (completion) {
+            completion(response.data, response.localFilePath, response.isFromCache, response.error);
+        }
+    }];
+}
+
+@end

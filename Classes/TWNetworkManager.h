@@ -63,3 +63,21 @@
 - (NSString *)localCachePath;
 
 @end
+
+@interface TWNetworkManager (Deprecated)
+
+- (void)downloadURL:(NSURL *)url
+         completion:(void(^)(NSData *_Nullable data,
+                             NSString *_Nullable localFilepath,
+                             BOOL isFromCache,
+                             NSError *_Nullable error))completion __deprecated;
+
+- (void)requestURL:(NSURL*)url
+              type:(TWNetworkHTTPMethod)HTTPMethod
+        completion:(void(^)(NSData *data,
+                            NSString *_Nullable localFilepath,
+                            BOOL isFromCache,
+                            NSError *_Nullable error))completion __deprecated;
+
+@end
+
