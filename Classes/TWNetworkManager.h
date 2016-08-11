@@ -59,9 +59,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param URL All requests with this URL will be canceled
 - (void)cancelAllRequestForURL:(NSURL *)url;
 
+/// Suspends all running requests
+- (void)suspend;
+
+/// Resumes the suspended requests
+- (void)resume;
+
 /// Deletes all cached data from disk and removes the images from NSCache
 - (BOOL)reset;
 
+/// The path to the TWNetwork's cache
 - (NSString *)localCachePath;
 
 @end

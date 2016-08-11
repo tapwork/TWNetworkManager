@@ -200,17 +200,28 @@ static void TWEndNetworkActivity()
 
 - (void)cancelAllRequestForURL:(NSURL*)url
 {
-    [_urlSession getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
-
-        NSInteger capacity = [dataTasks count] + [uploadTasks count] + [downloadTasks count];
-        NSMutableArray *tasks = [NSMutableArray arrayWithCapacity:capacity];
-        [tasks addObjectsFromArray:dataTasks];
-        [tasks addObjectsFromArray:uploadTasks];
-        [tasks addObjectsFromArray:downloadTasks];
+    [self getAllRunningTasks:^(NSArray<NSURLSessionTask *> *tasks) {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"originalRequest.URL = %@", url];
-        [tasks filterUsingPredicate:predicate];
+        for (NSURLSessionTask *task in [tasks filteredArrayUsingPredicate:predicate]) {
+            [task cancel];
+        }
+    }];
+}
+
+- (void)suspend
+{
+    [self getAllRunningTasks:^(NSArray<NSURLSessionTask *> *tasks) {
         for (NSURLSessionTask *task in tasks) {
             [task cancel];
+        }
+    }];
+}
+
+- (void)resume
+{
+    [self getAllRunningTasks:^(NSArray<NSURLSessionTask *> *tasks) {
+        for (NSURLSessionTask *task in tasks) {
+            [task resume];
         }
     }];
 }
@@ -430,6 +441,19 @@ static void TWEndNetworkActivity()
             _runningURLRequests = [requests copy];
         }
     }
+}
+
+- (void)getAllRunningTasks:(void (^)(NSArray<NSURLSessionTask *> *tasks))completionHandler; {
+    [_urlSession getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
+        
+        NSMutableArray *tasks = [NSMutableArray array];
+        [tasks addObjectsFromArray:dataTasks];
+        [tasks addObjectsFromArray:uploadTasks];
+        [tasks addObjectsFromArray:downloadTasks];
+        if (completionHandler) {
+            completionHandler([tasks copy]);
+        }
+    }];
 }
 
 - (NSString *)md5HashForString:(NSString *)string
