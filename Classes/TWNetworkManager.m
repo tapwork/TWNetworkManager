@@ -220,6 +220,7 @@ static void TWEndNetworkActivity()
     [_urlSession invalidateAndCancel];
     _urlSession = nil;
     _runningURLRequests = nil;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 - (void)cancelAllRequestForURL:(NSURL*)url
