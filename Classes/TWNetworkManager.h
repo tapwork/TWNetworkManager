@@ -78,5 +78,7 @@
 /// Deletes all cached data from disk and removes the images from NSCache
 - (BOOL)reset;
 
+- (NSString *)localCachePath;
+
 @end
 
