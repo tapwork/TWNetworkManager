@@ -31,6 +31,8 @@ typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
 @property (nonatomic, nullable) NSDictionary <NSString*, NSString*> *postParameters;
 @property (nonatomic) NSTimeInterval timeout; // Default 60 seconds
 
++ (TWNetworkRequest *)requestWithURL:(NSURL *)URL; //Creates a standard URL GET Request 
+
 @end
 
 NS_ASSUME_NONNULL_END

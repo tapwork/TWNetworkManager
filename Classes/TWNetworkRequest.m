@@ -15,6 +15,13 @@
 
 #pragma mark - LifeCycle
 
++ (TWNetworkRequest *)requestWithURL:(NSURL *)URL
+{
+    TWNetworkRequest *request = [TWNetworkRequest new];
+    request.URL = URL;
+    return request;
+}
+
 - (instancetype)init
 {
     self = [super init];
