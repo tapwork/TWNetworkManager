@@ -1,2028 +1,944 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>038367D72C092B569753EFB997B473F6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-TWNetworkManagerExampleTests.a</string>
-			<key>path</key>
-			<string>libPods-TWNetworkManagerExampleTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>050E8F1E04B2830D6B9215288AA34C98</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FD132D81BBBB6B1E28737F97C413F45B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>060B3935D09B5F85B4C80099E8332F43</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>060C0D299655F33F5CE830D5DBE49005</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FF1FCF00BC6897CE842FB49F33C861F0</string>
-				<string>0EDA9D2BD529CAA2C4FDE907C0C2ED09</string>
-				<string>0B222359AC1153B8B363FE0CCD3F7FC9</string>
-				<string>5C849F0EE46803F84DDA7EAF6A843995</string>
-				<string>75768143E7DE0BDF32467FBBD285656B</string>
-				<string>B28231B7705FBC1732E12D571315DC69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>07001ED068B70EDA431243D48DC9AED1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52963EA280C285D82725F25B9698B33E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>08AE01BF4B9978A539F63F58E04EBD51</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FBSnapshotTestController.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/FBSnapshotTestController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>096BDAC7C1B9E10F25BEBBE1C5C20850</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>669018FBC0BA60645F833549E83EBB8B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>80CAB5B88C9FDB2CF529FD0366AC8BD6</string>
-				<string>E74B7EFFF7FE6C9B7C6913A88512F645</string>
-				<string>3765712E79DCCE40A78A43A6918E9B28</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>FBSnapshotTestCase</string>
-			<key>productName</key>
-			<string>FBSnapshotTestCase</string>
-			<key>productReference</key>
-			<string>957C4C44C669E31F3B435E1566324EF3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>0A57D5BFB18625B664954096528A615B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8C626BABFF7A87B929491A0F33C78AE8</string>
-				<string>9FD13A2B2AD11D44EF3064772296A54A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0A6BD3584BCC69EB06FA3C3C10B8D0CF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>060C0D299655F33F5CE830D5DBE49005</string>
-				<string>1D9A62BBA8CEE6A8648A994FBBE7D944</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A988DC6506F508F2B23CDBCBFC77F22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>FBSnapshotTestCase</string>
-			<key>target</key>
-			<string>096BDAC7C1B9E10F25BEBBE1C5C20850</string>
-			<key>targetProxy</key>
-			<string>B598D96D07E66478D343D2BC30291756</string>
-		</dict>
-		<key>0B15631CCC061AC6D31926EDBECEC686</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E22BBD5B3E23012C75011C312C9BB47B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0B222359AC1153B8B363FE0CCD3F7FC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0B85B4B46D7ABBD0208909D35B3C6FD8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A358585D62236997DC13062184FEC42B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0D31B8B51C6D89DBE20D0F3E319B367C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FD132D81BBBB6B1E28737F97C413F45B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0EDA9D2BD529CAA2C4FDE907C0C2ED09</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12F4B5C6C5EEAC841FE5A1D9FE1A4748</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D5EA4BAD40FB5EF92636245B50FA50D0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>13847922C9CD96E3594734554F5BA34C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4EAE5E8D421C884235E51FFB8882D8FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>14B8B9B15ECBE87983FF987239AB2D7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4428BB839D10EBDF2E75E2E6BE7445D1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>15F1271414F6DC6A80CA56CF2041FAB0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>17EAC7526B10345BA467C91C4CD8A156</key>
-		<dict>
-			<key>fileRef</key>
-			<string>549D507D5181520119A4D3E401A9A10E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1A13449B4826D3FBCF55D1D4CAD2369A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EF7E9B4D7153988859953D0FF07044FE</string>
-				<string>B39E45763679D970AD45CAC838CA93A3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1AA784FF5EC96D78C5AE4A9F086858D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB74CA49057F79EA6426D4903D9BF84E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1D9A62BBA8CEE6A8648A994FBBE7D944</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>33A590F7BB648FFE692DBFE745BFA5FB</string>
-				<string>15F1271414F6DC6A80CA56CF2041FAB0</string>
-				<string>DB5F02964CC46B4B48AAAFB3D1A43D92</string>
-				<string>420E0FE593007BF6D179B72E0C626B23</string>
-				<string>573E63EB269EBA98F3995D2A3AF43FF6</string>
-				<string>C655F5C1C6C0BB0FEDF31BE3B7CF4691</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-TWNetworkManagerExampleTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F12D33B97953DE69EAC4EF0FD3E35FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F2FF4F605257FBB0A7E861C0442A28C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>23A35789280069CE9978CDFBA365FEFE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TWNetworkImageView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24722D98CF9343FA29E6B29BDA7FBA10</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TWNetworkManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2674404816839FFBDEDACE762E537E3E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>852435B697BC68728C7931C24C62A356</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2780B13CEBCB44CA8E95453133E663CE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F2E2518E85C263D8447E02369C4595DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9EB645C612834738B99727720210C23E</string>
-				<string>E39CD1E764776175CB82EEC82A6C9948</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>304A95E50A65A479D117EA86B2A79585</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FD132D81BBBB6B1E28737F97C413F45B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>33A590F7BB648FFE692DBFE745BFA5FB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3765712E79DCCE40A78A43A6918E9B28</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2780B13CEBCB44CA8E95453133E663CE</string>
-				<string>1AA784FF5EC96D78C5AE4A9F086858D8</string>
-				<string>564CF4B55C727B97662317703B0AC2FE</string>
-				<string>E27999CBE16C87FC1D6D4C02F9F9FD5D</string>
-				<string>782A2E7235CA1DE4C5B7CEAE9E57E5A2</string>
-				<string>2674404816839FFBDEDACE762E537E3E</string>
-				<string>0B85B4B46D7ABBD0208909D35B3C6FD8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>376E86EBEBB73203485EC638BA533B42</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImage+Compare.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIImage+Compare.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3797E89C48038811AF6B5D8408F11D5E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DE3B730EA3F3848DD8AA225AF9DF1CEB</string>
-				<string>8D4C451B9F530C21A697B95065CB631C</string>
-				<string>7B5B62CC070EBEA7D5C1CEFAF93F38A5</string>
-				<string>8C3C4E07859F5247E1A7E0D4BBA8D9DE</string>
-				<string>E9B0EB6CBBCDAD3C998B46C710FBCC2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B9D371B9EB9CD124B00D02D61FADC6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D16583510E93B987321E73187C92670</key>
-		<dict>
-			<key>fileRef</key>
-			<string>08AE01BF4B9978A539F63F58E04EBD51</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>420E0FE593007BF6D179B72E0C626B23</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4428BB839D10EBDF2E75E2E6BE7445D1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FD132D81BBBB6B1E28737F97C413F45B</string>
-				<string>7126A9054CA163D161B5EC68B6A41CF0</string>
-				<string>F052172D90EEADCA8FD738BBF4A21C1E</string>
-				<string>AAE59FD746F2D0AC6789847298B0A877</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>499EAF5AB715BBBA9AE39B899AAEB297</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CAF6F966445660157CAE8048E5FBF5E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4AE1E58D2462F3EA0759BBA6B1C2F3BC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TWNetworkManager-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4CA6AB1BE2ADC43BB3C219B8F9099E3B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1A13449B4826D3FBCF55D1D4CAD2369A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E7AE98CD5EC38C84ACEF32BEFB802907</string>
-				<string>532A889D4D4DA58F86B46C2508AB8126</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>0A988DC6506F508F2B23CDBCBFC77F22</string>
-				<string>64FAA3CCA547B88C051017640B5310AD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TWNetworkManagerExampleTests</string>
-			<key>productName</key>
-			<string>Pods-TWNetworkManagerExampleTests</string>
-			<key>productReference</key>
-			<string>038367D72C092B569753EFB997B473F6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>4D69216B03ECEBD5692DEDF6A3F51C1E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B28231B7705FBC1732E12D571315DC69</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>4EAE5E8D421C884235E51FFB8882D8FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Reachability.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4EF8CA5FA77D676290963D7A237DB60F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AAE59FD746F2D0AC6789847298B0A877</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4FD4DA691BA1431C8FED9837EFC0AA5A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TWNetworkRequest.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5161B322B47390E30DAA840157CEA364</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+Diff.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIImage+Diff.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>52963EA280C285D82725F25B9698B33E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIApplication+StrictKeyWindow.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>532A889D4D4DA58F86B46C2508AB8126</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>304A95E50A65A479D117EA86B2A79585</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>53F1F09AE53F045C942AB62A10E70872</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB5F02964CC46B4B48AAAFB3D1A43D92</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>549D507D5181520119A4D3E401A9A10E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FBSnapshotTestCasePlatform.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/FBSnapshotTestCasePlatform.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>564CF4B55C727B97662317703B0AC2FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7F405F85CC578CCBC7B7A6C461DA49EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>573E63EB269EBA98F3995D2A3AF43FF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>599E02DA3F31FDE0EEB5B52BCE971CBD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TWNetworkManager-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C21C4D9502CDB2F718E556CD8AD1D1A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5161B322B47390E30DAA840157CEA364</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5C849F0EE46803F84DDA7EAF6A843995</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>630722DFFA0DC0177E3845B8932AA9E4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Reachability.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64FAA3CCA547B88C051017640B5310AD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TWNetworkManager</string>
-			<key>target</key>
-			<string>F59C3FF6A283C97F75D010D12F3FC354</string>
-			<key>targetProxy</key>
-			<string>89EFF3777113F58722C9B0EABE5C30DC</string>
-		</dict>
-		<key>669018FBC0BA60645F833549E83EBB8B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>12F4B5C6C5EEAC841FE5A1D9FE1A4748</string>
-				<string>7C95D46E34C95D48DA71CEC95896D858</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7040D98BB38DBD24F96921E06EA614E5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>13847922C9CD96E3594734554F5BA34C</string>
-				<string>499EAF5AB715BBBA9AE39B899AAEB297</string>
-				<string>7F5A8AEFF3639972492E007E47A3412F</string>
-				<string>917E1DBB4B70F40CBDB026314BF1006F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7051811863BA1EA7D2F9C5E9B174A9C5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F052172D90EEADCA8FD738BBF4A21C1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7126A9054CA163D161B5EC68B6A41CF0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>74E493DDE84AD96F225E8CFE807FB45A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F289A764C20D91042704E66EE109A1B2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>75768143E7DE0BDF32467FBBD285656B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>782A2E7235CA1DE4C5B7CEAE9E57E5A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>376E86EBEBB73203485EC638BA533B42</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7B5B62CC070EBEA7D5C1CEFAF93F38A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4AE1E58D2462F3EA0759BBA6B1C2F3BC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C95D46E34C95D48DA71CEC95896D858</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D5EA4BAD40FB5EF92636245B50FA50D0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>0B15631CCC061AC6D31926EDBECEC686</string>
-				<string>14B8B9B15ECBE87983FF987239AB2D7B</string>
-				<string>74E493DDE84AD96F225E8CFE807FB45A</string>
-				<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
-				<string>0A6BD3584BCC69EB06FA3C3C10B8D0CF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F405F85CC578CCBC7B7A6C461DA49EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FBSnapshotTestController.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/FBSnapshotTestController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F5A8AEFF3639972492E007E47A3412F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24722D98CF9343FA29E6B29BDA7FBA10</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>80CAB5B88C9FDB2CF529FD0366AC8BD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A5A6FD7C56B2F8972C2FC7ACFA445406</string>
-				<string>1F12D33B97953DE69EAC4EF0FD3E35FA</string>
-				<string>17EAC7526B10345BA467C91C4CD8A156</string>
-				<string>3D16583510E93B987321E73187C92670</string>
-				<string>07001ED068B70EDA431243D48DC9AED1</string>
-				<string>AAE065E5E890B7F36FFD72E5E751CE8D</string>
-				<string>5C21C4D9502CDB2F718E556CD8AD1D1A</string>
-				<string>9C6A1AF6DF36F91FF8419A662E1369C4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8257A624502769C248E74B8C46B3010C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>050E8F1E04B2830D6B9215288AA34C98</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>852435B697BC68728C7931C24C62A356</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImage+Diff.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIImage+Diff.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>853E1DF3C0AE880D3B5309FE2989AA74</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EA9E145794DBC35A18EBB2341246E155</string>
-				<string>D3980DC4B387F28F8F7B1454B04B9BC5</string>
-				<string>4AE1E58D2462F3EA0759BBA6B1C2F3BC</string>
-				<string>599E02DA3F31FDE0EEB5B52BCE971CBD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/TWNetworkManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8885007430DB2B759174454284E8395E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+Compare.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIImage+Compare.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89EFF3777113F58722C9B0EABE5C30DC</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>F59C3FF6A283C97F75D010D12F3FC354</string>
-			<key>remoteInfo</key>
-			<string>TWNetworkManager</string>
-		</dict>
-		<key>89F75027A7807B2BE51539079072D43A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FD132D81BBBB6B1E28737F97C413F45B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8C3C4E07859F5247E1A7E0D4BBA8D9DE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9B1B6E1F0CA11991FE44934B734B3EB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8C626BABFF7A87B929491A0F33C78AE8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D3980DC4B387F28F8F7B1454B04B9BC5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8D4C451B9F530C21A697B95065CB631C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>23A35789280069CE9978CDFBA365FEFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>917E1DBB4B70F40CBDB026314BF1006F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4FD4DA691BA1431C8FED9837EFC0AA5A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>957C4C44C669E31F3B435E1566324EF3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libFBSnapshotTestCase.a</string>
-			<key>path</key>
-			<string>libFBSnapshotTestCase.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>96197C51DE357C16A2D392193931CA35</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B0E47D016C8CDC60D8D9EDE42AC8FA4F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9694ADC1B11EEF9E709BA9B4F7B1719E</string>
-				<string>8257A624502769C248E74B8C46B3010C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>DC89D15EE6C11C42557787B7A79F72E0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>060B3935D09B5F85B4C80099E8332F43</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>9694ADC1B11EEF9E709BA9B4F7B1719E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A9B7DDB2389047E1A6F8D4B68B5A860B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9B1B6E1F0CA11991FE44934B734B3EB0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TWNetworkManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C6A1AF6DF36F91FF8419A662E1369C4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DA1D2672F3A08C2E5D6CDCE01E8EFEFD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D7E1CC4EDDB6A540DAC8B666EF703DF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIApplication+StrictKeyWindow.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EB645C612834738B99727720210C23E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9F5FD0F9ADD2E181099A4C37D5DE2479</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F2E2518E85C263D8447E02369C4595DF</string>
-				<string>F2FF4F605257FBB0A7E861C0442A28C3</string>
-				<string>CB74CA49057F79EA6426D4903D9BF84E</string>
-				<string>549D507D5181520119A4D3E401A9A10E</string>
-				<string>7F405F85CC578CCBC7B7A6C461DA49EE</string>
-				<string>08AE01BF4B9978A539F63F58E04EBD51</string>
-				<string>9D7E1CC4EDDB6A540DAC8B666EF703DF</string>
-				<string>52963EA280C285D82725F25B9698B33E</string>
-				<string>376E86EBEBB73203485EC638BA533B42</string>
-				<string>8885007430DB2B759174454284E8395E</string>
-				<string>852435B697BC68728C7931C24C62A356</string>
-				<string>5161B322B47390E30DAA840157CEA364</string>
-				<string>A358585D62236997DC13062184FEC42B</string>
-				<string>DA1D2672F3A08C2E5D6CDCE01E8EFEFD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Core</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9FD13A2B2AD11D44EF3064772296A54A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D3980DC4B387F28F8F7B1454B04B9BC5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A358585D62236997DC13062184FEC42B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImage+Snapshot.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIImage+Snapshot.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A390B055E8BA39C6E043F51BFFB441DA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>89F75027A7807B2BE51539079072D43A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A45C5FF62910AE30BF72484AC24721AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5A6FD7C56B2F8972C2FC7ACFA445406</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B9D371B9EB9CD124B00D02D61FADC6B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9B7DDB2389047E1A6F8D4B68B5A860B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0B222359AC1153B8B363FE0CCD3F7FC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AAE065E5E890B7F36FFD72E5E751CE8D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8885007430DB2B759174454284E8395E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AAE59FD746F2D0AC6789847298B0A877</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B0E47D016C8CDC60D8D9EDE42AC8FA4F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B371937BAB63743C72A2B6CB54563185</string>
-				<string>4D69216B03ECEBD5692DEDF6A3F51C1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B28231B7705FBC1732E12D571315DC69</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B371937BAB63743C72A2B6CB54563185</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>75768143E7DE0BDF32467FBBD285656B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B39E45763679D970AD45CAC838CA93A3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C655F5C1C6C0BB0FEDF31BE3B7CF4691</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B598D96D07E66478D343D2BC30291756</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>096BDAC7C1B9E10F25BEBBE1C5C20850</string>
-			<key>remoteInfo</key>
-			<string>FBSnapshotTestCase</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>C1ADAF77A8ECEEF17245E13E6EB53CCD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C65792CC61CF888C39FFF0B332411F7F</string>
-				<string>D5EA4BAD40FB5EF92636245B50FA50D0</string>
-				<string>3B9D371B9EB9CD124B00D02D61FADC6B</string>
-				<string>A45C5FF62910AE30BF72484AC24721AA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/FBSnapshotTestCase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C655F5C1C6C0BB0FEDF31BE3B7CF4691</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C65792CC61CF888C39FFF0B332411F7F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CAF6F966445660157CAE8048E5FBF5E1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TWNetworkImageView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB74CA49057F79EA6426D4903D9BF84E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FBSnapshotTestCasePlatform.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/FBSnapshotTestCasePlatform.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCA510CFBEA2D207524CDA0D73C3B561</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>957C4C44C669E31F3B435E1566324EF3</string>
-				<string>060B3935D09B5F85B4C80099E8332F43</string>
-				<string>038367D72C092B569753EFB997B473F6</string>
-				<string>E69E6AE2556B2615BB93F4880D668CA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D3980DC4B387F28F8F7B1454B04B9BC5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>TWNetworkManager-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>096BDAC7C1B9E10F25BEBBE1C5C20850</string>
-				<string>96197C51DE357C16A2D392193931CA35</string>
-				<string>4CA6AB1BE2ADC43BB3C219B8F9099E3B</string>
-				<string>F59C3FF6A283C97F75D010D12F3FC354</string>
-			</array>
-		</dict>
-		<key>D5EA4BAD40FB5EF92636245B50FA50D0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA1D2672F3A08C2E5D6CDCE01E8EFEFD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+Snapshot.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/Categories/UIImage+Snapshot.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DB5F02964CC46B4B48AAAFB3D1A43D92</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TWNetworkManagerExampleTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC89D15EE6C11C42557787B7A79F72E0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TWNetworkManager</string>
-			<key>target</key>
-			<string>F59C3FF6A283C97F75D010D12F3FC354</string>
-			<key>targetProxy</key>
-			<string>FCD0E03D4A2E9AAFBA92311DE6EB7A59</string>
-		</dict>
-		<key>DE3B730EA3F3848DD8AA225AF9DF1CEB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>630722DFFA0DC0177E3845B8932AA9E4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E22BBD5B3E23012C75011C312C9BB47B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FC8741E494517BD5CB4C352D57E95725</string>
-				<string>853E1DF3C0AE880D3B5309FE2989AA74</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TWNetworkManager</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E27999CBE16C87FC1D6D4C02F9F9FD5D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D7E1CC4EDDB6A540DAC8B666EF703DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E39CD1E764776175CB82EEC82A6C9948</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E69E6AE2556B2615BB93F4880D668CA5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libTWNetworkManager.a</string>
-			<key>path</key>
-			<string>libTWNetworkManager.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E74B7EFFF7FE6C9B7C6913A88512F645</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0D31B8B51C6D89DBE20D0F3E319B367C</string>
-				<string>F2391E5E8EEE1898D007A95FECE887E1</string>
-				<string>7051811863BA1EA7D2F9C5E9B174A9C5</string>
-				<string>4EF8CA5FA77D676290963D7A237DB60F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E7AE98CD5EC38C84ACEF32BEFB802907</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>53F1F09AE53F045C942AB62A10E70872</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E9B0EB6CBBCDAD3C998B46C710FBCC2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F4DE1FB93378EC0373123D85CB00B6E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EA9E145794DBC35A18EBB2341246E155</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>TWNetworkManager.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF7E9B4D7153988859953D0FF07044FE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>573E63EB269EBA98F3995D2A3AF43FF6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F052172D90EEADCA8FD738BBF4A21C1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>F2391E5E8EEE1898D007A95FECE887E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7126A9054CA163D161B5EC68B6A41CF0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F289A764C20D91042704E66EE109A1B2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9F5FD0F9ADD2E181099A4C37D5DE2479</string>
-				<string>C1ADAF77A8ECEEF17245E13E6EB53CCD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FBSnapshotTestCase</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F2E2518E85C263D8447E02369C4595DF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FBSnapshotTestCase.h</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/FBSnapshotTestCase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F2FF4F605257FBB0A7E861C0442A28C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FBSnapshotTestCase.m</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase/FBSnapshotTestCase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F4DE1FB93378EC0373123D85CB00B6E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TWNetworkRequest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F59C3FF6A283C97F75D010D12F3FC354</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0A57D5BFB18625B664954096528A615B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3797E89C48038811AF6B5D8408F11D5E</string>
-				<string>A390B055E8BA39C6E043F51BFFB441DA</string>
-				<string>7040D98BB38DBD24F96921E06EA614E5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TWNetworkManager</string>
-			<key>productName</key>
-			<string>TWNetworkManager</string>
-			<key>productReference</key>
-			<string>E69E6AE2556B2615BB93F4880D668CA5</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>FC8741E494517BD5CB4C352D57E95725</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4EAE5E8D421C884235E51FFB8882D8FC</string>
-				<string>630722DFFA0DC0177E3845B8932AA9E4</string>
-				<string>CAF6F966445660157CAE8048E5FBF5E1</string>
-				<string>23A35789280069CE9978CDFBA365FEFE</string>
-				<string>24722D98CF9343FA29E6B29BDA7FBA10</string>
-				<string>9B1B6E1F0CA11991FE44934B734B3EB0</string>
-				<string>4FD4DA691BA1431C8FED9837EFC0AA5A</string>
-				<string>F4DE1FB93378EC0373123D85CB00B6E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FCD0E03D4A2E9AAFBA92311DE6EB7A59</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>F59C3FF6A283C97F75D010D12F3FC354</string>
-			<key>remoteInfo</key>
-			<string>TWNetworkManager</string>
-		</dict>
-		<key>FD132D81BBBB6B1E28737F97C413F45B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>FF1FCF00BC6897CE842FB49F33C861F0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07927F46D3CDAF4352D2F724174EBF29 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308056A0BE5E113F8E7CA1B8A094E79 /* SystemConfiguration.framework */; };
+		1D1897ADE878B33EB02CED2DC8388F36 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E0022EE27C87AC25FC564552376F7097 /* FBSnapshotTestCase.m */; };
+		1DA21D9216D66D24B3622036C53BB036 /* TWNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028641574B9A967939C62814D67A7AE /* TWNetworkRequest.m */; };
+		2AAD55EEDF28B881D3BA60934667D271 /* TWNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 286501775C723EE89FC11F32FCC9627E /* TWNetworkRequest.h */; };
+		2C0C6C3256E79D34678407475D22F0B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */; };
+		2C5EF0A9278F861B7EE1BAB1EB026552 /* TWNetworkManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E5D6E199061580FC4405CB2226DC /* TWNetworkManager-dummy.m */; };
+		346FFF701E6366182E4D199242C9F0C5 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CFFD5F16163C2782109441C0D41F0 /* FBSnapshotTestCase-dummy.m */; };
+		487E16C9CD4953BC2E9CD765357C443C /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E81CFC23818609747B61E060CA3327 /* UIImage+Diff.h */; };
+		4A39FEEEA05197C1543282E3471766B6 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3BEC328CC98F4D576D876BB647FD79 /* FBSnapshotTestCase.h */; };
+		4DD5FFBA58A47276F2F03E5D57B75321 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C1BA0757E269D358624590AB450FDD1 /* FBSnapshotTestController.h */; };
+		5F940F8024976FD836D698EDA5B001DF /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 972D80B14EE3C877E20E31D39AF29AC5 /* FBSnapshotTestCasePlatform.h */; };
+		623ED8AF45564BBE685F65B0D5A12C69 /* Pods-TWNetworkManagerExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EFAB602FC6F22162AD70663AA78EF0 /* Pods-TWNetworkManagerExampleTests-dummy.m */; };
+		729D8A6243B5D17B6A310F6C9E8F6062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DC0D83448DFC8FAE248565A9384C9F /* UIKit.framework */; };
+		74DAA7BB23EB44C4FF97A8F456958B0C /* TWNetworkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E07C7B12CEF1466BA04D7466736EDC /* TWNetworkImageView.m */; };
+		790A9A314B78034E391933F6A5821532 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */; };
+		86499493C0100A322B4A26FEB19D9204 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F112946B0A77481A1FCF98F582018882 /* Reachability.m */; };
+		9080CADFA1D6BA21288834ABC8192215 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB82AE007000448ECBA79A5FF5E322C /* UIImage+Diff.m */; };
+		965C143511992291241F641033D21E7C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CAA17E64534DBBCF7AFD4C14026264 /* FBSnapshotTestController.m */; };
+		99CD2885DD333A65D0ACF7277B8BD570 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9279DF9B6BDEBE08D5CB2EEC2A79F8 /* Reachability-dummy.m */; };
+		9A60A18F576B513278C853333C3FCFCB /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E203691EC17328CA9267FC2A70AFE752 /* Reachability.h */; };
+		9BEC0627905CE13CAF6DD9949CFAAB43 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1AACF2CECDD5D1B837415D096FEA3 /* UIApplication+StrictKeyWindow.m */; };
+		9E813F742A1845BDFBEE37EB9E39A4C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */; };
+		A0EB1E304EA7B65DDDD87C42F2F4C582 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9DAEF2A8E31B42216E221C176D1 /* UIImage+Compare.m */; };
+		B07EA652E12D097C17B8CC6B05BA5052 /* TWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CD984F92928CFFC8C34A8C0A47772C /* TWNetworkManager.m */; };
+		B66F4CF54C6CE718B225FFBF09303042 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 042811C89A39910C2993E34BE7C83104 /* UIImage+Snapshot.h */; };
+		B9E6DC3BA7B3DEB70BBDA5183FCCCBD7 /* TWNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 618B5C818D2C6632B6F92BF2228EB977 /* TWNetworkManager.h */; };
+		C3E295A33819C8DA1016F902EFD18E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */; };
+		C8EE73271DB26270C2DD6A1F746D0046 /* TWNetworkImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9CD4279502577B5A5064C00BDF1064 /* TWNetworkImageView.h */; };
+		CB5E0DAC11D46B3A221AA095385A0A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */; };
+		DCF74BABC9484EB5FFFEFEF89FCA1821 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEAFFF835758B236735B55CC1D2278D /* UIImage+Compare.h */; };
+		DE78EBB7DFACBF0C23727C1B063CD824 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797EA6C9ED71ED2E161D494DF4E1FC5F /* QuartzCore.framework */; };
+		E310104FCF5837BA62B63F4573373452 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 42345A00ED62E36F69BFA5984A2E9276 /* FBSnapshotTestCasePlatform.m */; };
+		E66BCA07BDE67C2149371A5A6054F5E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308056A0BE5E113F8E7CA1B8A094E79 /* SystemConfiguration.framework */; };
+		EFD8DDF06D972B18EB7CAAE3C34FD3FC /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8C433424464CA1E67D7B744EA211F /* Pods-dummy.m */; };
+		F2C3A41E790EE01404F3623771F76210 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0555C1A9C1CE73A825343775A1B617E2 /* UIImage+Snapshot.m */; };
+		F314E82EB5D98475D2FB15AAC243C173 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BEB2803B1C3640A561E0D06D2B079F /* XCTest.framework */; };
+		FFCD4A01859225626BB32B5CD98D801E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3164329FDD0572595A75001342C15CFB /* UIApplication+StrictKeyWindow.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02F072D223AFB3D9739ED66D7DE7D733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C5B0D4971E7B0FFA82766C7397C43F7;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		09E994782B1D3374797768D204B5FCBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71374DA1341E70D50CB94187A099B02B;
+			remoteInfo = Reachability;
+		};
+		21C1CF1FD7342E6171E46557276346EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71374DA1341E70D50CB94187A099B02B;
+			remoteInfo = Reachability;
+		};
+		2E03F267A66ECFD824C517E5B5280EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71374DA1341E70D50CB94187A099B02B;
+			remoteInfo = Reachability;
+		};
+		6E650A0905CBAD9EB7F3EAC3F76F9D3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60128F056D010BCC29C6F0902AE80CE1;
+			remoteInfo = TWNetworkManager;
+		};
+		A9ECB46BEB37145F6186AF8B24851123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60128F056D010BCC29C6F0902AE80CE1;
+			remoteInfo = TWNetworkManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CAA17E64534DBBCF7AFD4C14026264 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		042811C89A39910C2993E34BE7C83104 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		0555C1A9C1CE73A825343775A1B617E2 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		0990B5BC6E3AC6833BD2B49A1432447D /* TWNetworkManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TWNetworkManager-Private.xcconfig"; sourceTree = "<group>"; };
+		0EDA9D2BD529CAA2C4FDE907C0C2ED09 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		15F1271414F6DC6A80CA56CF2041FAB0 /* Pods-TWNetworkManagerExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TWNetworkManagerExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BE4A98BD405EA5281F6E54CCC2A581D /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
+		1D9CDDE5FC5D0391CF5A1337380A12A9 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		286501775C723EE89FC11F32FCC9627E /* TWNetworkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkRequest.h; sourceTree = "<group>"; };
+		2FE1AACF2CECDD5D1B837415D096FEA3 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		3164329FDD0572595A75001342C15CFB /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		33A590F7BB648FFE692DBFE745BFA5FB /* Pods-TWNetworkManagerExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TWNetworkManagerExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41E07C7B12CEF1466BA04D7466736EDC /* TWNetworkImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkImageView.m; sourceTree = "<group>"; };
+		420E0FE593007BF6D179B72E0C626B23 /* Pods-TWNetworkManagerExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TWNetworkManagerExampleTests-resources.sh"; sourceTree = "<group>"; };
+		42345A00ED62E36F69BFA5984A2E9276 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		42473EEB5A0B92E8332169D7F4921E42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		427D3EB9B575F41626AF465D467E6C06 /* FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
+		44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4CEAFFF835758B236735B55CC1D2278D /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		4E9CD4279502577B5A5064C00BDF1064 /* TWNetworkImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkImageView.h; sourceTree = "<group>"; };
+		57D595CDC463357B33F29077CE205303 /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
+		599E02DA3F31FDE0EEB5B52BCE971CBD /* TWNetworkManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TWNetworkManager-prefix.pch"; sourceTree = "<group>"; };
+		5C849F0EE46803F84DDA7EAF6A843995 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		5F9279DF9B6BDEBE08D5CB2EEC2A79F8 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
+		60EFAB602FC6F22162AD70663AA78EF0 /* Pods-TWNetworkManagerExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TWNetworkManagerExampleTests-dummy.m"; sourceTree = "<group>"; };
+		618B5C818D2C6632B6F92BF2228EB977 /* TWNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkManager.h; sourceTree = "<group>"; };
+		6C1BA0757E269D358624590AB450FDD1 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		77A2273474A7E834AA0D40D1EE28CAF6 /* libPods-TWNetworkManagerExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TWNetworkManagerExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797EA6C9ED71ED2E161D494DF4E1FC5F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7A406DE619B9B94F511B9FB38376E463 /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FC900AAA301B78936A332DCE3A0CCF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F47AC6A07A7C871DFC07499FDDD173 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FB337100B908E615B1EA9B5B9008CA4 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		9028641574B9A967939C62814D67A7AE /* TWNetworkRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkRequest.m; sourceTree = "<group>"; };
+		91E81CFC23818609747B61E060CA3327 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		9308056A0BE5E113F8E7CA1B8A094E79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		972D80B14EE3C877E20E31D39AF29AC5 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		99B3A9DAEF2A8E31B42216E221C176D1 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		9D6CFFD5F16163C2782109441C0D41F0 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		A2C6E5D6E199061580FC4405CB2226DC /* TWNetworkManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TWNetworkManager-dummy.m"; sourceTree = "<group>"; };
+		A2CD984F92928CFFC8C34A8C0A47772C /* TWNetworkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkManager.m; sourceTree = "<group>"; };
+		ACB82AE007000448ECBA79A5FF5E322C /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		B2BEB2803B1C3640A561E0D06D2B079F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE99120E0EC20FFB15FD6D362D126A6D /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3BEC328CC98F4D576D876BB647FD79 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		DB69E1428A90F7FB34CC32DCEABED47F /* libTWNetworkManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTWNetworkManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0022EE27C87AC25FC564552376F7097 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		E203691EC17328CA9267FC2A70AFE752 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E5DC0D83448DFC8FAE248565A9384C9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E67991E82AB70C67CFD0910BE7283E31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E9F27C3693074BC92294BD247774D0B5 /* Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reachability-Private.xcconfig"; sourceTree = "<group>"; };
+		EA9E145794DBC35A18EBB2341246E155 /* TWNetworkManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWNetworkManager.xcconfig; sourceTree = "<group>"; };
+		EF487195C710C36018784FB5CA51D245 /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0C8C433424464CA1E67D7B744EA211F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F112946B0A77481A1FCF98F582018882 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FF1FCF00BC6897CE842FB49F33C861F0 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20217EF763D0ADEBA96B8EDB0259E197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E813F742A1845BDFBEE37EB9E39A4C5 /* Foundation.framework in Frameworks */,
+				E66BCA07BDE67C2149371A5A6054F5E9 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D1439706FF5B001813DF1E9F536D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5E0DAC11D46B3A221AA095385A0A33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CA7E67419FE682DE9BFFE7B4FA3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0C6C3256E79D34678407475D22F0B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06C643815746F1DA1A7872445C7CC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790A9A314B78034E391933F6A5821532 /* Foundation.framework in Frameworks */,
+				DE78EBB7DFACBF0C23727C1B063CD824 /* QuartzCore.framework in Frameworks */,
+				729D8A6243B5D17B6A310F6C9E8F6062 /* UIKit.framework in Frameworks */,
+				F314E82EB5D98475D2FB15AAC243C173 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6741D9C68436851BE10D7F3FB4645D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E295A33819C8DA1016F902EFD18E0A /* Foundation.framework in Frameworks */,
+				07927F46D3CDAF4352D2F724174EBF29 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060C0D299655F33F5CE830D5DBE49005 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF1FCF00BC6897CE842FB49F33C861F0 /* Pods-acknowledgements.markdown */,
+				0EDA9D2BD529CAA2C4FDE907C0C2ED09 /* Pods-acknowledgements.plist */,
+				F0C8C433424464CA1E67D7B744EA211F /* Pods-dummy.m */,
+				5C849F0EE46803F84DDA7EAF6A843995 /* Pods-resources.sh */,
+				E67991E82AB70C67CFD0910BE7283E31 /* Pods.debug.xcconfig */,
+				42473EEB5A0B92E8332169D7F4921E42 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		0A6BD3584BCC69EB06FA3C3C10B8D0CF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				060C0D299655F33F5CE830D5DBE49005 /* Pods */,
+				1D9A62BBA8CEE6A8648A994FBBE7D944 /* Pods-TWNetworkManagerExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0B15631CCC061AC6D31926EDBECEC686 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E22BBD5B3E23012C75011C312C9BB47B /* TWNetworkManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1D9A62BBA8CEE6A8648A994FBBE7D944 /* Pods-TWNetworkManagerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				33A590F7BB648FFE692DBFE745BFA5FB /* Pods-TWNetworkManagerExampleTests-acknowledgements.markdown */,
+				15F1271414F6DC6A80CA56CF2041FAB0 /* Pods-TWNetworkManagerExampleTests-acknowledgements.plist */,
+				60EFAB602FC6F22162AD70663AA78EF0 /* Pods-TWNetworkManagerExampleTests-dummy.m */,
+				420E0FE593007BF6D179B72E0C626B23 /* Pods-TWNetworkManagerExampleTests-resources.sh */,
+				EF487195C710C36018784FB5CA51D245 /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */,
+				86F47AC6A07A7C871DFC07499FDDD173 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */,
+			);
+			name = "Pods-TWNetworkManagerExampleTests";
+			path = "Target Support Files/Pods-TWNetworkManagerExampleTests";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C71F92B984C960CC9E62955E773B335 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C71F92B984C960CC9E62955E773B335 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				44298587F16B36FA9C6F491EB5CAB7E0 /* Foundation.framework */,
+				797EA6C9ED71ED2E161D494DF4E1FC5F /* QuartzCore.framework */,
+				9308056A0BE5E113F8E7CA1B8A094E79 /* SystemConfiguration.framework */,
+				E5DC0D83448DFC8FAE248565A9384C9F /* UIKit.framework */,
+				B2BEB2803B1C3640A561E0D06D2B079F /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6091137E3794A3D7EB53D3124BDB5DF2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E203691EC17328CA9267FC2A70AFE752 /* Reachability.h */,
+				F112946B0A77481A1FCF98F582018882 /* Reachability.m */,
+				CFA5FA187280E06DCD97E91D541E5689 /* Support Files */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		7CE3A739DE5F06C01D67A7DD8FDF2DA8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DB3BEC328CC98F4D576D876BB647FD79 /* FBSnapshotTestCase.h */,
+				E0022EE27C87AC25FC564552376F7097 /* FBSnapshotTestCase.m */,
+				972D80B14EE3C877E20E31D39AF29AC5 /* FBSnapshotTestCasePlatform.h */,
+				42345A00ED62E36F69BFA5984A2E9276 /* FBSnapshotTestCasePlatform.m */,
+				6C1BA0757E269D358624590AB450FDD1 /* FBSnapshotTestController.h */,
+				00CAA17E64534DBBCF7AFD4C14026264 /* FBSnapshotTestController.m */,
+				3164329FDD0572595A75001342C15CFB /* UIApplication+StrictKeyWindow.h */,
+				2FE1AACF2CECDD5D1B837415D096FEA3 /* UIApplication+StrictKeyWindow.m */,
+				4CEAFFF835758B236735B55CC1D2278D /* UIImage+Compare.h */,
+				99B3A9DAEF2A8E31B42216E221C176D1 /* UIImage+Compare.m */,
+				91E81CFC23818609747B61E060CA3327 /* UIImage+Diff.h */,
+				ACB82AE007000448ECBA79A5FF5E322C /* UIImage+Diff.m */,
+				042811C89A39910C2993E34BE7C83104 /* UIImage+Snapshot.h */,
+				0555C1A9C1CE73A825343775A1B617E2 /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				0B15631CCC061AC6D31926EDBECEC686 /* Development Pods */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				E525B2E28C5564D728E2E524E5E84210 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				0A6BD3584BCC69EB06FA3C3C10B8D0CF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80A16841158F2B8C48C941B3D2720314 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				7CE3A739DE5F06C01D67A7DD8FDF2DA8 /* Core */,
+				D6AF84A9C07BA73FCD31699DF203231D /* Support Files */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		853E1DF3C0AE880D3B5309FE2989AA74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E145794DBC35A18EBB2341246E155 /* TWNetworkManager.xcconfig */,
+				0990B5BC6E3AC6833BD2B49A1432447D /* TWNetworkManager-Private.xcconfig */,
+				A2C6E5D6E199061580FC4405CB2226DC /* TWNetworkManager-dummy.m */,
+				599E02DA3F31FDE0EEB5B52BCE971CBD /* TWNetworkManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TWNetworkManager";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A406DE619B9B94F511B9FB38376E463 /* libFBSnapshotTestCase.a */,
+				80FC900AAA301B78936A332DCE3A0CCF /* libPods.a */,
+				77A2273474A7E834AA0D40D1EE28CAF6 /* libPods-TWNetworkManagerExampleTests.a */,
+				BE99120E0EC20FFB15FD6D362D126A6D /* libReachability.a */,
+				DB69E1428A90F7FB34CC32DCEABED47F /* libTWNetworkManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFA5FA187280E06DCD97E91D541E5689 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57D595CDC463357B33F29077CE205303 /* Reachability.xcconfig */,
+				E9F27C3693074BC92294BD247774D0B5 /* Reachability-Private.xcconfig */,
+				5F9279DF9B6BDEBE08D5CB2EEC2A79F8 /* Reachability-dummy.m */,
+				1BE4A98BD405EA5281F6E54CCC2A581D /* Reachability-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reachability";
+			sourceTree = "<group>";
+		};
+		D6AF84A9C07BA73FCD31699DF203231D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D9CDDE5FC5D0391CF5A1337380A12A9 /* FBSnapshotTestCase.xcconfig */,
+				427D3EB9B575F41626AF465D467E6C06 /* FBSnapshotTestCase-Private.xcconfig */,
+				9D6CFFD5F16163C2782109441C0D41F0 /* FBSnapshotTestCase-dummy.m */,
+				8FB337100B908E615B1EA9B5B9008CA4 /* FBSnapshotTestCase-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		E22BBD5B3E23012C75011C312C9BB47B /* TWNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FC8741E494517BD5CB4C352D57E95725 /* Classes */,
+				853E1DF3C0AE880D3B5309FE2989AA74 /* Support Files */,
+			);
+			name = TWNetworkManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E525B2E28C5564D728E2E524E5E84210 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80A16841158F2B8C48C941B3D2720314 /* FBSnapshotTestCase */,
+				6091137E3794A3D7EB53D3124BDB5DF2 /* Reachability */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC8741E494517BD5CB4C352D57E95725 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4E9CD4279502577B5A5064C00BDF1064 /* TWNetworkImageView.h */,
+				41E07C7B12CEF1466BA04D7466736EDC /* TWNetworkImageView.m */,
+				618B5C818D2C6632B6F92BF2228EB977 /* TWNetworkManager.h */,
+				A2CD984F92928CFFC8C34A8C0A47772C /* TWNetworkManager.m */,
+				286501775C723EE89FC11F32FCC9627E /* TWNetworkRequest.h */,
+				9028641574B9A967939C62814D67A7AE /* TWNetworkRequest.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24DED4F7EDE8561ACBF525988B6CA27E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A60A18F576B513278C853333C3FCFCB /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5ED3E47BB21F18DF52334A3AAFE515 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EE73271DB26270C2DD6A1F746D0046 /* TWNetworkImageView.h in Headers */,
+				B9E6DC3BA7B3DEB70BBDA5183FCCCBD7 /* TWNetworkManager.h in Headers */,
+				2AAD55EEDF28B881D3BA60934667D271 /* TWNetworkRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF2BD98D26F50585ADA45B8D0AFCECE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39FEEEA05197C1543282E3471766B6 /* FBSnapshotTestCase.h in Headers */,
+				5F940F8024976FD836D698EDA5B001DF /* FBSnapshotTestCasePlatform.h in Headers */,
+				4DD5FFBA58A47276F2F03E5D57B75321 /* FBSnapshotTestController.h in Headers */,
+				FFCD4A01859225626BB32B5CD98D801E /* UIApplication+StrictKeyWindow.h in Headers */,
+				DCF74BABC9484EB5FFFEFEF89FCA1821 /* UIImage+Compare.h in Headers */,
+				487E16C9CD4953BC2E9CD765357C443C /* UIImage+Diff.h in Headers */,
+				B66F4CF54C6CE718B225FFBF09303042 /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		215ADBC92D444AFE9D76A470D05F69E7 /* Pods-TWNetworkManagerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 588A8B3C85833C12F807C1D4B1280B1C /* Build configuration list for PBXNativeTarget "Pods-TWNetworkManagerExampleTests" */;
+			buildPhases = (
+				B2416CC449B610EB0F498E3A03CA2214 /* Sources */,
+				85D1439706FF5B001813DF1E9F536D0F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01754B6D946586945879182D1637D34A /* PBXTargetDependency */,
+				8B6677057B42920725AE4F444ED8F1EE /* PBXTargetDependency */,
+				1B7C7B5E8A5E3784861BD1BD00710670 /* PBXTargetDependency */,
+			);
+			name = "Pods-TWNetworkManagerExampleTests";
+			productName = "Pods-TWNetworkManagerExampleTests";
+			productReference = 77A2273474A7E834AA0D40D1EE28CAF6 /* libPods-TWNetworkManagerExampleTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		60128F056D010BCC29C6F0902AE80CE1 /* TWNetworkManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952264A3D47C87B891073A5EB4CD0142 /* Build configuration list for PBXNativeTarget "TWNetworkManager" */;
+			buildPhases = (
+				243DAF83855E058E78BEF26E26CE3DDC /* Sources */,
+				20217EF763D0ADEBA96B8EDB0259E197 /* Frameworks */,
+				BF5ED3E47BB21F18DF52334A3AAFE515 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C20174795A9FF50B718B73A54975CF5 /* PBXTargetDependency */,
+			);
+			name = TWNetworkManager;
+			productName = TWNetworkManager;
+			productReference = DB69E1428A90F7FB34CC32DCEABED47F /* libTWNetworkManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		71374DA1341E70D50CB94187A099B02B /* Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A26B621C6DB6383D3BEB97977EDDE0 /* Build configuration list for PBXNativeTarget "Reachability" */;
+			buildPhases = (
+				31216605875B12D718957E3893A6FE7E /* Sources */,
+				EE6741D9C68436851BE10D7F3FB4645D /* Frameworks */,
+				24DED4F7EDE8561ACBF525988B6CA27E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reachability;
+			productName = Reachability;
+			productReference = BE99120E0EC20FFB15FD6D362D126A6D /* libReachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		790EC993358F047B2515A970693E4CFA /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05662B8734BDDB1BD439570FB47E99F6 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				ABD2492A9F0FF466EFF09AFD7D22C23A /* Sources */,
+				A9CA7E67419FE682DE9BFFE7B4FA3FBE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F198EF9FC0DBBAD47F3847614A04CD4 /* PBXTargetDependency */,
+				D022530FCE110171A50923389845C388 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 80FC900AAA301B78936A332DCE3A0CCF /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9C5B0D4971E7B0FFA82766C7397C43F7 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230D287CBFCAAA20DC203F194A5CA3F4 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				54D6C7A2490394BB1E462BCF4A637A18 /* Sources */,
+				D06C643815746F1DA1A7872445C7CC1F /* Frameworks */,
+				CEF2BD98D26F50585ADA45B8D0AFCECE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 7A406DE619B9B94F511B9FB38376E463 /* libFBSnapshotTestCase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C5B0D4971E7B0FFA82766C7397C43F7 /* FBSnapshotTestCase */,
+				790EC993358F047B2515A970693E4CFA /* Pods */,
+				215ADBC92D444AFE9D76A470D05F69E7 /* Pods-TWNetworkManagerExampleTests */,
+				71374DA1341E70D50CB94187A099B02B /* Reachability */,
+				60128F056D010BCC29C6F0902AE80CE1 /* TWNetworkManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		243DAF83855E058E78BEF26E26CE3DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DAA7BB23EB44C4FF97A8F456958B0C /* TWNetworkImageView.m in Sources */,
+				2C5EF0A9278F861B7EE1BAB1EB026552 /* TWNetworkManager-dummy.m in Sources */,
+				B07EA652E12D097C17B8CC6B05BA5052 /* TWNetworkManager.m in Sources */,
+				1DA21D9216D66D24B3622036C53BB036 /* TWNetworkRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31216605875B12D718957E3893A6FE7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CD2885DD333A65D0ACF7277B8BD570 /* Reachability-dummy.m in Sources */,
+				86499493C0100A322B4A26FEB19D9204 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D6C7A2490394BB1E462BCF4A637A18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346FFF701E6366182E4D199242C9F0C5 /* FBSnapshotTestCase-dummy.m in Sources */,
+				1D1897ADE878B33EB02CED2DC8388F36 /* FBSnapshotTestCase.m in Sources */,
+				E310104FCF5837BA62B63F4573373452 /* FBSnapshotTestCasePlatform.m in Sources */,
+				965C143511992291241F641033D21E7C /* FBSnapshotTestController.m in Sources */,
+				9BEC0627905CE13CAF6DD9949CFAAB43 /* UIApplication+StrictKeyWindow.m in Sources */,
+				A0EB1E304EA7B65DDDD87C42F2F4C582 /* UIImage+Compare.m in Sources */,
+				9080CADFA1D6BA21288834ABC8192215 /* UIImage+Diff.m in Sources */,
+				F2C3A41E790EE01404F3623771F76210 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD2492A9F0FF466EFF09AFD7D22C23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD8DDF06D972B18EB7CAAE3C34FD3FC /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2416CC449B610EB0F498E3A03CA2214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623ED8AF45564BBE685F65B0D5A12C69 /* Pods-TWNetworkManagerExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01754B6D946586945879182D1637D34A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 9C5B0D4971E7B0FFA82766C7397C43F7 /* FBSnapshotTestCase */;
+			targetProxy = 02F072D223AFB3D9739ED66D7DE7D733 /* PBXContainerItemProxy */;
+		};
+		0F198EF9FC0DBBAD47F3847614A04CD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 71374DA1341E70D50CB94187A099B02B /* Reachability */;
+			targetProxy = 09E994782B1D3374797768D204B5FCBA /* PBXContainerItemProxy */;
+		};
+		1B7C7B5E8A5E3784861BD1BD00710670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TWNetworkManager;
+			target = 60128F056D010BCC29C6F0902AE80CE1 /* TWNetworkManager */;
+			targetProxy = 6E650A0905CBAD9EB7F3EAC3F76F9D3B /* PBXContainerItemProxy */;
+		};
+		8B6677057B42920725AE4F444ED8F1EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 71374DA1341E70D50CB94187A099B02B /* Reachability */;
+			targetProxy = 2E03F267A66ECFD824C517E5B5280EA4 /* PBXContainerItemProxy */;
+		};
+		9C20174795A9FF50B718B73A54975CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 71374DA1341E70D50CB94187A099B02B /* Reachability */;
+			targetProxy = 21C1CF1FD7342E6171E46557276346EB /* PBXContainerItemProxy */;
+		};
+		D022530FCE110171A50923389845C388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TWNetworkManager;
+			target = 60128F056D010BCC29C6F0902AE80CE1 /* TWNetworkManager */;
+			targetProxy = A9ECB46BEB37145F6186AF8B24851123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0690E7370E9D70ECAA5B727A78EC22F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427D3EB9B575F41626AF465D467E6C06 /* FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3693F20C6CF93C20752621C2FD601C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF487195C710C36018784FB5CA51D245 /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C3A7DC62DCDFB343B983848EEB1B245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F47AC6A07A7C871DFC07499FDDD173 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		61FABF89BBE339CA19EF7FC45BB07226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0990B5BC6E3AC6833BD2B49A1432447D /* TWNetworkManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		670081B3307397AA4764B9FAC7DCF312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67991E82AB70C67CFD0910BE7283E31 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EB645C612834738B99727720210C23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DB396EF3E3AEBD3ADF5E559C3E10AFBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427D3EB9B575F41626AF465D467E6C06 /* FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E48B1679B4F5ADE85D88F4117E58732D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F27C3693074BC92294BD247774D0B5 /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E8FF8809D10A4291D98E9A23EFCF664F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42473EEB5A0B92E8332169D7F4921E42 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E9EEC3E90599EB228495217E7DAAB894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0990B5BC6E3AC6833BD2B49A1432447D /* TWNetworkManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TWNetworkManager/TWNetworkManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F678F4D5E5CE378CC4985605AEE2533A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F27C3693074BC92294BD247774D0B5 /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05662B8734BDDB1BD439570FB47E99F6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670081B3307397AA4764B9FAC7DCF312 /* Debug */,
+				E8FF8809D10A4291D98E9A23EFCF664F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230D287CBFCAAA20DC203F194A5CA3F4 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0690E7370E9D70ECAA5B727A78EC22F1 /* Debug */,
+				DB396EF3E3AEBD3ADF5E559C3E10AFBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB645C612834738B99727720210C23E /* Debug */,
+				E39CD1E764776175CB82EEC82A6C9948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		588A8B3C85833C12F807C1D4B1280B1C /* Build configuration list for PBXNativeTarget "Pods-TWNetworkManagerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3693F20C6CF93C20752621C2FD601C33 /* Debug */,
+				4C3A7DC62DCDFB343B983848EEB1B245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952264A3D47C87B891073A5EB4CD0142 /* Build configuration list for PBXNativeTarget "TWNetworkManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61FABF89BBE339CA19EF7FC45BB07226 /* Debug */,
+				E9EEC3E90599EB228495217E7DAAB894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A26B621C6DB6383D3BEB97977EDDE0 /* Build configuration list for PBXNativeTarget "Reachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F678F4D5E5CE378CC4985605AEE2533A /* Debug */,
+				E48B1679B4F5ADE85D88F4117E58732D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

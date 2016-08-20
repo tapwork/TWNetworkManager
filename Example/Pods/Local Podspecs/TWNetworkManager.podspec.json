@@ -20,5 +20,11 @@
     "ios": "7.0"
   },
   "source_files": "Classes/**.{h,m}",
-  "requires_arc": true
+  "requires_arc": true,
+  "frameworks": "SystemConfiguration",
+  "dependencies": {
+    "Reachability": [
+      "~> 3.0"
+    ]
+  }
 }

@@ -9,8 +9,8 @@
 @import UIKit;
 @import Foundation;
 #include <sys/xattr.h>
-#import <Reachability.h>
-#import <TWNetworkRequest.h>
+#import <Reachability/Reachability.h>
+#import "TWNetworkRequest.h"
 
 @interface TWNetworkManager : NSObject
 

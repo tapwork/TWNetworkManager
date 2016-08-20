@@ -6,7 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
     TWNetworkHTTPMethodGET = 0,

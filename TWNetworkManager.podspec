@@ -14,4 +14,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.source_files = 'Classes/**.{h,m}'
   s.requires_arc = true
+  s.framework    = 'SystemConfiguration'
+  s.dependency 'Reachability', '~> 3.0' 
 end
