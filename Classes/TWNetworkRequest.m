@@ -99,7 +99,7 @@
     }
 
     NSData *authData = [authStr dataUsingEncoding:NSASCIIStringEncoding];
-    NSString *authValue = [authData base64Encoding];
+    NSString *authValue = [authData base64EncodedStringWithOptions:0];
 
     return authValue;
 }
