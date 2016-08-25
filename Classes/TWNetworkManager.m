@@ -294,17 +294,17 @@ static void TWEndNetworkActivity()
 
 #pragma mark - Private
 
-- (void)canUseCacheForRequest:(TWNetworkRequest *)request
+- (void)canUseCacheForRequest:(TWNetworkRequest *)networkRequest
                 completion:(void(^)(BOOL canUseCache))completion
 {
-    NSParameterAssert(request.URL);
+    NSParameterAssert(networkRequest.URL);
     NSParameterAssert(completion);
-    NSURL *url = request.URL;
+    NSURL *url = networkRequest.URL;
     NSString *cachedFile = [self cachedFilePathForURL:url];
     NSString *eTag = [self eTagAtCachedFilepath:cachedFile];
     NSString *lastModified = [self lastModifiedAtCachedFilepath:cachedFile];
     
-    if (!request.useCache) {
+    if (!networkRequest.useCache) {
         completion(NO);
     } else if (![self isNetworkReachable] && [self hasCachedFileForURL:url]) {
         completion(YES);
@@ -322,7 +322,6 @@ static void TWEndNetworkActivity()
             [request setValue:lastModified forHTTPHeaderField:@"If-Modified-Since"];
         }
         [request setHTTPMethod:@"HEAD"];
-        __weak __typeof(self) weakself = self;
         NSURLSession *session = self.urlSession;
         [[session dataTaskWithRequest:request
                     completionHandler:^(NSData *data,
@@ -338,7 +337,7 @@ static void TWEndNetworkActivity()
                             } else if (statusCode == 301) { // Moved Permanently HTTP Forward
                                 NSURL *forwardURL = [NSURL URLWithString:header[@"Location"]];
                                 request.URL = forwardURL;
-                                [self canUseCacheForRequest:request completion:completion];
+                                [self canUseCacheForRequest:networkRequest completion:completion];
                             } else if (statusCode == 200) {
                                 completion(NO);
                             } else if (statusCode > 400 && [self hasCachedFileForURL:url]) {
