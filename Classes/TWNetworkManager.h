@@ -8,10 +8,13 @@
 
 @import UIKit;
 @import Foundation;
+
 #include <sys/xattr.h>
 #import "TWNetworkRequest.h"
 #import "TWNetworkResponse.h"
 #import <Reachability/Reachability.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface TWNetworkManager : NSObject
 
