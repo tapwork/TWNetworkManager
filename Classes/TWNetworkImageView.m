@@ -46,8 +46,8 @@ static const double kFadeInTime = 0.25;
             if ([_URL isEqual:URL]) {
                 if (image && URL) {
                     [self.imageCache setObject:image forKey:URL];
-                    [weakSelf setImage:image animated:animated];
                 }
+                [weakSelf setImage:image animated:animated];
             }
         }];
     }
