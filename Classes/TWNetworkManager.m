@@ -9,6 +9,8 @@
 #import "TWNetworkManager.h"
 #import <CommonCrypto/CommonHMAC.h>
 
+typedef void(^downloadCompletion)(NSData *data, NSURLResponse *response, NSError *error, NSString *cacheFilePath);
+
 // Make the response writeable
 @interface TWNetworkResponse (Private)
 @property (nonatomic) NSData *data;
@@ -29,17 +31,16 @@ static const double kETagValidationTimeout = 1.0;
 static NSCache *kImageCache = nil;
 static dispatch_queue_t kDownloadGCDQueue = nil;
 
-@interface TWNetworkManager ()
+@interface TWNetworkManager () <NSURLSessionDataDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
 
 @property (nonatomic, readonly) NSURLSession *urlSession;
-@property (nonatomic, readonly) NSSet *runningURLRequests;
-
+@property (nonatomic) NSMutableDictionary *URLCompletionBlocks;
+@property (nonatomic) NSMutableDictionary *URLProgressBlocks;
 @end
 
 @implementation TWNetworkManager
 {
     NSURLSession *_urlSession;
-    NSSet *_runningURLRequests;
 }
 
 static NSUInteger networkFetchingCount = 0;
@@ -84,13 +85,21 @@ static void TWEndNetworkActivity()
         if (!kDownloadGCDQueue) {
             kDownloadGCDQueue = dispatch_queue_create("net.tapwork.download_gcd_queue", DISPATCH_QUEUE_CONCURRENT);
         }
+        self.URLCompletionBlocks = [NSMutableDictionary dictionary];
+        self.URLProgressBlocks = [NSMutableDictionary dictionary];
     }
     return self;
 }
 
 #pragma mark - Public methods
-
 - (void)request:(TWNetworkRequest *)request completion:(void(^)(TWNetworkResponse *response))completion
+{
+    [self request:request completion:completion progress:nil];
+}
+
+- (void)request:(TWNetworkRequest *)request
+     completion:(void(^)(TWNetworkResponse *response))completion
+       progress:(void(^)(float progress))progressBlock
 {
     NSParameterAssert(request);
     NSParameterAssert(request.URL);
@@ -124,12 +133,13 @@ static void TWEndNetworkActivity()
                                                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                                                     timeoutInterval:kDownloadTimeout];
                                  [URLrequest setHTTPMethod:request.HTTPMethod];
-                                 [self sendRequest:request completion:^(NSData *data,
-                                                                        NSURLResponse *URLResponse,
-                                                                        NSError *error,
-                                                                        NSString* cacheFilePath) {
-                                     
-                                     TWNetworkResponse *response = [TWNetworkResponse new];
+                                 [self sendRequest:request
+                                        completion:^(NSData *data,
+                                                     NSURLResponse *URLResponse,
+                                                     NSError *error,
+                                                     NSString* cacheFilePath) {
+
+                                            TWNetworkResponse *response = [TWNetworkResponse new];
                                      response.requestURL = request.URL;
                                      response.data = data;
                                      response.error = error;
@@ -138,7 +148,7 @@ static void TWEndNetworkActivity()
                                      dispatch_async(dispatch_get_main_queue(), ^{
                                          completion(response);
                                      });
-                                 }];
+                                 } progress:progressBlock];
                              }
                          }];
 }
@@ -197,7 +207,6 @@ static void TWEndNetworkActivity()
 {
     [_urlSession invalidateAndCancel];
     _urlSession = nil;
-    _runningURLRequests = nil;
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
@@ -238,15 +247,15 @@ static void TWEndNetworkActivity()
     return [fileManager removeItemAtPath:cachePath error:&error];
 }
 
-- (BOOL)isProcessingURL:(NSURL*)url
+- (BOOL)isProcessingURL:(NSURL*)URL
 {
-    return ([self.runningURLRequests containsObject:url]);
+    return (self.URLCompletionBlocks[URL] != nil);
 }
 
-- (BOOL)hasCachedFileForURL:(NSURL*)url
+- (BOOL)hasCachedFileForURL:(NSURL*)URL
 {
     NSFileManager *fileManager = [[NSFileManager alloc] init];
-    return [fileManager fileExistsAtPath:[self cachedFilePathForURL:url]];
+    return [fileManager fileExistsAtPath:[self cachedFilePathForURL:URL]];
 }
 
 - (NSString *)cachedFilePathForURL:(NSURL*)url
@@ -354,94 +363,39 @@ static void TWEndNetworkActivity()
 }
 
 - (void)sendRequest:(TWNetworkRequest *)request
-         completion:(void(^)(NSData *data,
-                             NSURLResponse *response,
-                             NSError *error,
-                             NSString *cacheFilePath))completion
+         completion:(downloadCompletion)completion
+           progress:(void(^)(float progress))progressBlock
 {
     NSParameterAssert(request);
     NSParameterAssert(request.URL);
-    
-    NSURL *url = request.URL;
-    NSURLRequest *URLrequest = request.URLRequest;
-    TWBeginNetworkActivity();
-    [self addRequestedURL:url];
-    NSURLSession *session = self.urlSession;
-    [[session dataTaskWithRequest:URLrequest
-                completionHandler:^(NSData *data,
-                                    NSURLResponse *response,
-                                    NSError *connectionError) {
-                    
-                    TWEndNetworkActivity();
-                    
-                    NSError *resError = connectionError;
-                    NSInteger statusCode = 0;
-                    if ([response respondsToSelector:@selector(statusCode)]) {
-                        statusCode = [(NSHTTPURLResponse*)response statusCode];
-                    }
-                    if (statusCode >= 400) {
-                        NSMutableDictionary *errorUserInfo = [NSMutableDictionary dictionary];
-                        errorUserInfo[@"HTTP statuscode"] = @(statusCode);
-                        if (connectionError) {
-                            errorUserInfo[@"underlying error"] = connectionError;
-                        }
-                        resError = [NSError errorWithDomain:NSURLErrorDomain
-                                                       code:statusCode
-                                                   userInfo:errorUserInfo];
-                    }
-                    
-                    NSString *filepath = [self cachedFilePathForURL:url];
-                    if (data) {
-                        // for some strange reasons,NSDataWritingAtomic does not override in some cases
-                        NSFileManager* filemanager = [[NSFileManager alloc] init];
-                        [filemanager removeItemAtPath:filepath error:nil];
-                        [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
-                        
-                        NSError *readError = nil;
-                        data = [NSData dataWithContentsOfFile:filepath
-                                                      options:NSDataReadingMappedIfSafe
-                                                        error:&readError];
-                        
-                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-                            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
-                            NSString *etag = header[@"Etag"];
-                            NSString *lastmodified = header[@"Last-Modified"];
-                            if (etag) {
-                                // store the eTag - we use it to check later if the content has been modified
-                                [self setETag:etag forCachedFilepath:filepath];
-                            } else if (lastmodified) {
-                                [self setLastModified:lastmodified forCachedFilepath:filepath];
-                            }
-                        }
-                    }
-                    [self removeRequestedURL:url];
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        if (completion) {
-                            completion(data, response, resError, filepath);
-                        }
-                    });
-                }] resume];
-}
-
-- (void)addRequestedURL:(NSURL*)url
-{
-    @synchronized(self) {
-        if (url) {
-            NSMutableSet *requests = [self.runningURLRequests mutableCopy];
-            [requests addObject:url];
-            _runningURLRequests = [requests copy];
+    @synchronized (self) {
+        NSURL *URL = request.URL;
+        NSURLRequest *URLrequest = request.URLRequest;
+        TWBeginNetworkActivity();
+        NSMutableSet *completionBlocks = nil;
+        NSMutableSet *progressBlocks = nil;
+        NSURLSessionDownloadTask *downloadTask = nil;
+        if (self.URLCompletionBlocks[URL]) {
+            completionBlocks = self.URLCompletionBlocks[URL];
+        } else {
+            completionBlocks = [NSMutableSet set];
+            downloadTask = [self.urlSession downloadTaskWithRequest:URLrequest];
         }
-    }
-}
+        [completionBlocks addObject:completion];
 
-- (void)removeRequestedURL:(NSURL*)url
-{
-    @synchronized(self ) {
-        NSMutableSet *requests = [self.runningURLRequests mutableCopy];
-        if (url && [requests containsObject:url]) {
-            [requests removeObject:url];
-            _runningURLRequests = [requests copy];
+        if (self.URLProgressBlocks[URL]) {
+            progressBlocks = self.URLProgressBlocks[URL];
+        } else {
+            progressBlocks = [NSMutableSet set];
         }
+        if (progressBlock) {
+            [progressBlocks addObject:progressBlock];
+        }
+
+        self.URLCompletionBlocks[URL] = completionBlocks;
+        self.URLProgressBlocks[URL] = progressBlocks;
+
+        [downloadTask resume];
     }
 }
 
@@ -463,9 +417,7 @@ static void TWEndNetworkActivity()
     const char *cStr = [string UTF8String];
     unsigned char digest[16];
     CC_MD5( cStr, (CC_LONG)strlen(cStr), digest );
-    
     NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    
     for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
         [output appendFormat:@"%02x", digest[i]];
     }
@@ -473,27 +425,107 @@ static void TWEndNetworkActivity()
     return output;
 }
 
-- (NSSet *)runningURLRequests
-{
-    if (!_runningURLRequests) {
-       _runningURLRequests = [[NSSet alloc] init];
-    }
-    return _runningURLRequests;
-}
-
 - (NSURLSession *)urlSession
 {
     if (_urlSession) {
         return _urlSession;
     }
-    
-    _urlSession = [NSURLSession sessionWithConfiguration:
-                   [NSURLSessionConfiguration defaultSessionConfiguration]];
+
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    _urlSession = [NSURLSession sessionWithConfiguration:configuration
+                                                delegate:self
+                                           delegateQueue:[NSOperationQueue mainQueue]];
     _urlSession.sessionDescription = @"net.tapwork.twnetworkmanager.nsurlsession";
     
     return _urlSession;
 }
 
+#pragma mark - NSURLSessionDelegate
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
+{
+    float progess = (float)totalBytesWritten/totalBytesExpectedToWrite;
+    NSLog(@"downloaded %d%%", (int)(100.0*progess));
+    NSURL *URL = downloadTask.originalRequest.URL;
+    NSSet *progressBlocks = self.URLProgressBlocks[URL];
+    for (void (^block)(float) in progressBlocks) {
+        block(progess);
+    }
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location
+{
+    NSData *data = [NSData dataWithContentsOfURL:location];
+    NSURL *URL = downloadTask.originalRequest.URL;
+    NSError *resError = downloadTask.error;
+    NSInteger statusCode = 0;
+    NSURLResponse *response = downloadTask.response;
+    if ([response respondsToSelector:@selector(statusCode)]) {
+        statusCode = [(NSHTTPURLResponse*)response statusCode];
+    }
+    if (statusCode >= 400) {
+        NSMutableDictionary *errorUserInfo = [NSMutableDictionary dictionary];
+        errorUserInfo[@"HTTP statuscode"] = @(statusCode);
+        if (downloadTask.error) {
+            errorUserInfo[@"underlying error"] = downloadTask.error;
+        }
+        resError = [NSError errorWithDomain:NSURLErrorDomain
+                                       code:statusCode
+                                   userInfo:errorUserInfo];
+    }
+
+    NSString *filepath = [self cachedFilePathForURL:URL];
+    if (data) {
+        // for some strange reasons,NSDataWritingAtomic does not override in some cases
+        NSFileManager* filemanager = [[NSFileManager alloc] init];
+        [filemanager removeItemAtPath:filepath error:nil];
+        [data writeToFile:filepath options:NSDataWritingAtomic error:nil];
+
+        NSError *readError = nil;
+        data = [NSData dataWithContentsOfFile:filepath
+                                      options:NSDataReadingMappedIfSafe
+                                        error:&readError];
+
+        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+            NSDictionary *header = [(NSHTTPURLResponse*)response allHeaderFields];
+            NSString *etag = header[@"Etag"];
+            NSString *lastmodified = header[@"Last-Modified"];
+            if (etag) {
+                // store the eTag - we use it to check later if the content has been modified
+                [self setETag:etag forCachedFilepath:filepath];
+            } else if (lastmodified) {
+                [self setLastModified:lastmodified forCachedFilepath:filepath];
+            }
+        }
+    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        TWEndNetworkActivity();
+        @synchronized (self) {
+            NSSet *completionBlocks = self.URLCompletionBlocks[URL];
+            for (downloadCompletion block in completionBlocks) {
+                block(data, response, resError, filepath);
+            }
+            [self.URLCompletionBlocks removeObjectForKey:URL];
+            [self.URLProgressBlocks removeObjectForKey:URL];
+        }
+    });
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        TWEndNetworkActivity();
+        @synchronized (self) {
+            NSURL *URL = task.originalRequest.URL;
+            NSHashTable *completionBlocks = self.URLCompletionBlocks[URL];
+            for (downloadCompletion block in completionBlocks) {
+                block(nil, task.response, error, nil);
+            }
+            [self.URLCompletionBlocks removeObjectForKey:URL];
+            [self.URLProgressBlocks removeObjectForKey:URL];
+        }
+    });
+}
 
 #pragma mark - Extended File Attributes (eTag & Last Modified)
 

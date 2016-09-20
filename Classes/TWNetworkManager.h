@@ -31,6 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// Request with a custom configurable TWRequest object
 - (void)request:(TWNetworkRequest *)request completion:(void(^)(TWNetworkResponse *response))completion;
 
+/// Request with a custom configurable TWRequest object - use the progress block for user download feedback
+- (void)request:(TWNetworkRequest *)request
+     completion:(void(^)(TWNetworkResponse *response))completion
+       progress:(void(^)(float progress))progressBlock;
+
 /// Image download - uses disk and memory caching - returns the image immediately if the image is in cache
 - (UIImage *)imageAtURL:(NSURL *)url
              completion:(void(^)(UIImage *_Nullable image,
