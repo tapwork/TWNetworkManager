@@ -58,11 +58,6 @@ static const double kFadeInTime = 0.25;
     [self.layer setMinificationFilter:kCAFilterTrilinear];
 
     if (!image) {
-        if (_URL) {
-            if ([[TWNetworkManager defaultManager] isProcessingURL:_URL]) {
-                [[TWNetworkManager defaultManager] cancelAllRequestForURL:_URL];
-            }
-        }
         _URL = nil;
     }
 }
