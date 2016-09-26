@@ -1,7 +1,7 @@
 PODS:
-  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/Core (2.1.3)
   - Reachability (3.2)
-  - TWNetworkManager (1.5.2):
+  - TWNetworkManager (1.5.3):
     - Reachability
 
 DEPENDENCIES:
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: "../TWNetworkManager.podspec"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  FBSnapshotTestCase: 4607968e0dfa1e2772ec0d0098354f8b870c5753
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  TWNetworkManager: e8b006eea03bcf9505062b36549aad82a6258d69
+  TWNetworkManager: eafe1d8c4277282af581193b83c1de1a8663d9b7
 
 COCOAPODS: 0.38.2
