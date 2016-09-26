@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic) NSURL *URL;
 
+- (void)setURL:(NSURL *)URL animated:(BOOL)animated;
 - (void)setImage:(UIImage *_Nullable)image animated:(BOOL)animated;
 
 @end
