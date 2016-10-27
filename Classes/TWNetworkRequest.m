@@ -23,6 +23,17 @@
     return request;
 }
 
++ (TWNetworkRequest *)requestWithURLRequest:(NSURLRequest *)URLRequest
+{
+    TWNetworkRequest *request = [TWNetworkRequest new];
+    request.URL = URLRequest.URL;
+    request.HTTPMethod = URLRequest.HTTPMethod;
+    request.timeout = URLRequest.timeoutInterval;
+    request.postParameters = [[NSString alloc] initWithData:URLRequest.HTTPBody encoding:NSUTF8StringEncoding];
+
+    return request;
+}
+
 - (instancetype)init
 {
     self = [super init];

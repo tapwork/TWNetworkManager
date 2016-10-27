@@ -13,8 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TWNetworkRequest : NSObject
 
 @property (nonatomic) NSURL *URL;
-@property (nonatomic, nullable) NSURLRequest *URLRequest; // Set a custom request to override all properties
-@property (nonatomic, readonly) NSString *HTTPMethod; // Default is GET
+@property (nonatomic, readonly) NSMutableURLRequest *URLRequest; // the URLRequest
 @property (nonatomic) NSString *HTTPMethod; // Default is GET
 @property (nonatomic) BOOL useCache;
 @property (nonatomic, nullable) NSString *username;
@@ -24,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSTimeInterval timeout; // Default 60 seconds
 
 + (TWNetworkRequest *)requestWithURL:(NSURL *)URL; //Creates a standard URL GET Request 
++ (TWNetworkRequest *)requestWithURLRequest:(NSURLRequest *)URLRequest;
+
 - (void)setValue:(nullable NSString *)value forHTTPHeaderField:(NSString *)field;
 
 @end
