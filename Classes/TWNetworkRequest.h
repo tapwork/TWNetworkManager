@@ -10,21 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, TWNetworkHTTPMethod) {
-    TWNetworkHTTPMethodGET = 0,
-    TWNetworkHTTPMethodPOST,
-    TWNetworkHTTPMethodDELETE,
-    TWNetworkHTTPMethodPUT,
-    TWNetworkHTTPMethodHEAD,
-    TWNetworkHTTPMethodPatch
-};
-
 @interface TWNetworkRequest : NSObject
 
 @property (nonatomic) NSURL *URL;
 @property (nonatomic, nullable) NSURLRequest *URLRequest; // Set a custom request to override all properties
-@property (nonatomic) TWNetworkHTTPMethod type;
 @property (nonatomic, readonly) NSString *HTTPMethod; // Default is GET
+@property (nonatomic) NSString *HTTPMethod; // Default is GET
 @property (nonatomic) BOOL useCache;
 @property (nonatomic, nullable) NSString *username;
 @property (nonatomic, nullable) NSString *password;

@@ -89,7 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
                              NSError *_Nullable error))completion __deprecated;
 
 - (void)requestURL:(NSURL*)url
-              type:(TWNetworkHTTPMethod)HTTPMethod
+              type:(NSString *)HTTPMethod
         completion:(void(^)(NSData *data,
                             NSString *_Nullable localFilepath,
                             BOOL isFromCache,

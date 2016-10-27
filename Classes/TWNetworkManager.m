@@ -132,7 +132,7 @@ static void TWEndNetworkActivity()
                                                                     initWithURL:request.URL
                                                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                                                     timeoutInterval:kDownloadTimeout];
-                                 [URLrequest setHTTPMethod:request.HTTPMethod];
+                                 [URLrequest setHTTPMethod:[request.HTTPMethod uppercaseString]];
                                  [self sendRequest:request
                                         completion:^(NSData *data,
                                                      NSURLResponse *URLResponse,
@@ -176,7 +176,7 @@ static void TWEndNetworkActivity()
     }
     
     TWNetworkRequest *request = [TWNetworkRequest new];
-    request.type = TWNetworkHTTPMethodGET;
+    request.HTTPMethod = @"GET";
     request.URL = url;
     request.useCache = YES;
     [self request:request
@@ -610,7 +610,7 @@ static void TWEndNetworkActivity()
 }
 
 - (void)requestURL:(NSURL*)url
-              type:(TWNetworkHTTPMethod)HTTPMethod
+              type:(NSString *)HTTPMethod
         completion:(void(^)(NSData *data,
                             NSString *_Nullable localFilepath,
                             BOOL isFromCache,
@@ -618,7 +618,7 @@ static void TWEndNetworkActivity()
     TWNetworkRequest *request = [TWNetworkRequest new];
     request.URL = url;
     request.useCache = NO;
-    request.type = HTTPMethod;
+    request.HTTPMethod = HTTPMethod;
     [self request:request completion:^(TWNetworkResponse * _Nonnull response) {
         if (completion) {
             completion(response.data, response.localFilePath, response.isFromCache, response.error);

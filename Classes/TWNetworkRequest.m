@@ -52,34 +52,6 @@
     }
 }
 
-#pragma mark - Getter
-
-- (NSString *)HTTPMethod
-{
-    NSString *HTTPMethod = @"GET";
-    switch (self.type) {
-        case TWNetworkHTTPMethodGET:
-            HTTPMethod = @"GET";
-            break;
-        case TWNetworkHTTPMethodPOST:
-            HTTPMethod = @"POST";
-            break;
-        case TWNetworkHTTPMethodDELETE:
-            HTTPMethod = @"DELETE";
-            break;
-        case TWNetworkHTTPMethodPUT:
-            HTTPMethod = @"PUT";
-            break;
-        case TWNetworkHTTPMethodHEAD:
-            HTTPMethod = @"HEAD";
-            break;
-        case TWNetworkHTTPMethodPatch:
-            HTTPMethod = @"PATCH";
-            break;
-    }
-
-    return HTTPMethod;
-}
 
 - (NSString *)HTTPAuth
 {
