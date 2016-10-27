@@ -447,7 +447,6 @@ static void TWEndNetworkActivity()
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
 {
     float progess = (float)totalBytesWritten/totalBytesExpectedToWrite;
-    NSLog(@"downloaded %d%%", (int)(100.0*progess));
     NSURL *URL = downloadTask.originalRequest.URL;
     NSSet *progressBlocks = self.URLProgressBlocks[URL];
     for (void (^block)(float) in progressBlocks) {
