@@ -78,9 +78,6 @@
 
 - (NSString *)HTTPAuth
 {
-    if (_URLRequest.HTTPMethod) {
-        return _URLRequest.HTTPMethod;
-    }
     NSString *authStr = nil;
     if (self.username) {
         authStr = self.username;
@@ -101,33 +98,22 @@
 
 - (NSTimeInterval)timeout
 {
-    if (_URLRequest) {
-        return _URLRequest.timeoutInterval;
-    }
-
     return _timeout;
 }
 
 - (NSURL *)URL
 {
-    if (_URLRequest.URL) {
-        return _URLRequest.URL;
-    }
-
     return _URL;
 }
 
-- (NSURLRequest *)URLRequest
+- (NSMutableURLRequest *)URLRequest
 {
-    if (_URLRequest) {
-        return _URLRequest;
-    }
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                     initWithURL:self.URL
                                     cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                     timeoutInterval:self.timeout];
 
-    [request setHTTPMethod:self.HTTPMethod];
+    [request setHTTPMethod:[self.HTTPMethod uppercaseString]];
     if ([self HTTPAuth]) {
         NSString *value = [NSString stringWithFormat:@"Basic %@", [self HTTPAuth]];
         [request setValue:value forHTTPHeaderField:@"Authorization"];

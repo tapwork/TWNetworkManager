@@ -325,7 +325,7 @@ static void TWEndNetworkActivity()
     } else if (![self hasCachedFileForURL:url] || ![self isNetworkReachable] || (!eTag && !lastModified)) {
         completion(NO);
     } else {
-        NSMutableURLRequest *request = [[networkRequest URLRequest] mutableCopy];
+        NSMutableURLRequest *request = [networkRequest URLRequest] ;
         if ([eTag length] > 0) {
             [request setValue:eTag forHTTPHeaderField:@"If-None-Match"];
         }
