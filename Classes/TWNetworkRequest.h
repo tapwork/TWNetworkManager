@@ -20,9 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, nullable) NSString *username;
 @property (nonatomic, nullable) NSString *password;
 @property (nonatomic, nullable) NSDictionary <NSString*, NSString*> *postParameters;
+@property (nonatomic) NSData *HTTPBody; // Overrides postParameters
 @property (nonatomic) NSTimeInterval timeout; // Default 60 seconds
 
 + (TWNetworkRequest *)requestWithURL:(NSURL *)URL; //Creates a standard URL GET Request 
+- (void)setValue:(nullable NSString *)value forHTTPHeaderField:(NSString *)field;
 
 @end
 

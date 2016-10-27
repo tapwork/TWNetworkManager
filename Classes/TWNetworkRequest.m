@@ -11,6 +11,7 @@
 @implementation TWNetworkRequest
 {
     NSString *_postParametersAsString;
+    NSMutableDictionary *_HTTPHeaderFields;
 }
 
 #pragma mark - LifeCycle
@@ -52,6 +53,17 @@
     }
 }
 
+- (void)setValue:(nullable NSString *)value forHTTPHeaderField:(NSString *)field
+{
+    @synchronized (self) {
+        if (!_HTTPHeaderFields) {
+            _HTTPHeaderFields = [NSMutableDictionary dictionary];
+        }
+        _HTTPHeaderFields[field] = value;
+    }
+}
+
+#pragma mark - Getter
 
 - (NSString *)HTTPAuth
 {
@@ -111,6 +123,14 @@
     }
     if (self.postParameters && _postParametersAsString) {
         [request setHTTPBody:[_postParametersAsString dataUsingEncoding:NSUTF8StringEncoding]];
+    }
+    if (self.HTTPBody) {
+        [request setHTTPBody:self.HTTPBody];
+    }
+    if (_HTTPHeaderFields) {
+        for (NSString *key in _HTTPHeaderFields.allKeys) {
+            [request setValue:_HTTPHeaderFields[key] forHTTPHeaderField:key];
+        }
     }
     
     return request;
