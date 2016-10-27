@@ -247,6 +247,11 @@ static void TWEndNetworkActivity()
     return [fileManager removeItemAtPath:cachePath error:&error];
 }
 
+- (BOOL)hasProcessingURLs
+{
+    return ([self.URLCompletionBlocks count] > 0);
+}
+
 - (BOOL)isProcessingURL:(NSURL*)URL
 {
     return (self.URLCompletionBlocks[URL] != nil);

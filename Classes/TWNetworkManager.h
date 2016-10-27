@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) BOOL isNetworkReachable;
 @property (nonatomic, readonly) BOOL isReachableViaWiFi;
+@property (nonatomic, readonly) BOOL hasProcessingURLs;
 
 /// Request with a custom configurable TWRequest object
 - (void)request:(TWNetworkRequest *)request completion:(void(^)(TWNetworkResponse *response))completion;
