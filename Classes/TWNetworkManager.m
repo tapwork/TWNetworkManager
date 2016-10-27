@@ -94,7 +94,7 @@ static void TWEndNetworkActivity()
 #pragma mark - Public methods
 - (void)request:(TWNetworkRequest *)request completion:(void(^)(TWNetworkResponse *response))completion
 {
-    [self request:request completion:completion progress:nil];
+    [self request:request completion:completion progress:^(float progress) {}];
 }
 
 - (void)request:(TWNetworkRequest *)request
