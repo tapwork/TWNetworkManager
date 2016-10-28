@@ -26,9 +26,13 @@
 {
     TWNetworkRequest *request = [TWNetworkRequest new];
     request.URL = URLRequest.URL;
-    request.HTTPMethod = URLRequest.HTTPMethod;
+    if (URLRequest.HTTPMethod) {
+        request.HTTPMethod = URLRequest.HTTPMethod;
+    }
+    if (URLRequest.HTTPBody) {
+        request.HTTPBody = URLRequest.HTTPBody;
+    }
     request.timeout = URLRequest.timeoutInterval;
-    request.postParameters = [[NSString alloc] initWithData:URLRequest.HTTPBody encoding:NSUTF8StringEncoding];
 
     return request;
 }
