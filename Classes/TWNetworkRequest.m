@@ -39,6 +39,7 @@
     self = [super init];
     if (self) {
         _timeout = 60.0;
+        _HTTPMethod = @"GET";
     }
     return self;
 }
@@ -124,6 +125,12 @@
     if (self.HTTPBody) {
         [request setHTTPBody:self.HTTPBody];
     }
+    if (self.HTTPMethod) {
+        [request setHTTPMethod:self.HTTPMethod];
+    } else {
+        [request setHTTPMethod:@"GET"];
+    }
+
     if (_HTTPHeaderFields) {
         for (NSString *key in _HTTPHeaderFields.allKeys) {
             [request setValue:_HTTPHeaderFields[key] forHTTPHeaderField:key];
