@@ -127,19 +127,13 @@ static void TWEndNetworkActivity()
                                      });
                                  }
                              } else {
-                                 // We need a fresh request for this URL
-                                 NSMutableURLRequest *URLrequest = [[NSMutableURLRequest alloc]
-                                                                    initWithURL:request.URL
-                                                                    cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                                                    timeoutInterval:kDownloadTimeout];
-                                 [URLrequest setHTTPMethod:[request.HTTPMethod uppercaseString]];
                                  [self sendRequest:request
                                         completion:^(NSData *data,
                                                      NSURLResponse *URLResponse,
                                                      NSError *error,
                                                      NSString* cacheFilePath) {
 
-                                            TWNetworkResponse *response = [TWNetworkResponse new];
+                                     TWNetworkResponse *response = [TWNetworkResponse new];
                                      response.requestURL = request.URL;
                                      response.data = data;
                                      response.error = error;
@@ -325,7 +319,7 @@ static void TWEndNetworkActivity()
     } else if (![self hasCachedFileForURL:url] || ![self isNetworkReachable] || (!eTag && !lastModified)) {
         completion(NO);
     } else {
-        NSMutableURLRequest *request = [networkRequest URLRequest] ;
+        NSMutableURLRequest *request = networkRequest.URLRequest;
         if ([eTag length] > 0) {
             [request setValue:eTag forHTTPHeaderField:@"If-None-Match"];
         }
