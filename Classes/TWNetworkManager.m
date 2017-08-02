@@ -437,9 +437,6 @@ static void TWEndNetworkActivity()
                 completionHandler:^(NSData *data,
                                     NSURLResponse *response,
                                     NSError *connectionError) {
-                    
-                    TWEndNetworkActivity();
-                    
                     NSError *resError = connectionError;
                     NSInteger statusCode = 0;
                     if ([response respondsToSelector:@selector(statusCode)]) {
@@ -483,6 +480,7 @@ static void TWEndNetworkActivity()
                     [self removeRequestedURL:url];
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
+                        TWEndNetworkActivity();
                         if (completion) {
                             completion(data,filepath,NO,resError);
                         }
