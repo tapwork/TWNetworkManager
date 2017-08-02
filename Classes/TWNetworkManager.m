@@ -430,7 +430,9 @@ static void TWEndNetworkActivity()
     
     [self addRequestedURL:url];
     
-    TWBeginNetworkActivity();
+    dispatch_async(dispatch_get_main_queue(), ^{
+        TWBeginNetworkActivity();
+    });
     
     NSURLSession *session = self.urlSession;
     [[session dataTaskWithRequest:request
