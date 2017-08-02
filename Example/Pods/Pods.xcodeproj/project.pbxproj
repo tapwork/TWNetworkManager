@@ -118,7 +118,7 @@
 		4A5DFD85DDA8F2C9E38931104D72E3E7 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-umbrella.h"; sourceTree = "<group>"; };
 		4B7B434015B57AF16CCF8560CB2910E8 /* Pods-TWNetworkManagerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TWNetworkManagerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		50FFCD12D43E0F4B1A87E09B82DB032D /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		528C6CBA5A8BA5767794BA7E63786E80 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.modulemap"; sourceTree = "<group>"; };
+		528C6CBA5A8BA5767794BA7E63786E80 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.modulemap"; sourceTree = "<group>"; };
 		53788CA8990502638CDBC7BD477655FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E9EAB41D32133F411FF794F9DC1F40 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		59C7FD8B8C9D352AA5F896062CF2568C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
@@ -128,47 +128,47 @@
 		660B58F464D05A910802C964E97FA3E3 /* Pods-TWNetworkManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		6B145D38DC8A82DA2A2353CA4C8DC7DE /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		6BDA5BB1547A00422DFF300A8E1190D6 /* TWNetworkImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkImageView.h; sourceTree = "<group>"; };
-		781E52396D555F8D481577DFD7E83F8A /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		786DD3AAF53ADF97D74D716E501F137A /* Pods_TWNetworkManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TWNetworkManagerExample.framework; path = "Pods-TWNetworkManagerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		781E52396D555F8D481577DFD7E83F8A /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		786DD3AAF53ADF97D74D716E501F137A /* Pods_TWNetworkManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWNetworkManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBF20222C9DD077C1D2F4EBFE7C2A6D /* TWNetworkImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWNetworkImageView.m; sourceTree = "<group>"; };
 		7CF81915C54D8D6586E3164333EDB95E /* TWNetworkManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TWNetworkManager-dummy.m"; sourceTree = "<group>"; };
 		815CB680978AE91E40C06787A97056E5 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
-		81BB8F57D6E080041FB9F50AD1AFFB7B /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		81BB8F57D6E080041FB9F50AD1AFFB7B /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		8B3DFE5BDD99A74097BE2B314B9F0D5B /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		8FFB9843FB9102FFE089B9FEE7014131 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-resources.sh"; sourceTree = "<group>"; };
 		928EF7BABA630E265EE954E3B98B71A6 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A417B5BAA1E05946D9C7DC15F79655B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		A7B2344D146B003CAF0AFC4B7D3DC58A /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		A95E7A6DEE9A5BFAB7CA45AF1E8E7223 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A9CD54A0790D462A79A9AA0E2D676B68 /* TWNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkManager.h; sourceTree = "<group>"; };
 		AB765775E86CC40F20AAF87AB58EECB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD7A30B0157A9A865011181EDDA3CECB /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7A30B0157A9A865011181EDDA3CECB /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3ACF5101008DB0ABD3D3BAF4A6613D /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		B0B787B3BAF7B1FD9E0DABFD92A31683 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B2BFED8223AF56ADDB6D32A688B523B1 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA720D09C5208E7E96DDB256D50A91F6 /* TWNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TWNetworkManager.framework; path = TWNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA720D09C5208E7E96DDB256D50A91F6 /* TWNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TWNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC3DB4CF9DD89729D15BBCAF541562B /* Pods-TWNetworkManagerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TWNetworkManagerExample-umbrella.h"; sourceTree = "<group>"; };
 		C1556D789473CC42B8E9F077350516BD /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		CAB6E993EF1F3E7CE963935609DF87CF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		CCB38301B7899433059AE0F5443940A9 /* Pods-TWNetworkManagerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TWNetworkManagerExample.modulemap"; sourceTree = "<group>"; };
+		CCB38301B7899433059AE0F5443940A9 /* Pods-TWNetworkManagerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TWNetworkManagerExample.modulemap"; sourceTree = "<group>"; };
 		CEA090E7CA57B783FBB424785AA88D10 /* Pods-TWNetworkManagerExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TWNetworkManagerExample-resources.sh"; sourceTree = "<group>"; };
 		CFE21EB4514719FEFCB0E0DAD6165BEC /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D7A0E0BF50015DCF927D7C8DB8B3A8C8 /* Pods-TWNetworkManagerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TWNetworkManagerExample-frameworks.sh"; sourceTree = "<group>"; };
 		D8D1BC1CB21FDB1FE2360947B871BAA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DCD0F72A3099A10FADBF757A0507EB11 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		DCDC82895D627F2E97030A82A7B8DA2D /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reachability.modulemap; sourceTree = "<group>"; };
+		DCDC82895D627F2E97030A82A7B8DA2D /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Reachability.modulemap; sourceTree = "<group>"; };
 		DF6167D740E5B12705141B63DBF0AC03 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		E58A71E6DF39EAD4C59E0871DB014587 /* TWNetworkRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWNetworkRequest.h; sourceTree = "<group>"; };
 		E90E03BB534881702077354D8E304AF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EAAF43C3337BB1AF7C436FEA9C06D35E /* TWNetworkManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWNetworkManager.xcconfig; sourceTree = "<group>"; };
 		EB99208B90DF0830C964E07D63E9AD05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4B1804AE62038D9250B9766429154D /* Pods-TWNetworkManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWNetworkManagerExample.release.xcconfig"; sourceTree = "<group>"; };
-		ECCC2ECB46F92F5891F56084D94BCDF8 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCC2ECB46F92F5891F56084D94BCDF8 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13774FDB4A5B72DC1261EFF44C739C3 /* Pods-TWNetworkManagerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TWNetworkManagerExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		F17E50E56D90733C2B32EA5970B4AE7B /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
 		F51AA163D2D3CA7F77F6ABA5D1371D16 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		FD0CE3F53FD51D5A230CC54621948CCD /* TWNetworkManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TWNetworkManager.modulemap; sourceTree = "<group>"; };
+		FD0CE3F53FD51D5A230CC54621948CCD /* TWNetworkManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TWNetworkManager.modulemap; sourceTree = "<group>"; };
 		FDF81F6CDF8B621B4A50988C42DB86D8 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,7 +308,6 @@
 				14F086D0DE3C53566A481D425B28201A /* Core */,
 				095450B180E43F557881539D3DF0CF54 /* Support Files */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -399,7 +398,6 @@
 				E58A71E6DF39EAD4C59E0871DB014587 /* TWNetworkRequest.h */,
 				607B2867AA9B84F7A169F186F9BAECEF /* TWNetworkRequest.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -410,7 +408,6 @@
 				928EF7BABA630E265EE954E3B98B71A6 /* Reachability.m */,
 				E2D378845272FD2FBE0A937F1CE56E3A /* Support Files */,
 			);
-			name = Reachability;
 			path = Reachability;
 			sourceTree = "<group>";
 		};
@@ -593,6 +590,20 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					4A01E2793C9E1CBC3B6893CA38CCBCE4 = {
+						LastSwiftMigration = 0830;
+					};
+					4F6954CFFB62243390914E6C69EE384E = {
+						LastSwiftMigration = 0830;
+					};
+					87F77D44CD54DB4EDA9C860284A67B5B = {
+						LastSwiftMigration = 0830;
+					};
+					FE8955422D7A7A9636EC9EABAE7EC548 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -767,6 +778,7 @@
 				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -799,6 +811,7 @@
 				PRODUCT_NAME = TWNetworkManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -835,6 +848,7 @@
 				PRODUCT_NAME = Pods_TWNetworkManagerExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -947,6 +961,7 @@
 				PRODUCT_NAME = TWNetworkManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -983,6 +998,7 @@
 				PRODUCT_NAME = Pods_TWNetworkManagerExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1015,6 +1031,7 @@
 				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1051,6 +1068,7 @@
 				PRODUCT_NAME = Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1087,6 +1105,7 @@
 				PRODUCT_NAME = Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
