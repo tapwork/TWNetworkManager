@@ -54,17 +54,17 @@
                          NSError *error))completion;
 
 /// Check current process for an URL
-/// @param URL The URL to check if it is processing
+/// @param url The URL to check if it is processing
 /// @return YES if URL is currently requested or in download progress
 - (BOOL)isProcessingURL:(NSURL *)url;
 
 /// Checks if we already have a cached file on disk for the URL
-/// @param URL The URL to check if there is a local representation
+/// @param url The URL to check if there is a local representation
 /// @return YES If there is local representation
 - (BOOL)hasCachedFileForURL:(NSURL *)url;
 
 /// Gives a local representation for the real URL
-/// @param URL The URL for the local representation
+/// @param url The URL for the local representation
 /// @return A cached filepath for the full URL - nil if nothing is cached
 - (NSString *)cachedFilePathForURL:(NSURL *)url;
 
@@ -72,7 +72,7 @@
 - (void)cancelAllRequests;
 
 /// Cancels all tasks for the given URL.
-/// @param URL All requests with this URL will be canceled
+/// @param url All requests with this URL will be canceled
 - (void)cancelAllRequestForURL:(NSURL*)url;
 
 /// Deletes all cached data from disk and removes the images from NSCache
