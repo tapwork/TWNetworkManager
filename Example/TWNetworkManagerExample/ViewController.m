@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <TWNetworkManager/TWNetworkManager.h>
+@import TWNetworkManager;
 
 static const CGSize kButtonSize = {120.0,30};
 

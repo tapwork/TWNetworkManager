@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57C31621DDB999FF02B77809 /* libPods-TWNetworkManagerExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C51E5362ABC0EB289D14FC2 /* libPods-TWNetworkManagerExampleTests.a */; };
-		773CBF29127170AEE4BAB232 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FDCD9CCF487D7BE961BA92 /* libPods.a */; };
+		4F27BF9954A01A8A105D7802 /* Pods_TWNetworkManagerExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EC808B723AA8F74EBE9DC2 /* Pods_TWNetworkManagerExampleTests.framework */; };
+		805575AFC682FBAE18A20A42 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14DC8F1F374BEFCDEF6D783 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework */; };
+		AD6161B37E18F1DF909D2CEC /* Pods_TWNetworkManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DC363DCB858423B8AF859A /* Pods_TWNetworkManagerExample.framework */; };
 		DA47DFCA1A78325B005B9160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47DFC91A78325B005B9160 /* main.m */; };
 		DA47DFCD1A78325B005B9160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47DFCC1A78325B005B9160 /* AppDelegate.m */; };
 		DA47DFD01A78325B005B9160 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47DFCF1A78325B005B9160 /* ViewController.m */; };
@@ -30,11 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03FDCD9CCF487D7BE961BA92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C51E5362ABC0EB289D14FC2 /* libPods-TWNetworkManagerExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TWNetworkManagerExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F459288BF363474640E3287 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		65BDBED13D41C123A4368F0C /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AA064C2FE06E92076B6DF104 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		045C24DD973A79D25E78E5B4 /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30EC808B723AA8F74EBE9DC2 /* Pods_TWNetworkManagerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWNetworkManagerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A56C6BF71036AC3B9F7999 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		603C0DAB9A51C608EC270D98 /* Pods-TWNetworkManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExample/Pods-TWNetworkManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		64DC363DCB858423B8AF859A /* Pods_TWNetworkManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWNetworkManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67833DA913A0B452BE52F7E8 /* Pods-TWNetworkManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExample/Pods-TWNetworkManagerExample.release.xcconfig"; sourceTree = "<group>"; };
+		8D903E89328C92EF6D1F4829 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		B14DC8F1F374BEFCDEF6D783 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA47DFC41A78325B005B9160 /* TWNetworkManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWNetworkManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA47DFC81A78325B005B9160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA47DFC91A78325B005B9160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,7 +53,7 @@
 		DA47DFE21A78325C005B9160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA47DFE31A78325C005B9160 /* TWNetworkManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWNetworkManagerExampleTests.m; sourceTree = "<group>"; };
 		DAEE99FA1D59BB7000E68CE5 /* TWNetworkImageViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNetworkImageViewTests.m; sourceTree = "<group>"; };
-		E7FEAB30373ECDD49FA7CF8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E9E03965A1DF9F20FA397914 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773CBF29127170AEE4BAB232 /* libPods.a in Frameworks */,
+				AD6161B37E18F1DF909D2CEC /* Pods_TWNetworkManagerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,31 +69,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C31621DDB999FF02B77809 /* libPods-TWNetworkManagerExampleTests.a in Frameworks */,
+				4F27BF9954A01A8A105D7802 /* Pods_TWNetworkManagerExampleTests.framework in Frameworks */,
+				805575AFC682FBAE18A20A42 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00D32C17BBAC459BD149420D /* Frameworks */ = {
+		8B250E55F7DBF8B0D8401DA8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03FDCD9CCF487D7BE961BA92 /* libPods.a */,
-				0C51E5362ABC0EB289D14FC2 /* libPods-TWNetworkManagerExampleTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		84BC91D018A4C63E9FF42DE5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E7FEAB30373ECDD49FA7CF8D /* Pods.debug.xcconfig */,
-				AA064C2FE06E92076B6DF104 /* Pods.release.xcconfig */,
-				65BDBED13D41C123A4368F0C /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */,
-				4F459288BF363474640E3287 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */,
+				045C24DD973A79D25E78E5B4 /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */,
+				8D903E89328C92EF6D1F4829 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */,
+				603C0DAB9A51C608EC270D98 /* Pods-TWNetworkManagerExample.debug.xcconfig */,
+				67833DA913A0B452BE52F7E8 /* Pods-TWNetworkManagerExample.release.xcconfig */,
+				E9E03965A1DF9F20FA397914 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig */,
+				38A56C6BF71036AC3B9F7999 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5C59C20D16B9D2C99BC8CA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30EC808B723AA8F74EBE9DC2 /* Pods_TWNetworkManagerExampleTests.framework */,
+				64DC363DCB858423B8AF859A /* Pods_TWNetworkManagerExample.framework */,
+				B14DC8F1F374BEFCDEF6D783 /* Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DA47DFBB1A78325B005B9160 = {
@@ -98,8 +106,8 @@
 				DA47DFC61A78325B005B9160 /* TWNetworkManagerExample */,
 				DA47DFE01A78325C005B9160 /* TWNetworkManagerExampleTests */,
 				DA47DFC51A78325B005B9160 /* Products */,
-				84BC91D018A4C63E9FF42DE5 /* Pods */,
-				00D32C17BBAC459BD149420D /* Frameworks */,
+				8B250E55F7DBF8B0D8401DA8 /* Pods */,
+				A5C59C20D16B9D2C99BC8CA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,11 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA47DFE71A78325C005B9160 /* Build configuration list for PBXNativeTarget "TWNetworkManagerExample" */;
 			buildPhases = (
-				DFF2E7904023DF98C3AE0D69 /* Check Pods Manifest.lock */,
+				B2F1B7048CDCE98B1400EA02 /* [CP] Check Pods Manifest.lock */,
 				DA47DFC01A78325B005B9160 /* Sources */,
 				DA47DFC11A78325B005B9160 /* Frameworks */,
 				DA47DFC21A78325B005B9160 /* Resources */,
-				B8D1AACB6F5A0F355F0233F0 /* Copy Pods Resources */,
+				7455F5BF61B1BA3B2B469558 /* [CP] Embed Pods Frameworks */,
+				EE401D6E61B72A5F50E727DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,11 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA47DFEA1A78325C005B9160 /* Build configuration list for PBXNativeTarget "TWNetworkManagerExampleTests" */;
 			buildPhases = (
-				2EC86DD1EC550C8AFB406A88 /* Check Pods Manifest.lock */,
+				19316E06CF0BC211642D5335 /* [CP] Check Pods Manifest.lock */,
 				DA47DFD91A78325B005B9160 /* Sources */,
 				DA47DFDA1A78325B005B9160 /* Frameworks */,
 				DA47DFDB1A78325B005B9160 /* Resources */,
-				6A83C7D7A84CEF35BDB36A3E /* Copy Pods Resources */,
+				4134678893FDD33A459C0770 /* [CP] Embed Pods Frameworks */,
+				D37C0C72267CD0B8B1405F4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,64 +264,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EC86DD1EC550C8AFB406A88 /* Check Pods Manifest.lock */ = {
+		19316E06CF0BC211642D5335 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6A83C7D7A84CEF35BDB36A3E /* Copy Pods Resources */ = {
+		4134678893FDD33A459C0770 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExampleTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8D1AACB6F5A0F355F0233F0 /* Copy Pods Resources */ = {
+		7455F5BF61B1BA3B2B469558 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TWNetworkManagerExample/Pods-TWNetworkManagerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFF2E7904023DF98C3AE0D69 /* Check Pods Manifest.lock */ = {
+		B2F1B7048CDCE98B1400EA02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D37C0C72267CD0B8B1405F4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests/Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE401D6E61B72A5F50E727DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TWNetworkManagerExample/Pods-TWNetworkManagerExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -404,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -443,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,7 +493,7 @@
 		};
 		DA47DFE81A78325C005B9160 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7FEAB30373ECDD49FA7CF8D /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 603C0DAB9A51C608EC270D98 /* Pods-TWNetworkManagerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TWNetworkManagerExample/Info.plist;
@@ -465,7 +505,7 @@
 		};
 		DA47DFE91A78325C005B9160 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA064C2FE06E92076B6DF104 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 67833DA913A0B452BE52F7E8 /* Pods-TWNetworkManagerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TWNetworkManagerExample/Info.plist;
@@ -477,7 +517,7 @@
 		};
 		DA47DFEB1A78325C005B9160 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65BDBED13D41C123A4368F0C /* Pods-TWNetworkManagerExampleTests.debug.xcconfig */;
+			baseConfigurationReference = E9E03965A1DF9F20FA397914 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -498,7 +538,7 @@
 		};
 		DA47DFEC1A78325C005B9160 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F459288BF363474640E3287 /* Pods-TWNetworkManagerExampleTests.release.xcconfig */;
+			baseConfigurationReference = 38A56C6BF71036AC3B9F7999 /* Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

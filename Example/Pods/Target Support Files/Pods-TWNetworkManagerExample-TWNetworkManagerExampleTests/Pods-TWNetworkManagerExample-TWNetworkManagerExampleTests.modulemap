@@ -1,0 +1,6 @@
+framework module Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests {
+  umbrella header "Pods-TWNetworkManagerExample-TWNetworkManagerExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,11 @@
-pod "TWNetworkManager", :path => "../TWNetworkManager.podspec"
+platform :ios, '9.0'
+use_frameworks!
 
-target "TWNetworkManagerExampleTests" do
-  pod 'TWNetworkManager', :path => "../TWNetworkManager.podspec"
-  pod 'FBSnapshotTestCase/Core'
+target "TWNetworkManagerExample" do
+	pod "TWNetworkManager", :path => "../TWNetworkManager.podspec"
+
+	target "TWNetworkManagerExampleTests" do
+		inherit! :complete
+  		pod 'FBSnapshotTestCase/Core'
+	end
 end

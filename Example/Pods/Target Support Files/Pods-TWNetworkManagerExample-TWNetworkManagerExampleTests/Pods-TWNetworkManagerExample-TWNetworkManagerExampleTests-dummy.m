@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests : NSObject
+@end
+@implementation PodsDummy_Pods_TWNetworkManagerExample_TWNetworkManagerExampleTests
+@end
