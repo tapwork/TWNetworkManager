@@ -82,7 +82,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"testEtagAndLastModified"];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.cmenschel.de/wp-content/uploads/2014/09/demo.png"];
+    NSURL *url = [NSURL URLWithString:@"http://www.tapwork.de/api/wp-content/uploads/2014/09/mygigs_preview_image-5.png"];
     [[TWNetworkManager defaultManager]
      downloadURL:url
      completion:^(NSData *data, NSString *localFilepath, BOOL isFromCache, NSError *error) {
