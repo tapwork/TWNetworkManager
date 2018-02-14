@@ -46,7 +46,7 @@ static const double kFadeInTime = 0.25;
                                             NSString *localFilepath,
                                             BOOL isFromCache,
                                             NSError *error) {
-            if ([_URL isEqual:URL]) {
+            if ([weakSelf.URL isEqual:URL]) {
                 if (image && URL) {
                     [self.imageCache setObject:image forKey:URL];
                     [weakSelf setImage:image animated:animated];
