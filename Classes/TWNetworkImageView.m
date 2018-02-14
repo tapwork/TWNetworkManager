@@ -14,7 +14,10 @@ static const double kFadeInTime = 0.25;
 @implementation TWNetworkImageView
 
 - (TWNetworkManager *)networkManager {
-    return [TWNetworkManager defaultManager];
+    if (!_networkManager) {
+		return [TWNetworkManager defaultManager];
+    }
+    return _networkManager;
 }
 
 - (NSCache *)imageCache {

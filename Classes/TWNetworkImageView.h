@@ -7,11 +7,13 @@
 //
 
 @import UIKit;
+@class TWNetworkManager;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TWNetworkImageView : UIImageView
 
+@property (nonnull, nonatomic) TWNetworkManager *networkManager; // Default is [TWNetworkManager defaultManager]
 @property (nullable, nonatomic) NSURL *URL;
 
 - (void)setURL:(NSURL *)URL animated:(BOOL)animated;
